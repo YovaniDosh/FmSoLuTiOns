@@ -1,0 +1,154 @@
+/* ==============================
+           Mobile-first
+   ============================== */
+
+   :root
+   {
+
+    /*          COLORS            */
+
+    --color-white:    hsl(0, 0%, 100%);       
+    --color-slate-300:hsl(212, 45%, 89%);
+    --color-slate-500:hsl(216, 15, 48%);
+    --color-slate-900:hsl(218, 44%, 22%);
+
+    /*          FONTS             */
+
+    --font-family-primary: "Outfil",sans-serif;
+    --font-size-body: 0.9375rem;
+    --font-size-title: 1.375rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /*          CARDS             */
+
+    --card-max-width: 20rem;
+    --card-radius: 1.25rem;
+    --image-radius: 0.625rem;
+
+    /*          SPACES            */
+        
+    --space-100: 0.5rem;
+    --space-200: 1rem;
+    --space-300: 1.5rem;
+    --space-500: 2.5rem;
+
+   }
+
+   /* ==============================
+                RESET
+   ============================== */
+
+*,
+*::before,
+*::after 
+{
+  box-sizing: border-box;
+}
+
+html 
+{
+  min-height: 100%;
+}
+
+body,
+h1,
+p 
+{
+  margin: 0;
+}
+
+img 
+{
+  display: block;
+  max-width: 100%;
+}
+
+/* ==============================
+               BASE
+   ============================== */
+
+body 
+{
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-slate-300);
+  color: var(--color-slate-900);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4;
+}
+
+/* ==============================
+            PAGE
+   ============================== */
+
+.page
+{
+    min-height: calc(100vh - 2.5rem);
+    min-height: calc(100dvh - 2.5rem);
+    display: grid;
+    place-items: center;
+    padding: var(--space-300);
+}
+
+/* ==============================
+   QR CARD
+   ============================== */
+
+.qr-card 
+{
+  width: min(100%, var(--card-max-width));
+  padding: var(--space-200);
+  padding-bottom: var(--space-500);
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  background-color: var(--color-white);
+  box-shadow: 0 1.5625rem 1.5625rem hsla(220, 15%, 55%, 0.2);
+  text-align: center;
+}
+
+.qr-card__image 
+{
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--image-radius);
+  object-fit: cover;
+}
+
+.qr-card__content 
+{
+  padding: var(--space-300) var(--space-200) 0;
+}
+
+.qr-card__title 
+{
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.qr-card__description 
+{
+  margin-top: var(--space-200);
+  color: var(--color-slate-500);
+  letter-spacing: 0.0125rem;
+  text-wrap: pretty;
+}
+
+/* ==============================
+            RESPONSIVE
+   ============================== */
+
+@media (min-width: 48rem) 
+{
+  .page {
+    padding: var(--space-500);
+  }
+
+  .qr-card {
+    box-shadow: 0 2rem 3rem hsla(220, 15%, 55%, 0.25);
+  }
+}
