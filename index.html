@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name=" description"content="Colección personal de desafíos completados de Frontend Mentor.">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Mis desafíos</title>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <p class="hero__eyebrow">Frontend Mentor</p>
+
+      <h1>Mi colección de desafíos Frontend</h1>
+
+      <p class="hero__technologies">
+        HTML <span>•</span>
+        CSS <span>•</span>
+        JavaScript <span>•</span>
+        Responsive
+      </p>
+
+      <a class="button" href="#completedChallenges">
+        Ver proyectos
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-section" id="completedChallenges">
+      <div class="container">
+        <div class="section-heading">
+          <span class="projects-counter">
+            <strong id="completedCount">0</strong>
+            de 100 proyectos completados
+          </span>
+        </div>
+
+        <div
+          class="projects-grid"
+          id="projectsGrid"
+          aria-live="polite"
+        ></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Construido con HTML, CSS y JavaScript.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="./data/app.js"></script>
+</body>
+</html>
