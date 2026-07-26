@@ -5,8 +5,8 @@ const projects = [
       "Componente QR creado con HTML semántico, CSS y diseño responsive.",
     technologies: ["HTML", "CSS"],
     image: "assets/images/image-qr-code.png",
-    liveUrl: "./challenges/01-qr-code-component/",
-    githubUrl: "#",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/qr-code-component-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/qr-code-component-main",
     completed: true
   },
   {
