@@ -124,6 +124,7 @@ body
 
 .qr-card__title 
 {
+  margin-top: var(--space-200);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
