@@ -4,12 +4,11 @@ Esta es mi solución para el reto [QR Code Component de Frontend Mentor](https:/
 
 ## Vista previa
 
-![Captura del proyecto QR Code Component](./assets/screenshots/preview.jpg)
+![Captura del proyecto QR Code Component](/assets/screenshots/screenshot-qr.png)
 
 ## Enlaces
 
-- Repositorio: [Ver código en GitHub](https://github.com/tu-usuario/qr-code-component)
-- Sitio publicado: [Ver proyecto en vivo](https://tu-usuario.github.io/qr-code-component/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/qr-code-component-main/)
 
 ## Tecnologías utilizadas
 
@@ -31,31 +30,8 @@ Durante este reto practiqué:
 - La creación de un diseño adaptable mediante un enfoque mobile-first.
 - La importancia del texto alternativo en las imágenes.
 
-## Estructura del proyecto
 
-```text
-qr-code-component/
-├── images/
-│   └── image-qr-code.png
-├── screenshots/
-│   └── qr-code-preview.png
-├── index.html
-├── style.css
-└── README.md
-```
-
-## Colaboración con IA
-
-Utilicé ChatGPT como apoyo durante el desarrollo para:
-
-- Comprender conceptos de HTML y CSS.
-- Revisar posibles errores.
-- Recibir orientación paso a paso.
-- Mejorar la estructura y documentación del proyecto.
-
-La implementación del reto se realizó como parte de mi aprendizaje práctico de desarrollo frontend.
 
 ## Autor
 
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
 - Frontend Mentor: [@tu-usuario](https://www.frontendmentor.io/profile/tu-usuario)
