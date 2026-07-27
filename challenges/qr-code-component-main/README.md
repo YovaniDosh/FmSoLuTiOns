@@ -4,7 +4,7 @@ Esta es mi solución para el reto [QR Code Component de Frontend Mentor](https:/
 
 ## Vista previa
 
-![Captura del proyecto QR Code Component](/assets/screenshots/screenshot-qr.png)
+![Captura del proyecto QR Code Component](../../assets/screenshots/qr-code-screen.png)
 
 ## Enlaces
 

@@ -1,0 +1,135 @@
+:root
+{
+    --color-yellow:   hsl(47,88%,63%);
+    --color-white:    hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0,0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face 
+{
+    font-family: "Figtree" ;
+    src: url("../../../assets/fonts/Figtree-VariableFont_wght.ttf");
+    font-weight: 500 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p
+{
+    margin:0;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+}
+
+body
+{
+    min-width: 20rem;
+    min-height: 100vh;
+    background: var(--color-yellow);
+    color: var(--color-gray-950);
+    font-family: "Figtree", sans-serif;
+}
+
+.page
+{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+}
+
+.blog-card
+{
+    width: min(100%, 24rem);
+    padding: 1.5rem;
+    border: 1px solid var(--color-gray-950);
+    border-radius: 1.25rem;
+    background: var(--color-white);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-gray-950);
+}
+
+.blog-card__image
+{
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.blog-card__content
+{
+    margin-top: 1.5rem;
+}
+
+.blog-card__category
+{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.25rem;
+    background: var(--color-yellow);
+    font-size: 0.875rem;
+    font-weight: 800;
+}
+
+.blog-card__date
+{
+    margin-top: 0.85rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.blog-card__title
+{
+    margin-top: 1rem;
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+    line-height: 1.25;
+    font-family: "Figtree" sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    transition: color 180ms ease;
+}
+
+.blog-card__title:active
+{
+    color: var(--color-yellow);
+}
+
+.blog-card__description
+{
+    margin-top: 1rem;
+    color: var(--color-gray-500);
+    line-height: 1.5;
+}
+
+.blog-card__author
+{
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+}
+
+.blog-card__avatar
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+.blog-card__author-name
+{
+    font-size: 0.875rem;
+    font-weight: 800;
+}
