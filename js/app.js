@@ -42,12 +42,12 @@ const projects = [
   {
     title: "Blog Preview Card",
     description:
-      "Espacio reservado para una tarjeta de vista previa de blog.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Tarjeta de vista previa de blog creada con HTML semático y CSS responsive",
+    technologies: ["HTML", "CSS", "GIT"],
+    image: "assets/images/image-blog-preview.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/blog-preview-card-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/blog-preview-card-main",
+    completed: true
   },
   {
     title: "Recipe Page",
@@ -128,6 +128,8 @@ function createProjectCard(project) {
         <a
           class="project-link project-link--primary"
           href="${project.liveUrl}"
+          target="_blanck"
+          rel="noopener noreferrer"
         >
           Live Demo
         </a>
@@ -135,6 +137,8 @@ function createProjectCard(project) {
         <a
           class="project-link project-link--secondary"
           href="${project.githubUrl}"
+          target="_blanck"
+          rel"nooper noreferrer"
         >
           GitHub
         </a>
