@@ -34,4 +34,4 @@ Durante este reto practiqué:
 
 ## Autor
 
-- Frontend Mentor: [@tu-usuario](https://www.frontendmentor.io/profile/tu-usuario)
+- Frontend Mentor: [JOHANX](https://www.frontendmentor.io/profile/YovaniDosh)
