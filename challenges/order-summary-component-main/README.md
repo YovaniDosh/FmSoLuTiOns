@@ -34,7 +34,7 @@ El objetivo fue construir una tarjeta de resumen de pedido con:
 - Diseño mobile-first
 - Responsive design
 - Fuentes locales
-- Metodoloia BEM
+- Metodologia BEM
 
 ## Lo que aprendí
 
