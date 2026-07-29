@@ -23,15 +23,12 @@ Esta es mi solución para el reto [Blog Preview Card](https://www.frontendmentor
 
 ## Lo que aprendí
 
-Durante este reto practiqué:
-
-- La creación de una tarjeta utilizando HTML semántico.
-- El centrado de elementos con Flexbox.
-- El funcionamiento del modelo de caja de CSS.
-- El uso de propiedades personalizadas para organizar colores.
-- La creación de un diseño adaptable mediante un enfoque mobile-first.
-- La importancia del texto alternativo en las imágenes.
-- Metodologia BEM y buenas practicas de nombramiento
+- Organizar clases con la metodología BEM.
+- Separar un componente en bloque y elementos.
+- Crear una sombra sólida desplazada.
+- Aplicar estados interactivos con `:hover`.
+- Usar una fuente variable local.
+- Construir un componente mobile-first.
 
 
 

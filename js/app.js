@@ -10,14 +10,14 @@ const projects = [
     completed: true
   },
   {
-    title: "Product Preview Card",
-    description:
-      "Tarjeta de producto responsive preparada para el segundo challenge.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+  title: "Product Preview Card",
+  description:
+    "Tarjeta de producto responsive con imágenes adaptativas y estados interactivos.",
+  technologies: ["HTML", "CSS", "GIT"],
+  image: "assets/images/image-product-mobile.jpg",
+  liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-preview-card-component-main/",
+  githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/product-preview-card-component-main",
+  completed: true
   },
   {
     title: "NFT Preview Card",

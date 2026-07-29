@@ -24,10 +24,14 @@ Esta es mi solución para el reto [QR Code Component de Frontend Mentor](https:/
 Durante este reto practiqué:
 
 - La creación de una tarjeta utilizando HTML semántico.
-- El centrado de elementos con Flexbox.
+- Centrar una tarjeta horizontal y verticalmente con Flexbox.
+- Usar `min-height: 100vh`.
+- Limitar el ancho de un componente con `max-width`.
 - El funcionamiento del modelo de caja de CSS.
 - El uso de propiedades personalizadas para organizar colores.
-- La creación de un diseño adaptable mediante un enfoque mobile-first.
+- Crear bordes redondeados.
+- Trabajar con padding y margin.
+- Adaptar un componente a dispositivos móviles.
 - La importancia del texto alternativo en las imágenes.
 
 

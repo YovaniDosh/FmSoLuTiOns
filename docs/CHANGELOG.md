@@ -52,3 +52,23 @@
 - Orden de proyectos actualizado para respetar la numeración.
 
 ## [0.5.0]
+
+### Added
+
+- Product Preview Card completado.
+- Captura previa del tercer reto.
+- README propio del Product Preview Card.
+
+### Changed
+
+- Contador actualizado a 3 de 100.
+- Product Preview Card marcado como completado.
+- Flujo de documentación ampliado.
+
+### Learned
+
+- Uso de `<picture>`.
+- Imágenes diferentes para móvil y escritorio.
+- CSS Grid y Flexbox.
+- Estados `hover`, `focus-visible` y `active`.
+- Transiciones suaves.

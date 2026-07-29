@@ -9,7 +9,7 @@ Esta es mi solución para el reto [Product Preview Card.](https://www.frontendme
 
 ## Link
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-preview-card/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-preview-card-component-main/)
 
 ## Tecnologías utilizadas
 
@@ -23,14 +23,14 @@ Esta es mi solución para el reto [Product Preview Card.](https://www.frontendme
 
 ## Lo que aprendí
 
-Durante este reto practiqué:
-
-- La creación de una tarjeta utilizando HTML semántico.
-- El centrado de elementos con Flexbox.
-- El funcionamiento del modelo de caja de CSS.
-- El uso de propiedades personalizadas para organizar colores.
-- La creación de un diseño adaptable mediante un enfoque mobile-first.
-- La importancia del texto alternativo en las imágenes.
+- Usar `<picture>` para cambiar imágenes según el dispositivo.
+- Utilizar `<source>`, `media` y `srcset`.
+- Crear primero la versión móvil y después la versión desktop.
+- Combinar CSS Grid y Flexbox.
+- Aplicar `object-fit: cover`.
+- Cargar fuentes localmente.
+- Crear estados `:hover`, `:focus-visible` y `:active`.
+- Añadir transiciones suaves.
 
 
 
