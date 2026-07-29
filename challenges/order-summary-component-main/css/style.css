@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after 
+{
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p 
+{
+  margin: 0;
+}
+
+img 
+{
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a 
+{
+  font: inherit;
+}
+
+button 
+{
+  border: 0;
+}
+
+:root 
+{
+  --color-pale-blue:         hsl(225, 100%, 94%);
+  --color-bright-blue:       hsl(245, 75%, 52%);
+  --color-bright-blue-hover: hsl(245, 83%, 68%);
+  --color-very-pale-blue:    hsl(225, 100%, 98%);
+  --color-desaturated-blue:  hsl(224, 23%, 55%);
+  --color-dark-blue:         hsl(223, 47%, 23%);
+  --color-white:             hsl(0, 0%, 100%);
+
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+
+  --shadow-card:
+    0 1.5rem 2.5rem hsla(245, 75%, 52%, 0.16);
+  --shadow-button:
+    0 1rem 1.5rem hsla(245, 75%, 52%, 0.28);
+}
+
+@font-face 
+{
+    font-family: "Red Hat Display";
+    src: url("../../../assets/fonts/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500 900;
+    font-style: normal;
+    font-display: swap;    
+}
+
+body
+{
+  min-width: 20rem;
+  min-height: 100vh;
+  background-color: var(--color-pale-blue);
+  background-image: 
+    url("../../../assets/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  color: var(--color-dark-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.page
+{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.order-card
+{
+  width: min(100%, 28rem);
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.order-card__hero
+{
+  width: 100%;
+}
+
+.order-card__content
+{
+  padding: 2rem 1.5rem;
+}
+
+.order-card__title
+{
+  font-size: clam(1.5rem, 6vw, 1.75rem);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.order-card__description
+{
+  max-width: 32ch;
+  margin: 1rem auto 0;
+  color: var(--color-desaturated-blue);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.order-card__plan
+{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: var(--radius-control);
+  background: var(--color-very-pale-blue);
+  text-align: left;
+}
+
+.order-card__plan-icon 
+{
+  width: 3rem;
+}
+
+.order-card__plan-details 
+{
+  display: grid;
+}
+
+.order-card__plan-name 
+{
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+}
+
+.order-card__plan-price 
+{
+  margin-top: 0.15rem;
+  color: var(--color-desaturated-blue);
+  font-size: 0.875rem;
+}
+
+.order-card__change-link 
+{
+  color: var(--color-bright-blue);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-decoration: underline;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.order-card__change-link:hover,
+.order-card__change-link:focus-visible 
+{
+  color: var(--color-bright-blue-hover);
+  text-decoration-color: transparent;
+}
+
+.button 
+{
+  width: 100%;
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-control);
+  font-weight: 900;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.button--primary 
+{
+  margin-top: 1.5rem;
+  background: var(--color-bright-blue);
+  color: var(--color-white);
+  box-shadow: var(--shadow-button);
+}
+
+.button--primary:hover,
+.button--primary:focus-visible 
+{
+  background: var(--color-bright-blue-hover);
+  box-shadow:
+    0 0.75rem 1.25rem hsla(245, 75%, 52%, 0.2);
+}
+
+.button--secondary 
+{
+  margin-top: 0.75rem;
+  background: transparent;
+  color: var(--color-desaturated-blue);
+}
+
+.button--secondary:hover,
+.button--secondary:focus-visible 
+{
+  color: var(--color-dark-blue);
+}
+
+.button:active 
+{
+  transform: scale(0.98);
+}
+
+.button:focus-visible,
+.order-card__change-link:focus-visible 
+{
+  outline: 0.2rem solid var(--color-dark-blue);
+  outline-offset: 0.2rem;
+}
+
+@media (min-width: 48rem) 
+{
+  body {
+    background-image:
+      url("../../../assets/images/pattern-background-desktop.svg");
+  }
+
+  .order-card__content {
+    padding: 2.75rem 3rem 2.25rem;
+  }
+
+  .order-card__plan {
+    margin-top: 1.75rem;
+    padding: 1.25rem;
+  }
+
+  .button--primary {
+    margin-top: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms;
+  }
+}

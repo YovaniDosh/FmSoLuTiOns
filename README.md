@@ -21,7 +21,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 01 | QR Code Component | Completado | HTML, CSS |
 | 02 | Blog Preview Card | Completado | HTML, CSS |
 | 03 | Product Preview Card | Completado | HTML, CSS |
-| 04 | NFT Preview Card | Pendiente | HTML, CSS |
+| 04 | Order Summary Component | Completado | HTML, CSS |
 
 ## Tecnologías
 
