@@ -1,25 +1,25 @@
-# Frontend Mentor - Blog Preview Card
+# Frontend Mentor - Product Preview Card
 
-Esta es mi solución para el reto [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
+
+Esta es mi solución para el reto [Product Preview Card.](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
 
 ## Vista previa
 
-![Captura del proyecto QR Code Component](../../assets/screenshots/blog-card-screen.png)
+![Captura del proyecto QR Code Component](../../assets/screenshots/preview-card-screen.png)
 
-## Enlaces
+## Link
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/blog-preview-card/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-preview-card/)
 
 ## Tecnologías utilizadas
 
 - HTML5 semántico
 - CSS
 - Flexbox
-- Variables Css
 - Propiedades personalizadas de CSS
 - Diseño mobile-first
+- Metodologia BEM
 - Responsive design
-- Metodoloia BEM
 
 ## Lo que aprendí
 
@@ -31,7 +31,6 @@ Durante este reto practiqué:
 - El uso de propiedades personalizadas para organizar colores.
 - La creación de un diseño adaptable mediante un enfoque mobile-first.
 - La importancia del texto alternativo en las imágenes.
-- Metodologia BEM y buenas practicas de nombramiento
 
 
 
