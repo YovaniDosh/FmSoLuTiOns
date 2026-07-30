@@ -72,3 +72,27 @@
 - CSS Grid y Flexbox.
 - Estados `hover`, `focus-visible` y `active`.
 - Transiciones suaves.
+
+## [0.6.0]
+
+### Added
+
+- Order Summary Component.
+- Captura previa del cuarto desafío.
+- Biblioteca inicial de componentes.
+- Componente base de botón.
+- Brandbook inicial.
+- Documentación de componentes.
+
+### Changed
+
+- Contador actualizado a 4 de 100.
+- Flujo de trabajo ampliado con detección de componentes reutilizables.
+
+### Learned
+
+- Fondos responsive.
+- Imágenes decorativas mediante `background-image`.
+- Variantes reutilizables de componentes.
+- Estados accesibles.
+- `prefers-reduced-motion`.
