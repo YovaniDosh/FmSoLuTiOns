@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Results Summary Component created as a Frontend Mentor challenge.">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Results summary component</title>
+</head>
+<body>
+  <main class="page">
+    <article class="results-card">
+      <section class="results-card__result" aria-labelledby="resultTitle">
+
+        <p class="results-card__eyebrow" id="resultTitle">
+          Your Result
+        </p>
+        
+        <div class="score-circle" aria-label="Score: 76 out of 100">
+          <strong class="score-circle__value">
+            76
+          </strong>
+          <span class="score-circle__total">
+            of 100
+          </span>
+        </div>
+
+        <h1 class="results-card__rating">Great</h1>
+        
+        <p class="results-card__description">
+          You score higher than 65% of the people who have these tests.
+        </p>
+
+      </section>
+
+      <section class="results-card__summary" aria-labelledby="summaryTitle">
+        <h2 class="results-card__summary-title">Summary</h2>
+        <div class="summary-list" id="summaryList"></div>
+        <button class="button button--continue" type="button">Continue</button>
+      </section>
+    </article>
+  </main>
+
+  <script src="js/app.js" type="module"></script>
+
+</body>
+</html>
