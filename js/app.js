@@ -80,14 +80,14 @@ const projects = [
     completed: false
   },
   {
-    title: "Order Summary",
+    title: "Order Summary Component",
     description:
-      "Espacio reservado para el componente de resumen de pedido.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Resumen de pedido responsive con selección de plan, botones reutilizables y estados accesibles.",
+    technologies: ["HTML", "CSS", "GIT"],
+    image: "../assets/images/illustration-hero.svg",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/order-summary-component-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/order-summary-component-main",
+    completed: true
   }
 ];
 
