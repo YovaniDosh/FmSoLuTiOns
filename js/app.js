@@ -84,7 +84,7 @@ const projects = [
     description:
       "Resumen de pedido responsive con selección de plan, botones reutilizables y estados accesibles.",
     technologies: ["HTML", "CSS", "GIT"],
-    image: "../assets/images/illustration-hero.svg",
+    image: "assets/images/illustration-hero.svg",
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/order-summary-component-main/",
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/order-summary-component-main",
     completed: true
