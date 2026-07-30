@@ -22,7 +22,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 02 | Blog Preview Card | Completado | HTML, CSS |
 | 03 | Product Preview Card | Completado | HTML, CSS |
 | 04 | Order Summary Component | Completado | HTML, CSS |
-| 05 | next proyect | pendiente | HTML , CSS, GIT |
+| 05 | Results Summary Component | Completado | HTML , CSS, GIT, JAVASCRIPT |
 | 06 | next proyect | pendiente | HTML , CSS, GIT |
 | 07 | next proyect | pendiente | HTML , CSS, GIT |
 | 08 | next proyect | pendiente | HTML , CSS, GIT |

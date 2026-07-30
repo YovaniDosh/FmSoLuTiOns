@@ -96,3 +96,34 @@
 - Variantes reutilizables de componentes.
 - Estados accesibles.
 - `prefers-reduced-motion`.
+
+## [0.7.0]
+
+### Added
+
+- Results Summary Component completado.
+- Captura previa del quinto reto.
+- Datos separados en `data/results.js`.
+- Renderizado dinámico con JavaScript.
+- Componente reutilizable `score-circle`.
+- Componente reutilizable `summary-item`.
+- Animación de entrada para la puntuación.
+- README propio del reto 05.
+
+### Changed
+
+- Contador actualizado a 5 de 100.
+- Results Summary Component marcado como completado.
+- Biblioteca de componentes ampliada con la categoría `scores`.
+- README principal actualizado con el quinto reto.
+
+### Learned
+
+- Uso de `map()` para generar interfaz.
+- Uso de `join("")`.
+- Separación entre datos y presentación.
+- Importación de módulos JavaScript.
+- Gradientes lineales.
+- Círculos con `aspect-ratio`.
+- Animaciones con `@keyframes`.
+- Variantes visuales por categoría.

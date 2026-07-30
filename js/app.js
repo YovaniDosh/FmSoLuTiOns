@@ -60,14 +60,14 @@ const projects = [
     completed: false
   },
   {
-    title: "Results Summary",
+    title: "Results Summary Component",
     description:
-      "Espacio reservado para un componente de resultados y estadísticas.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Componente de resultados responsive con datos renderizados dinámicamente desde JavaScript.",
+    technologies: ["HTML", "CSS", "GIT", "JS"],
+    image: "assets/images/image-result-mobile.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/results-summary-component-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/results-summary-component-main",
+    completed: true
   },
   {
     title: "Profile Card",
