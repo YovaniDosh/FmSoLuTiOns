@@ -25,3 +25,5 @@ Los proyectos individuales permanecen independientes. Esta biblioteca documenta 
 | Primary Button | Product Preview Card | Disponible |
 | Button Variants | Order Summary Component | Disponible |
 | Interactive Link | Order Summary Component | Disponible |
+| Score Circle | Results Summary Component | Disponible |
+| Summary Item | Results Summary Component | Disponible |

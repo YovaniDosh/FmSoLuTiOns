@@ -1,0 +1,25 @@
+.score-circle 
+{
+  width: var(--score-size, 9rem);
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--score-background);
+  color: var(--score-color, white);
+  text-align: center;
+}
+
+.score-circle__value 
+{
+  font-size: var(--score-value-size, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-circle__total 
+{
+  margin-top: 0.5rem;
+  opacity: 0.6;
+  font-weight: 700;
+}
