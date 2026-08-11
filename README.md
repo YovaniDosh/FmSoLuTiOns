@@ -1,4 +1,4 @@
-# Frontend Mentor Completed Challenges(HOUSE)
+# Complete "FrontendMentor" challenges (HOUSE)
 
 Página principal para organizar, presentar y publicar mi colección de desafíos completados de Frontend Mentor.
 
