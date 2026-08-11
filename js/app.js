@@ -22,12 +22,12 @@ const projects = [
   {
     title: "NFT Preview Card",
     description:
-      "Tarjeta NFT preparada para integrarse cuando completemos el challenge.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Tarjeta NFT responsive con overlay interactivo, transiciones y estados accesibles.",
+    technologies: ["HTML", "CSS", "GIT"],
+    image: "assets/images/image-equilibrium.jpg",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/nft-preview-card-component-main/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/nft-preview-card-component-main",
+    completed: true
   },
   {
     title: "Social Links Profile",

@@ -147,3 +147,32 @@
 - Contador actualizado a 6 de 100.
 - Recipe Page marcado como completado.
 - README principal actualizado con el sexto reto.
+
+## [0.9.0]
+
+### Added
+
+- NFT Preview Card completado.
+- Captura previa del séptimo reto.
+- Overlay interactivo sobre la imagen.
+- Icono de vista en estado hover.
+- Estados accesibles para enlaces.
+
+### Changed
+
+- Contador actualizado a 7 de 100.
+- NFT Preview Card marcado como completado.
+- README principal actualizado.
+
+### Learned
+
+- `position: relative`.
+- `position: absolute`.
+- `inset: 0`.
+- Overlays.
+- Uso de `opacity`.
+- Transiciones suaves.
+- `:hover`.
+- `:focus-visible`.
+- `aspect-ratio`.
+- `object-fit: cover`.
