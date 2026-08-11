@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Fylo data storage component solution for Frontend Mentor.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Fylo data storage component</title>
+</head>
+<body>
+  <main class="page">
+    <div class="storage">
+      <section class="storage__actions" aria-label="Fylo storage actions">
+
+        <img class="storage__logo" src="../../assets/images/logo.svg" alt="Fylo">
+
+        <div class="storage__buttons">
+
+          <button class="storage__button" type="button" aria-label="Open documents">
+            <img src="../../assets/images/icon-document.svg" alt="" aria-hidden="true">
+          </button>
+
+          <button class="storage__button" type="button" aria-label="Open folders">
+            <img src="../../assets/images/icon-folder.svg" alt="" aria-hidden="true">
+          </button>
+
+          <button class="storage__button" type="button" aria-label="Upload file">
+            <img src="../../assets/images/icon-upload.svg" alt="" aria-hidden="true">
+          </button>
+
+        </div>
+
+      </section>
+
+      <section class="storage__status">
+
+        <p class="storage__message">
+          You've used
+          <strong>815 GB</strong>
+          of your storage
+        </p>
+
+        <div
+          class="storage__progress"
+          role="progressbar"
+          aria-label="Storage used"
+          aria-valuemin="0"
+          aria-valuemax="1000"
+          aria-valuenow="815">
+
+          <div class="storage__progress-value">
+            <span></span>
+          </div>
+
+        </div>
+
+        <div class="storage__limits">
+          <strong>0 GB</strong>
+          <strong>1000 GB</strong>
+        </div>
+
+        <div class="storage__remaining">
+          <strong>185</strong>
+          <span>GB Left</span>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
