@@ -2,18 +2,9 @@
 
 Esta es mi solucion para el desafio: [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-
 ## Vista previa
 
-![Captura del proyecto NFT card](../../assets/screenshots/nft-card.png.png)
+![Captura del proyecto NFT card](../../assets/screenshots/nft-card.png)
 
 ## Vista general
 
@@ -33,18 +24,6 @@ La tarjeta contiene:
 ## Enlaces
 
 - Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/nft-preview-card-component-main)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first
-- BEM
-- Media Queries
 
 ## Lo que aprendí
 
@@ -96,6 +75,12 @@ El proyecto incluye:
 - Estados `:focus-visible`.
 - Navegación mediante teclado.
 - Soporte para `prefers-reduced-motion`.
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first
+- BEM
+- Media Queries
 
 ## Responsive Design
 
