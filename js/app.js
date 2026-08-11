@@ -88,7 +88,17 @@ const projects = [
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/order-summary-component-main/",
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/order-summary-component-main",
     completed: true
-  }
+  },
+  {
+    title: "Fylo Data Storage Component",
+    description:
+      "Componente de almacenamiento responsive contruido con Html, Sass y un workFlow basado en npm.",
+    technologies: ["HTML", "SASS" , "npm", "Git"],
+    image: "assets/images/fylo-cap.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/fylo-data-storage-component-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/fylo-data-storage-component-master",
+    completed: true
+    }
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

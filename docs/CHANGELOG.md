@@ -169,10 +169,52 @@
 - `position: relative`.
 - `position: absolute`.
 - `inset: 0`.
-- Overlays.
 - Uso de `opacity`.
 - Transiciones suaves.
 - `:hover`.
 - `:focus-visible`.
 - `aspect-ratio`.
 - `object-fit: cover`.
+
+## [0.10.0]
+
+### Added
+
+- Fylo Data Storage Component completado.
+- Captura previa del octavo reto.
+- Configuración inicial de npm.
+- `package.json`.
+- `package-lock.json`.
+- Sass como dependencia de desarrollo.
+- Estructura SCSS.
+- Variables Sass.
+- Partials Sass.
+- Barra de progreso accesible.
+- Gradiente de almacenamiento.
+- Indicador de almacenamiento restante.
+- README propio del reto 08.
+
+### Changed
+
+- Contador actualizado a 8 de 100.
+- Fylo Data Storage Component marcado como completado.
+- README principal actualizado.
+- Workflow de desarrollo ampliado con npm y Sass.
+
+### Learned
+
+- npm.
+- `package.json`.
+- `package-lock.json`.
+- `node_modules`.
+- Sass.
+- Variables Sass.
+- Partials.
+- `@use`.
+- Nesting.
+- Selector `&`.
+- Gradientes.
+- Pseudo-elementos.
+- CSS triangles.
+- Barras de progreso accesibles.
+- Introducción a Bootstrap utilities.

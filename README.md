@@ -25,7 +25,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 05 | Results Summary Component | Completado | HTML , CSS, GIT, JS |
 | 06 | Recipe Page | Completado | HTML, CSS, GIT |
 | 07 | NFT Preview Card | Completado | HTML, CSS,GIT |
-| 08 | next proyect | pendiente | HTML , CSS, GIT |
+| 08 | Fylo Data Storage Component | Completado | Sass, npm, Git |
 | 09 | next proyect | pendiente | HTML , CSS, GIT |
 | 10 | next proyect | pendiente | HTML , CSS, GIT |
 | 11 | next proyect | pendiente | HTML , CSS, GIT |
