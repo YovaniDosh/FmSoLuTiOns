@@ -52,12 +52,12 @@ const projects = [
   {
     title: "Recipe Page",
     description:
-      "Espacio reservado para el challenge de una página de recetas.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Página de receta responsive con estructura semántica, listas personalizadas y tabla nutricional.",
+    technologies: ["HTML", "CSS", "GIT"],
+    image: "assets/images/image-omelette.jpeg",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/recipe-page-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/recipe-page-main",
+    completed: true
   },
   {
     title: "Results Summary Component",

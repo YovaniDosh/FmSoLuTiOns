@@ -4,7 +4,7 @@ Esta es mi solución para el reto [Product Preview Card.](https://www.frontendme
 
 ## Vista previa
 
-![Captura del proyecto QR Code Component](../../assets/screenshots/omellete-page.png)
+![Captura del proyecto "Recipe-Page"](../../assets/screenshots/omellete-page.png)
 
 ## Link 
 

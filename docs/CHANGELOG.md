@@ -127,3 +127,23 @@
 - Círculos con `aspect-ratio`.
 - Animaciones con `@keyframes`.
 - Variantes visuales por categoría.
+
+## [0.8.0]
+
+### Added
+
+- Recipe Page completado.
+- Captura previa del sexto reto.
+- README propio del Recipe Page.
+- Personalización mediante `::marker`.
+- Tabla nutricional semántica.
+- Uso semántico de `<section>` y `<aside>`.
+- Tablas con `<table>`, `<th>` y `<td>`.
+- Uso de `scope="row"`.
+- Listas ordenadas y desordenadas personalizadas.
+
+### Changed
+
+- Contador actualizado a 6 de 100.
+- Recipe Page marcado como completado.
+- README principal actualizado con el sexto reto.
