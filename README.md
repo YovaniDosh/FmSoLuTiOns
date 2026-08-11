@@ -23,7 +23,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 03 | Product Preview Card | Completado | HTML, CSS |
 | 04 | Order Summary Component | Completado | HTML, CSS |
 | 05 | Results Summary Component | Completado | HTML , CSS, GIT, JAVASCRIPT |
-| 06 | next proyect | pendiente | HTML , CSS, GIT |
+| 06 | Recipe Page | Completado | HTML, CSS, GIT | HTML semántico, listas y tablas accesibles |
 | 07 | next proyect | pendiente | HTML , CSS, GIT |
 | 08 | next proyect | pendiente | HTML , CSS, GIT |
 | 09 | next proyect | pendiente | HTML , CSS, GIT |
