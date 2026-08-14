@@ -1,0 +1,200 @@
+@use "variables" as *;
+
+.sidebar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid $color-border;
+  background: $color-background;
+
+&__menu-button {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid $color-border;
+    border-radius: 0.25rem;
+
+    background: transparent;
+    color: $color-text;
+    font-size: 1.5rem;
+  }
+ 
+  &__navigation {
+    display: none;
+    position: relative;
+  }
+
+  &__navigation li
+  {
+    display: flex;
+    padding: .2rem 1rem;
+    border-radius: $radius-small;
+    align-items: center;
+    color: $color-muted;
+    
+    transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+    
+    &:hover,
+    &:focus-visible {
+      border-color: &color-border;
+      background: white;
+      color: &color-text;
+    }
+  }
+  &__link {
+    
+    text-decoration: none;
+    outline: none;
+
+    &--active {
+      background: white;
+      font-weight: 700;
+    }
+  }
+
+  &__footer {
+    display: none;
+  }
+}
+
+.sidebar--open {
+  min-height: 100vh;
+
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+
+  .sidebar__navigation {
+    width: 100%;
+
+    display: block;
+
+    margin-top: 1rem;
+
+    ul {
+      display: grid;
+      gap: 0.25rem;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+  }
+
+  .sidebar__link {
+    border: 1px solid transparent;
+    display: block;
+
+    padding: 0.8rem 1rem;
+
+    border-radius: $radius-small;
+
+    color: $color-muted;
+
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      background: white;
+      border-color: &color-border;
+      color: &color-text;
+      outline: none;
+    }
+
+    &--active {
+      background: white;
+      color: $color-text;
+      font-weight: 700;
+    }
+  }
+
+  .sidebar__footer {
+    width: 100%;
+
+    display: block;
+
+    align-self: flex-end;
+
+    margin-top: auto;
+  }
+}
+
+.weather {
+  padding: 1rem;
+  position: relative;
+  border-radius: $radius-medium;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      #f8d970,
+      $color-yellow
+    );
+
+  color: $color-text;
+
+  span {
+    display: block;
+
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+  }
+
+  strong {
+    display: block;
+    margin: .7rem 0;
+    font-family: Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: 0.25rem;
+
+    font-size: 0.75rem;
+  }
+  &:after
+  {
+    content: "";
+    width: 30%;
+    height: 100%;
+    right: -1rem;
+    top: -2rem;
+    position: absolute;
+    background: url("../../../assets/images/icon-weather.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+}
+
+.sidebar__address {
+  margin-top: 2rem;
+
+  color: $color-muted;
+
+  font-size: 0.625rem;
+  line-height: 1.6;
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+  & span 
+  {
+    display: block;
+  }
+  & span:nth-child(2)
+  {
+    margin: .8rem 0;
+  }
+}

@@ -1,0 +1,230 @@
+@use "variables" as *;
+
+.booking {
+  display: grid;
+  margin-bottom: 3rem;
+}
+
+.booking__fan-control
+{
+  display: none;
+}
+
+.booking__sun
+{
+  color: $color-yellow;
+  font-size: 4rem;
+  width: 8rem;
+  line-height: 1;
+}
+.booking__fan-trigger
+{
+  border: 0;
+  background: transparent;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.receipt,
+.welcome-card {
+  width: 100%;
+  padding: 1.75rem;
+  max-height: 26rem;
+  overflow: hidden;
+  border-radius: $radius-medium;
+}
+
+.receipt {
+  order: 2;
+
+  background: $color-surface;
+
+  &__header {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed $color-border;
+    span,
+    small {
+      color: $color-muted;
+    }
+    small
+    {
+      font-size: .6rem;
+      text-align: end;
+      line-height: 1.4;
+    }
+    span
+    {
+    
+      letter-spacing: 0.15em;
+      font-size: .5rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-top: 0.4rem;
+
+      font-family: Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+
+  &__dates {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px dashed $color-border;    > div {
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    span {
+      color: $color-muted;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    strong {
+      font-family: Georgia, serif;
+      font-size: clamp(1.8rem, 8vw, 2.4rem);
+      font-weight: 400;
+    }
+
+    small {
+      color: $color-muted;
+    }
+  }
+
+  &__prices {
+    grid-column: 1 / -1;
+
+    margin-top: 0.5rem;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+      margin-top: 0.6rem;
+    }
+
+    dt {
+      font-size: 0.85rem;
+    }
+
+    dd {
+      margin: 0;
+
+      font-family: monospace;
+      white-space: nowrap;
+    }
+  }
+  
+  &__total
+  {
+    margin-top: 1.20rem;
+    border-top: 1px solid $color-text;
+  }
+
+  &__total p {
+    display: flex;
+    padding-top: .6rem;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: $color-muted;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    strong {
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.welcome-card {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(to left,
+      #d25527,
+      #a93618
+    );
+
+  color: white;
+
+  &__label {
+    font-size: 0.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  &__sun {
+    display: block;
+
+    margin-left: auto;
+
+    color: $color-yellow;
+
+    font-size: 4rem;
+  }
+
+  > p:first-of-type {
+    margin-top: 1rem;
+
+    color: #f7d77d;
+
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  h3 {
+    margin-block: 0.4rem 1.5rem;
+
+    font-family: Georgia, serif;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  > p:last-of-type {
+    line-height: 1.55;
+    line-height: 1.2;
+    font-size: clamp(.9rem, 1vh, 1.2rem);
+  }
+
+  &__room {
+    display: grid;
+
+    margin-top: auto;
+
+    span {
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+    }
+
+    strong {
+      margin-top: 0.25rem;
+
+      font-family: Georgia, serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+}
