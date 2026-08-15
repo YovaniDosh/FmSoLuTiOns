@@ -4,7 +4,7 @@ Esta es mi solución para el desafío: [Fylo data storage component challenge on
 
 ## Vista previa
 
-
+![Captura del proyecto NTF](../../assets/screenshots/fylo-storage.png)
 
 ## Vista general
 

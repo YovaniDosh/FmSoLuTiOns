@@ -4,7 +4,7 @@ Solución al desafío: [Order Summary Component.](https://www.frontendmentor.io/
 
 ## Vista previa
 
-![Captura del proyecto QR Code Component](../../assets/screenshots/result-card-screen.png)
+![Captura del proyecto Result Card](../../assets/screenshots/result-card-screen.png)
 
 
 ## Vista general

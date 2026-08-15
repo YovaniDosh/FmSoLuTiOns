@@ -32,12 +32,12 @@ const projects = [
   {
     title: "Social Links Profile",
     description:
-      "Espacio reservado para el challenge de perfil con enlaces sociales.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Perfil social responsive construido con HTML y Less, con estados interactivos accesibles.",
+    technologies: ["HTML", "Less", "npm"],
+    image: "assets/screenshots/jessicaRandal.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/social-links-profile-main/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/social-links-profile-main",
+    completed: true
   },
   {
     title: "Blog Preview Card",

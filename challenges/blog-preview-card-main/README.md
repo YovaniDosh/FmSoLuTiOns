@@ -4,7 +4,7 @@ Esta es mi solución para el reto [Blog Preview Card](https://www.frontendmentor
 
 ## Vista previa
 
-![Captura del proyecto QR Code Component](../../assets/screenshots/blog-card-screen.png)
+![Captura del proyecto Blog Card](../../assets/screenshots/blog-card-screen.png)
 
 ## Enlaces
 
