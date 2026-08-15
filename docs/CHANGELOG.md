@@ -218,3 +218,57 @@
 - CSS triangles.
 - Barras de progreso accesibles.
 - Introducción a Bootstrap utilities.
+
+## [0.11.0]
+
+### Added
+
+- Booking Confirmation Dashboard completado.
+- Sidebar responsive.
+- Menú móvil accesible.
+- Receipt de reserva.
+- Welcome Card.
+- Efecto Hover to fan.
+- Sol central revelado mediante interacción.
+- Cards de Arrival, WiFi y Breakfast.
+- Clipboard API para copiar la contraseña WiFi.
+- Feedback mediante `aria-live`.
+- README propio del reto 09.
+
+### Changed
+
+- Contador actualizado a 9 de 100.
+- HTML refactorizado.
+- Sass reorganizado mediante partials.
+- Clases BEM normalizadas.
+- Clases genéricas eliminadas.
+- Responsive mejorado.
+- Estados interactivos y accesibles mejorados.
+
+### Fixed
+
+- Estructura semántica del Receipt.
+- Uso correcto de `<dl>`, `<dt>` y `<dd>`.
+- Typos en textos.
+- Iconos decorativos.
+- Estados focus.
+- Duplicación de estilos del sidebar.
+
+### Learned
+
+- Sass modular.
+- `@use`.
+- Nesting.
+- CSS Grid avanzado.
+- Sidebar responsive.
+- `position: sticky`.
+- `transform`.
+- `z-index`.
+- `:has()`.
+- Hover to fan.
+- Clipboard API.
+- `async/await`.
+- `try...catch`.
+- `aria-live`.
+- `aria-expanded`.
+- Refactorización y eliminación de código duplicado.

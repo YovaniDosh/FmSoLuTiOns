@@ -70,14 +70,14 @@ const projects = [
     completed: true
   },
   {
-    title: "Profile Card",
+    title: "Booking Confirmation Dashboard",
     description:
-      "Espacio reservado para una tarjeta personal responsive.",
-    technologies: ["HTML", "CSS"],
-    image: "",
-    liveUrl: "#",
-    githubUrl: "#",
-    completed: false
+      "Dashboard responsive de reservas con Sass, JavaScript, menú móvil y efecto Hover to fan.",
+    technologies: ["HTML", "CSS", "GIT", "NPM", "SASS"],
+    image: "assets/screenshots/hotel-card.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/hotel-booking-confirmation-page-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/hotel-booking-confirmation-page-main",
+    completed: true
   },
   {
     title: "Order Summary Component",

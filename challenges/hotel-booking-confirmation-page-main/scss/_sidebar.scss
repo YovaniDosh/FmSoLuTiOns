@@ -26,24 +26,18 @@
   &__menu-button {
     width: 2.5rem;
     aspect-ratio: 1;
-
-    display: grid;
-    place-items: center;
-
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid $color-border;
     border-radius: 0.25rem;
 
-    background: transparent;
     color: $color-text;
 
     font-size: 1.4rem;
 
     cursor: pointer;
-
-    &:focus-visible {
-      outline: 0.125rem solid $color-orange;
-      outline-offset: 0.2rem;
-    }
   }
 
   &__body {
@@ -171,7 +165,7 @@
     top: -1.5rem;
     right: -1rem;
 
-    width: 5rem;
+    width: 5.5rem;
     aspect-ratio: 1;
 
     background:

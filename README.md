@@ -26,7 +26,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 06 | Recipe Page | Completado | HTML, CSS, GIT |
 | 07 | NFT Preview Card | Completado | HTML, CSS,GIT |
 | 08 | Fylo Data Storage Component | Completado | Sass, npm, Git |
-| 09 | next proyect | pendiente | HTML , CSS, GIT |
+| 09 | Booking Confirmation Dashboard | Completado | HTML, Sass, JS, npm |
 | 10 | next proyect | pendiente | HTML , CSS, GIT |
 | 11 | next proyect | pendiente | HTML , CSS, GIT |
 | 12 | next proyect | pendiente | HTML , CSS, GIT |
@@ -43,6 +43,8 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 - Flexbox
 - Responsive Design
 - Git y GitHub
+- Sass
+- npm
 - GitHub Pages
 
 ## Arquitectura
