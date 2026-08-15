@@ -22,7 +22,7 @@ La interfaz contiene:
 
 ## Enlaces
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/10-social-links-profile/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/social-links-profile-main/)
 
 ## Lo que aprendí
 
