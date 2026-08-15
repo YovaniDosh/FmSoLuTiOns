@@ -271,4 +271,38 @@
 - `try...catch`.
 - `aria-live`.
 - `aria-expanded`.
-- Refactorización y eliminación de código duplicado.
+- Refactorización .
+
+## [1.0.0]
+
+### Added
+
+- Social Links Profile completado.
+- Captura previa del décimo reto.
+- Primera configuración con Less.
+- Less instalado mediante npm.
+- Variables Less.
+- Imports Less.
+- Nesting Less.
+- Estados hover, focus y active.
+- README propio del reto 10.
+
+### Changed
+
+- Contador actualizado a 10 de 100.
+- README principal actualizado.
+- House alcanza el 10% de la colección.
+- Nuevo preprocesador incorporado al proceso de aprendizaje.
+
+### Learned
+
+- Less.
+- Variables con `@`.
+- `@import`.
+- Nesting.
+- Compilación de `.less` a `.css`.
+- Less mediante npm.
+- Comparación entre Sass y Less.
+- Responsive sin media queries innecesarias.
+- Uso de `min()`.
+- Estados accesibles para enlaces.

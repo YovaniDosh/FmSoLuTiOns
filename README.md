@@ -27,7 +27,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 07 | NFT Preview Card | Completado | HTML, CSS,GIT |
 | 08 | Fylo Data Storage Component | Completado | Sass, npm, Git |
 | 09 | Booking Confirmation Dashboard | Completado | HTML, Sass, JS, npm |
-| 10 | next proyect | pendiente | HTML , CSS, GIT |
+| 10 | Social Links Profile | Completado | HTML, Less, npm |
 | 11 | next proyect | pendiente | HTML , CSS, GIT |
 | 12 | next proyect | pendiente | HTML , CSS, GIT |
 | 13 | next proyect | pendiente | HTML , CSS, GIT |
