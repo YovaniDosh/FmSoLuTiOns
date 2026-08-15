@@ -1,0 +1,127 @@
+@import "variables.less";
+@import "reset.less";
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+
+  background: @color-background;
+  color: @color-white;
+
+  font-family:
+    Arial,
+    sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  
+  padding: 1.5rem;
+}
+
+.profile-card {
+  background-color: @color-card;
+  width: min(100%, 24rem);
+
+  padding: 2rem;
+
+  text-align: center;
+  border-radius: @radius-card;
+  text-align: center;
+
+  &__avatar {
+    width: 5.5rem;
+    aspect-ratio: 1;
+
+    margin-inline: auto;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
+
+  &__header {
+    margin-top: 1.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  &__location {
+    margin-top: 0.5rem;
+
+    color: @color-green;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  &__bio {
+    margin-top: 1.5rem;
+
+    color: @color-muted;
+
+    font-size: 0.875rem;
+  }
+
+  &__links {
+    margin-top: 1.5rem;
+
+    ul {
+      display: grid;
+      gap: 1rem;
+    }
+
+    a {
+      min-height: 3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding-inline: 1rem;
+
+      border-radius: @radius-control;
+
+      background: @color-button;
+      color: @color-white;
+
+      font-size: 0.875rem;
+      font-weight: 700;
+
+      transition:
+        background-color @transition-fast,
+        color @transition-fast,
+        transform @transition-fast;
+
+      &:hover,
+      &:focus-visible {
+        background: @color-green;
+        color: @color-background;
+      }
+
+      &:focus-visible {
+        outline:
+          0.15rem solid
+          @color-green;
+
+        outline-offset: 0.2rem;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+@media (min-width: @breakpoint-tablet) {
+  .profile-card {
+    padding:
+      2.5rem
+      2.5rem;
+  }
+}
