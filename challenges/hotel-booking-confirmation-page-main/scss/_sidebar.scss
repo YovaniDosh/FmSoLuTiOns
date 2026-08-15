@@ -2,16 +2,30 @@
 
 .sidebar {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem;
+
   border-bottom: 1px solid $color-border;
+
   background: $color-background;
 
-&__menu-button {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+
+    img {
+      width: 8.5rem;
+    }
+  }
+
+  &__menu-button {
     width: 2.5rem;
-    height: 2.5rem;
+    aspect-ratio: 1;
 
     display: grid;
     place-items: center;
@@ -21,118 +35,102 @@
 
     background: transparent;
     color: $color-text;
-    font-size: 1.5rem;
-  }
- 
-  &__navigation {
-    display: none;
-    position: relative;
-  }
 
-  &__navigation li
-  {
-    display: flex;
-    padding: .2rem 1rem;
-    border-radius: $radius-small;
-    align-items: center;
-    color: $color-muted;
-    
-    transition:
-    background-color 180ms ease,
-    border-color 180ms ease,
-    color 180ms ease;
-    
-    &:hover,
+    font-size: 1.4rem;
+
+    cursor: pointer;
+
     &:focus-visible {
-      border-color: &color-border;
-      background: white;
-      color: &color-text;
-    }
-  }
-  &__link {
-    
-    text-decoration: none;
-    outline: none;
-
-    &--active {
-      background: white;
-      font-weight: 700;
+      outline: 0.125rem solid $color-orange;
+      outline-offset: 0.2rem;
     }
   }
 
-  &__footer {
+  &__body {
     display: none;
   }
-}
 
-.sidebar--open {
-  min-height: 100vh;
-
-  align-items: flex-start;
-
-  flex-wrap: wrap;
-
-  .sidebar__navigation {
-    width: 100%;
-
-    display: block;
-
-    margin-top: 1rem;
-
+  &__navigation {
     ul {
       display: grid;
       gap: 0.25rem;
-
-      margin: 0;
-      padding: 0;
-
-      list-style: none;
     }
   }
 
-  .sidebar__link {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 0.7rem 0.8rem;
+
     border: 1px solid transparent;
-    display: block;
-
-    padding: 0.8rem 1rem;
-
     border-radius: $radius-small;
 
     color: $color-muted;
 
+    font-weight: 600;
     text-decoration: none;
 
+    transition:
+      background-color $transition-fast,
+      border-color $transition-fast,
+      color $transition-fast;
+
+    img {
+      width: 1.1rem;
+    }
+    &:active
+    {
+      border-color: $color-orange;
+    }
     &:hover,
     &:focus-visible {
-      background: white;
-      border-color: &color-border;
-      color: &color-text;
+      background: $color-surface;
+      color: $color-text;
+
       outline: none;
     }
 
     &--active {
-      background: white;
+      background: $color-surface;
       color: $color-text;
-      font-weight: 700;
     }
   }
 
-  .sidebar__footer {
-    width: 100%;
-
-    display: block;
-
-    align-self: flex-end;
-
+  &__footer {
     margin-top: auto;
   }
 }
 
+/* ==============================
+   MOBILE MENU OPEN
+   ============================== */
+
+.sidebar--open {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  .sidebar__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+  }
+}
+
 .weather {
-  padding: 1rem;
   position: relative;
-  border-radius: $radius-medium;
+
   overflow: hidden;
+
+  padding: 1rem;
+
+  border-radius: $radius-medium;
+
   background:
     linear-gradient(
       135deg,
@@ -145,56 +143,104 @@
   span {
     display: block;
 
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
 
     text-transform: uppercase;
   }
 
   strong {
     display: block;
-    margin: .7rem 0;
+
+    margin-block: 0.35rem;
+
     font-family: Georgia, serif;
-    font-size: 2.4rem;
+    font-size: 2.25rem;
     font-weight: 400;
   }
 
   p {
-    margin-top: 0.25rem;
-
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
-  &:after
-  {
-    content: "";
-    width: 30%;
-    height: 100%;
-    right: -1rem;
-    top: -2rem;
-    position: absolute;
-    background: url("../../../assets/images/icon-weather.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
 
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: -1.5rem;
+    right: -1rem;
+
+    width: 5rem;
+    aspect-ratio: 1;
+
+    background:
+      url("../../../assets/images/icon-weather.svg")
+      center / contain
+      no-repeat;
   }
 }
 
 .sidebar__address {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 
   color: $color-muted;
 
-  font-size: 0.625rem;
+  font-size: 0.6rem;
   line-height: 1.6;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
 
   text-transform: uppercase;
-  & span 
-  {
+
+  span {
     display: block;
+
+    & + span {
+      margin-top: 0.6rem;
+    }
   }
-  & span:nth-child(2)
-  {
-    margin: .8rem 0;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 1.25rem;
+
+    border-right: 1px solid $color-border;
+    border-bottom: 0;
+
+    &__top {
+      padding-bottom: 1rem;
+
+      border-bottom: 1px solid $color-border;
+    }
+
+    &__menu-button {
+      display: none;
+    }
+
+    &__body {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 1.25rem;
+    }
+
+    &__navigation {
+      display: block;
+    }
+
+    &__footer {
+      display: block;
+    }
   }
 }

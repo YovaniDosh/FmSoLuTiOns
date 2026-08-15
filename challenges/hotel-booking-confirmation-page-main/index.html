@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive booking confirmation dashboard for Maison Soleil.">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+
+  <title>Maison Soleil | Booking confirmed</title>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+
+      <div class="sidebar__top">
+
+        <a class="sidebar__brand" href="#stay" aria-label="Maison Soleil — Your stay">
+          <img src="../../assets/images/logo-maison.svg" alt="Maison Soleil">
+        </a>
+
+        <button
+          class="sidebar__menu-button"
+          id="menuButton"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mainNavigation"
+          aria-label="Open navigation">
+          <span aria-hidden="true">☰</span>
+        </button>
+
+      </div>
+
+      <div class="sidebar__body">
+
+        <nav class="sidebar__navigation" id="mainNavigation" aria-label="Main navigation">
+
+          <ul>
+
+            <li>
+              <a class="sidebar__link sidebar__link--active" href="#stay" aria-current="page">
+                
+                <img src="../../assets/images/icon-bed.svg" alt="" aria-hidden="true">
+                <span>Your stay</span>
+              
+              </a>
+            </li>
+
+            <li>
+              <a class="sidebar__link" href="#">
+
+                <img src="../../assets/images/icon-house.svg" alt="" aria-hidden="true">
+                <span>The house</span>
+              
+              </a>
+            </li>
+
+            <li>
+              <a class="sidebar__link" href="#">
+
+                <img src="../../assets/images/icon-pin.svg" alt="" aria-hidden="true">
+                <span>Around town</span>
+              
+              </a>
+            </li>
+
+            <li>
+              <a class="sidebar__link" href="#">
+              
+                <img src="../../assets/images/icon-breakfast-outline.svg" alt="" aria-hidden="true">
+                <span>Breakfast</span>
+                     
+              </a>
+            </li>
+
+            <li>
+              <a class="sidebar__link" href="#">
+
+                <img src="../../assets/images/icon-mail.svg" alt="" aria-hidden="true">
+                <span>Messages</span>
+              
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <footer class="sidebar__footer">
+
+          <article class="weather">
+
+            <span>
+              Today in Cassis
+            </span>
+
+            <strong>
+              27°
+            </strong>
+
+            <p>
+              Sunny · light breeze
+            </p>
+
+          </article>
+
+          <p class="sidebar__address">
+
+            <span>
+              Est. 1987
+            </span>
+
+            <span>
+              Maison Soleil · 12 Rue des Oliviers · Cassis
+            </span>
+
+            <span>
+              © 2026 Maison Soleil
+            </span>
+
+          </p>
+
+        </footer>
+
+      </div>
+
+    </aside>
+
+    <main class="dashboard" id="stay">
+      <header class="dashboard__header">
+
+        <div>
+
+          <p class="dashboard__eyebrow">
+            Booking · Confirmed
+          </p>
+
+          <h1>
+            Bienvenue,
+            <em>Lucia.</em>
+          </h1>
+
+        </div>
+
+        <div class="dashboard__actions">
+
+          <button type="button">
+            Print receipt
+          </button>
+
+          <button class="dashboard__primary-action" type="button">
+            Add to calendar
+          </button>
+
+        </div>
+
+      </header>
+
+      <section class="booking" aria-labelledby="bookingTitle">
+
+        <h2 class="visually-hidden" id="bookingTitle">
+          Booking information
+        </h2>
+
+        <article class="receipt">
+
+          <header class="receipt__header">
+
+            <div>
+              <span class="receipt__label">
+                Receipt
+              </span>
+
+              <h3>
+                Your stay
+              </h3>
+            </div>
+
+            <small>
+              Nº MS-2026<br>
+              0421-AH
+            </small>
+
+          </header>
+
+          <div class="receipt__dates">
+
+            <div>
+              <span>Check in</span>
+
+              <strong>
+                25 Apr
+              </strong>
+
+              <small>
+                Saturday · 15:00
+              </small>
+            </div>
+
+            <div>
+              <span>Check out</span>
+
+              <strong>
+                29 Apr
+              </strong>
+
+              <small>
+                Wednesday · 11:00
+              </small>
+            </div>
+
+          </div>
+
+          <dl class="receipt__prices">
+
+            <div>
+              <dt>
+                Room · La Garrigue × 4 nights
+              </dt>
+
+              <dd>
+                € 620.00
+              </dd>
+            </div>
+
+            <div>
+              <dt>
+                Breakfast × 2 guests
+              </dt>
+
+              <dd>
+                € 96.00
+              </dd>
+            </div>
+
+            <div>
+              <dt>
+                Tourist tax
+              </dt>
+
+              <dd>
+                € 14.40
+              </dd>
+            </div>
+
+          </dl>
+
+          <footer class="receipt__total">
+
+            <div class="receipt__total-price">
+
+              <span>
+                Total paid
+              </span>
+
+              <strong>
+                € 730.40
+              </strong>
+
+            </div>
+
+            <div class="receipt__payment">
+
+              <span>
+                Paid · Wise · GBP
+              </span>
+
+              <img
+                src="../../assets/images/icon-barcode.svg"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+          </footer>
+
+        </article>
+
+        <div class="booking__fan-control">
+
+          <span
+            class="booking__sun"
+            aria-hidden="true"
+          >
+            <img
+              src="../../assets/images/illustration-sun.svg"
+              alt=""
+            >
+          </span>
+
+          <button
+            class="booking__fan-trigger"
+            type="button"
+            aria-label="Fan booking cards"
+          >
+            ✦ Hover to fan ✦
+          </button>
+
+        </div>
+
+        <article class="welcome-card">
+
+          <span class="welcome-card__label">
+            Welcome card
+          </span>
+
+          <span
+            class="welcome-card__sun"
+            aria-hidden="true"
+          >
+            <img
+              src="../../assets/images/icon-sun.svg"
+              alt=""
+            >
+          </span>
+
+          <p>
+            A note from your host.
+          </p>
+
+          <h3>
+            Margaux.
+          </h3>
+
+          <p>
+            We're so glad you're coming. The shutters
+            will be open, the lemonade cold, and the
+            cat — Poivre — pretending not to notice you.
+          </p>
+
+          <div class="welcome-card__room">
+
+            <span>
+              Room
+            </span>
+
+            <strong>
+              La Garrigue
+            </strong>
+
+          </div>
+
+        </article>
+
+      </section>
+
+      <section
+        class="information"
+        aria-label="Stay information"
+      >
+
+        <article class="info-card info-card--arrival">
+
+          <header class="info-card__header">
+
+            <span
+              class="info-card__icon"
+              aria-hidden="true"
+            >
+              <img
+                src="../../assets/images/icon-key.svg"
+                alt=""
+              >
+            </span>
+
+            <div class="info-card__meta">
+
+              <span>
+                Arrival
+              </span>
+
+              <strong>
+                01
+              </strong>
+
+            </div>
+
+          </header>
+
+          <h2>
+            Check-in from 15:00
+          </h2>
+
+          <small>
+            Sat, 25 April
+          </small>
+
+          <p>
+            Ring the brass bell by the blue door.
+            If we're at the market, the key is in
+            the terracotta pot by the olive tree.
+          </p>
+
+        </article>
+
+        <article class="info-card info-card--wifi">
+
+          <header class="info-card__header">
+
+            <span
+              class="info-card__icon"
+              aria-hidden="true"
+            >
+              <img
+                src="../../assets/images/icon-wifi.svg"
+                alt=""
+              >
+            </span>
+
+            <div class="info-card__meta">
+
+              <span>
+                WiFi
+              </span>
+
+              <strong>
+                02
+              </strong>
+
+            </div>
+
+          </header>
+
+          <h2>
+            Le Soleil · Guest
+          </h2>
+
+          <small>
+            Password below
+          </small>
+
+          <dl class="wifi">
+
+            <div>
+
+              <dt>
+                Network
+              </dt>
+
+              <dd>
+                Le Soleil · Guest
+              </dd>
+
+            </div>
+
+            <div>
+
+              <dt>
+                Password
+              </dt>
+
+              <dd>
+
+                <span id="wifiPassword">
+                  soleil-2026
+                </span>
+
+                <button
+                  id="copyPassword"
+                  type="button"
+                  aria-label="Copy WiFi password"
+                >
+                  Copy
+                </button>
+
+              </dd>
+
+            </div>
+
+          </dl>
+
+          <span
+            class="visually-hidden"
+            id="copyStatus"
+            aria-live="polite"
+          ></span>
+
+        </article>
+
+        <article class="info-card info-card--breakfast">
+
+          <header class="info-card__header">
+
+            <span
+              class="info-card__icon"
+              aria-hidden="true"
+            >
+              <img
+                src="../../assets/images/icon-breakfast.svg"
+                alt=""
+              >
+            </span>
+
+            <div class="info-card__meta">
+
+              <span>
+                Breakfast
+              </span>
+
+              <strong>
+                03
+              </strong>
+
+            </div>
+
+          </header>
+
+          <h2>
+            Served 8 – 10:30
+          </h2>
+
+          <small>
+            On the terrace
+          </small>
+
+          <p>
+            Fresh figs, Marseille honey, pain au
+            levain, and espresso. Gluten-free option?
+            Leave a note the night before.
+          </p>
+
+        </article>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
