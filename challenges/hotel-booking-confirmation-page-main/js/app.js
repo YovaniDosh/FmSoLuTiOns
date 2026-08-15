@@ -3,22 +3,21 @@ const wifiPassword = document.getElementById("wifiPassword");
 const copyStatus = document.getElementById("copyStatus");
 const sidebar = document.querySelector(".sidebar");
 const menuButton = document.getElementById("menuButton");
+const COPY_FEEDBACK_DURATION = 2000;
 
 async function copyWifiPassword() {
-  const password =
-    wifiPassword.textContent.trim();
+  const password = wifiPassword.textContent.trim();
 
   try {
     await navigator.clipboard.writeText(password);
 
     copyPasswordButton.textContent = "Copied!";
-    copyStatus.textContent = "WiFi password copied to clipboard."
     copyPasswordButton.disabled = true;
 
-    setTimeout(() => {
-      copyPasswordButton.textContent = "Copy";
-      copyPasswordButton.disabled = false;
-    }, 2000);
+    copyStatus.textContent =
+      "WiFi password copied to clipboard.";
+
+    setTimeout(resetCopyButton, COPY_FEEDBACK_DURATION);
 
   } catch (error) {
     console.error(
@@ -27,13 +26,27 @@ async function copyWifiPassword() {
     );
 
     copyPasswordButton.textContent = "Error";
+
+    copyStatus.textContent =
+      "Unable to copy WiFi password.";
   }
+}
+
+function resetCopyButton() {
+  copyPasswordButton.textContent = "Copy";
+  copyPasswordButton.disabled = false;
+
+  copyStatus.textContent = "";
 }
 
 function toggleMobileMenu() {
   const isOpen =
     sidebar.classList.toggle("sidebar--open");
 
+  updateMenuButton(isOpen);
+}
+
+function updateMenuButton(isOpen) {
   menuButton.setAttribute(
     "aria-expanded",
     String(isOpen)
