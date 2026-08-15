@@ -1,6 +1,7 @@
 # Booking confirmation dashboard solution
 
-Esta es mi solución para el desafío Booking Confirmation Dashboard.
+Esta es mi solución para el desafío Booking Confirmation Dashboard: [Hote/Confirmation/Card/Page](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page).
+
 
 ## Vista previa
 
