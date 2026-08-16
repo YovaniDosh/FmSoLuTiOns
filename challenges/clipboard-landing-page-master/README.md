@@ -4,7 +4,7 @@ Esta es mi solución para el desafío: [Clipboard landing page challenge on Fron
 
 ## Vista previa
 
-
+![Captura del proyecto NTF](../../assets/screenshots/clipmain.png)
 
 ## Vista general
 
@@ -25,7 +25,7 @@ La página contiene:
 
 ## Enlaces
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/11-clipboard-landing-page/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/clipboard-landing-page-master/)
 
 ## Lo que aprendí
 

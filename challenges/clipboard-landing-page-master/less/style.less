@@ -58,6 +58,7 @@ body {
 
 .button {
   min-height: 3.25rem;
+  width: 90%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +76,8 @@ body {
     box-shadow @transition-fast;
 
   &:hover,
-  &:focus-visible {
+  &:focus-visible,
+  &:active {
     transform:
       translateY(-0.15rem);
 
@@ -161,7 +163,7 @@ body {
     gap: 2.5rem;
     padding-inline: 1.5rem;
     text-align: center;
-  }
+    }
 }
 
 .feature {
@@ -278,7 +280,7 @@ body {
   &__navigation {
     display: grid;
     gap: 2rem;
-
+    margin-bottom: 1.5rem;
     text-align: center;
 
     a {
@@ -290,21 +292,35 @@ body {
         color @transition-fast;
 
       &:hover,
-      &:focus-visible {
+      &:focus-visible,
+      &:active {
         color: @color-green;
       }
     }
+    
   }
-
-  &__social {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-
-    img {
-      width: 1.5rem;
+    &__social
+    {
+      display: flex;
+      gap: 1.5rem;
     }
-  }
+    .social-link {
+      display: inline-flex;
+      color: @color-heading;
+
+      svg {
+        display: block;
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: currentColor;
+      }
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+        color: @color-green;
+      }
+    }
 }
 
 @media (min-width: @breakpoint-tablet) {
@@ -340,9 +356,11 @@ body {
     width: 100%;
     grid-template-columns:
       minmax(0, 1.4fr)
-      minmax(18rem, 0.65fr);
+      minmax(18rem, 0.6fr);
 
     align-items: center;
+    max-width: 80rem;
+    margin-inline: auto;
 
     &__image
     {
@@ -362,6 +380,13 @@ body {
       padding-inline: 0 2rem;
       justify-self: start;
     }
+    .feature
+    {
+      p {
+        padding-inline: 0;
+        text-align: left;
+      }
+    }
   }
 
   .footer {
@@ -373,7 +398,7 @@ body {
 
       align-items: center;
 
-      justify-items: initial;
+      justify-items: center;
     }
 
     &__navigation {
@@ -381,10 +406,6 @@ body {
         repeat(3, max-content);
 
       text-align: left;
-    }
-
-    &__social {
-      justify-self: end;
     }
   }
 }

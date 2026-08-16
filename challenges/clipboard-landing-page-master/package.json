@@ -1,0 +1,20 @@
+{
+  "name": "clipboard-landing-page-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler less css style.less",
+    "build": "lessc --clean-css less/style.less css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "less": "^4.9.0",
+    "less-plugin-clean-css": "^1.6.0",
+    "less-watch-compiler": "^1.19.9",
+    "less-watcher-compiler": "^0.2.6"
+  }
+}
