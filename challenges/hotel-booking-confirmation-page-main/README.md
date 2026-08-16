@@ -1,6 +1,8 @@
-# Booking confirmation dashboard solution
+<h1 style = "text-align:center">
 
 Esta es mi solución para el desafío Booking Confirmation Dashboard: [Hote/Confirmation/Card/Page](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page).
+
+</h1>
 
 
 ## Vista previa

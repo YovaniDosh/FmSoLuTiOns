@@ -1,6 +1,8 @@
-# Frontend Mentor - Order Summary Component
+<h1 style = "text-align:center">
 
 Solución al desafío: [Order Summary Component.](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
+
+</h1>
 
 ## Vista previa
 

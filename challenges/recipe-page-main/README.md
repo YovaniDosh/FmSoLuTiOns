@@ -1,6 +1,8 @@
-# Frontend Mentor — Recipe Page
+<h1 style = "text-align:center">
 
 Esta es mi solución para el reto [Product Preview Card.](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
+
+</h1>
 
 ## Vista previa
 
@@ -8,7 +10,7 @@ Esta es mi solución para el reto [Product Preview Card.](https://www.frontendme
 
 ## Link 
 
--Sitio publicado : [Ver proyecto en vivo:](https://yovanidosh.github.io/FmSoLuTiOns/challenges/recipe-page-main/)
+Sitio publicado : [Ver proyecto en vivo:](https://yovanidosh.github.io/FmSoLuTiOns/challenges/recipe-page-main/)
 
 El objetivo fue construir una página de receta responsive con:
 

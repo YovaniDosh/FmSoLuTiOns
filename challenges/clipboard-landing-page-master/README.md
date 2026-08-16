@@ -1,10 +1,12 @@
-# Clipboard landing page solution
+<h1 style = "text-align:center">
 
 Esta es mi solución para el desafío: [Clipboard landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-82y9qDgXD).
 
+</h1>
+
 ## Vista previa
 
-![Captura del proyecto NTF](../../assets/screenshots/clipmain.png)
+![Captura del proyecto Clipboard Landing Page](../../assets/screenshots/clipmain.png)
 
 ## Vista general
 

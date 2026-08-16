@@ -1,7 +1,8 @@
-# Frontend Mentor - Product Preview Card
-
+<h1 style = "text-align:center">
 
 Esta es mi solución para el reto [Product Preview Card.](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
+
+</h1>
 
 ## Vista previa
 

@@ -1,6 +1,8 @@
-# Frontend Mentor - Blog Preview Card
+<h1 style = "text-align:center">
 
 Esta es mi solución para el reto [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
+
+</n1>
 
 ## Vista previa
 

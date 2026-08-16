@@ -375,3 +375,42 @@ Durante esta actualización aprendí a:
 - Diseñar una barra de progreso personalizada.
 - Resolver problemas de overflow en dispositivos pequeños.
 - Adaptar interfaces visualmente complejas mediante responsive design.
+
+
+### Added
+
+- Bento Grid completado.
+- Captura previa del reto 12.
+- Layout Bento responsive.
+- Configuración Sass mediante npm.
+- Variables Sass.
+- Partials Sass.
+- Grid avanzado.
+- `grid-template-areas`.
+- `grid-area`.
+- Cards con diferentes tamaños.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado oficialmente a 12 de 100.
+- Bento Grid marcado como completado.
+- README principal actualizado.
+- Progreso Arcade actualizado al 12%.
+- Sass retomado después de los retos realizados con Less.
+
+### Learned
+
+- CSS Grid avanzado.
+- Layouts Bento.
+- `grid-template-areas`.
+- `grid-area`.
+- `minmax()`.
+- `clamp()`.
+- `aspect-ratio`.
+- Reorganización visual sin modificar el HTML.
+- Imágenes que exceden intencionalmente el contenedor.
+- `max-width: none`.
+- `overflow: hidden`.
+- Sass modular.
+- Comparación práctica entre Sass y Less.

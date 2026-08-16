@@ -1,6 +1,7 @@
-# Social links profile solution
+<h1 style = "text-align:center">
 
 Esta es mi solución para el desafío: [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
+</h1>
 
 ## Vista previa
 

@@ -1,6 +1,8 @@
-# NFT preview card component solution
+<h1 style = "text-align:center">
 
 Esta es mi solucion para el desafio: [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
+
+</h1>
 
 ## Vista previa
 

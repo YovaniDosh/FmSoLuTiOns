@@ -1,10 +1,12 @@
-# Fylo data storage component solution
+<h1 style = "text-align:center">
 
 Esta es mi solución para el desafío: [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n).
 
+</h1>
+
 ## Vista previa
 
-![Captura del proyecto NTF](../../assets/screenshots/fylo-storage.png)
+![Captura del proyecto Fylo](../../assets/screenshots/fylo-storage.png)
 
 ## Vista general
 

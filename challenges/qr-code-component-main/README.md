@@ -1,7 +1,8 @@
-# Frontend Mentor - QR Code Component
+<h1 style = "text-align:center">
 
 Esta es mi solución para el reto [QR Code Component de Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
+</h1>
 ## Vista previa
 
 ![Captura del proyecto QR Code Component](../../assets/screenshots/qr-code-screen.png)

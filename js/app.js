@@ -98,6 +98,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/clipboard-landing-page-master",
     completed: true,
   },
+  {
+    title: "Bento Grid",
+    description: "Bento layout responsive construido con Sass y CSS Grid avanzado.",
+    technologies: ["HTML", "Sass","CSS Grid", "npm", "Git"],
+    image: "assets/screenshots/bentoGrid.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/bento-grid-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/bento-grid-main",
+    completed: true,
+  }
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

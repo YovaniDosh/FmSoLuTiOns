@@ -1,0 +1,30 @@
+@use "variables" as *;
+@use "reset";
+@use "cards";
+@use "mediaqueries";
+
+@font-face 
+{
+    font-family: "Sans" ;
+    src: url("../../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
+    font-weight: 500 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+body
+{
+    min-width: 20rem;
+    padding: 2rem 1rem;
+    background: $color-background;
+    color: $color-black;
+    font-family: "Sans" ,Arial, Helvetica, sans-serif;
+}
+
+.bento
+{
+    width: min(100%, 70rem);
+    display: grid;
+    gap: 1rem;
+    margin-inline: auto;
+}
