@@ -1,25 +1,19 @@
-/* ==============================
-   VARIABLES
-   ============================== */
-
 :root {
-  --color-background: hsl(220, 25%, 97%);
-  --color-surface: hsl(0, 0%, 100%);
-  --color-primary: hsl(245, 75%, 58%);
-  --color-primary-dark: hsl(245, 65%, 46%);
-  --color-text: hsl(220, 32%, 14%);
-  --color-muted: hsl(220, 12%, 43%);
-  --color-border: hsl(220, 20%, 87%);
-
-  --shadow-card: 0 1rem 2.5rem hsla(220, 30%, 20%, 0.09);
-
+  --color-background: conic-gradient( from 15deg at 50% 50%,#6f2134,#5a212f, #472029, #361c23, #26181b, #181113, #0b090a, #000);
+  --color-surface: #fff;
+  --color-primary: #6f2134;
+  --color-primary-dark: #5a212f;
+  --color-text: #27212a;
+  --color-muted: #667085;
+  --color-border: #d8dee8;
+  --shadow-card: 0 1rem 2.5rem rgb(15 23 42 / 12%);
   --radius-small: 0.75rem;
   --radius-medium: 1.25rem;
-
   --container-width: 70rem;
 }
+
 @font-face {
-  font-family: "believe";
+  font-family: "Believe";
   src: url("../assets/fonts/believe.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
@@ -27,16 +21,12 @@
 }
 
 @font-face {
-  font-family: "gocake";
+  font-family: "Gocake";
   src: url("../assets/fonts/Gocake.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
-/* ==============================
-   RESET
-   ============================== */
 
 *,
 *::before,
@@ -56,37 +46,24 @@ p {
   margin: 0;
 }
 
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+  background: #fff;
+  color: var(--color-text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
-}
-
-button,
-a {
   font: inherit;
-}
-
-/* ==============================
-   BASE
-   ============================== */
-
-body {
-  min-width: 20rem;
-  background: var(--color-background);
-  color: var(--color-text);
-  font-family:
-    Inter,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-  line-height: 1.6;
+  text-decoration: none;
 }
 
 .container {
@@ -94,18 +71,13 @@ body {
   margin-inline: auto;
 }
 
-/* ==============================
-   HERO
-   ============================== */
-
 .hero {
   min-height: 32rem;
   display: grid;
   place-items: center;
   padding-block: 5rem;
-  background: #020024;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-  color: white;
+  background: var(--color-background);
+  color: #fff;
   text-align: center;
 }
 
@@ -124,8 +96,7 @@ body {
 
 .hero h1 {
   max-width: 15ch;
-  font-family: "believe", sans-serif;
-  font-display: swap;
+  font-family: "Believe", sans-serif;
   font-size: clamp(2.3rem, 9vw, 4.5rem);
   line-height: 1.08;
 }
@@ -136,7 +107,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1.5rem;
-  color: hsla(0, 0%, 100%, 0.935);
+  color: rgb(255 255 255 / 94%);
   font-weight: 600;
 }
 
@@ -152,43 +123,33 @@ body {
   margin-top: 2rem;
   padding-inline: 1.35rem;
   border-radius: var(--radius-small);
-  background: white;
+  background: #fff;
   color: var(--color-primary-dark);
   font-weight: 800;
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
   transform: translateY(-3px);
-  box-shadow: 0 0.9rem 2rem hsla(245, 60%, 20%, 0.25);
+  box-shadow: 0 0.9rem 2rem rgb(26 9 15 / 35%);
 }
 
-/* ==============================
-   PROJECTS
-   ============================== */
+.button:focus-visible,
+.project-link:focus-visible {
+  outline: 0.18rem solid #67e8f9;
+  outline-offset: 0.2rem;
+}
 
 .projects-section {
   padding-block: 5rem;
+  background: var(--color-background);
 }
 
 .section-heading {
   display: grid;
   justify-items: center;
   margin-bottom: 2.5rem;
-  text-align: center;
-}
-
-.projects-counter {
-  margin-top: 0.55rem;
-  color: var(--color-muted);
-  margin-bottom: 0.75rem;
-}
-
-.projects-counter strong {
-  color: var(--color-text);
 }
 
 .projects-grid {
@@ -203,14 +164,12 @@ body {
   border-radius: var(--radius-medium);
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease;
+  transition: transform 180ms ease, border 180ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 1.4rem 3rem hsla(220, 30%, 20%, 0.13);
+  transform: translateY(-5px) scale(1.04);
+  border: none;
 }
 
 .project-card__image {
@@ -218,12 +177,7 @@ body {
   display: grid;
   place-items: center;
   overflow: hidden;
-  background:
-    linear-gradient(
-      135deg,
-      hsl(245, 75%, 92%),
-      hsl(190, 70%, 91%)
-    );
+  background: linear-gradient(135deg, #ede9fe, #dff7f7);
 }
 
 .project-card__preview {
@@ -234,7 +188,6 @@ body {
 
 .project-card__placeholder {
   color: var(--color-primary-dark);
-  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -256,7 +209,8 @@ body {
   font-size: 0.925rem;
 }
 
-.project-card__technologies {
+.project-card__technologies,
+.project-card__links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -267,15 +221,13 @@ body {
 .technology {
   padding: 0.3rem 0.65rem;
   border-radius: 999px;
-  background: hsl(245, 75%, 95%);
+  background: #f4e8ec;
   color: var(--color-primary-dark);
   font-size: 0.75rem;
   font-weight: 800;
 }
 
 .project-card__links {
-  display: flex;
-  justify-content: center;
   gap: 0.75rem;
   margin-top: 1.25rem;
 }
@@ -293,13 +245,12 @@ body {
 
 .project-link--primary {
   background: var(--color-primary);
-  color: white;
+  color: #fff;
 }
 
 .project-link--secondary {
   border: 1px solid var(--color-border);
-  background: white;
-  color: var(--color-text);
+  background: #fff;
 }
 
 .empty-project {
@@ -308,32 +259,16 @@ body {
   opacity: 0.72;
 }
 
-.empty-project .project-card__image {
-  background: hsl(220, 20%, 94%);
-}
-
-.empty-project .project-card__placeholder {
-  color: var(--color-muted);
-}
-
-/* ==============================
-   FOOTER
-   ============================== */
-
 .footer {
   padding-block: 1.5rem;
-  border-top: 1px solid var(--color-border);
-  background: var(--color-surface);
-  color: var(--color-muted);
+  border-top: 1px solid #713044;
+  background: var(--color-primary-dark);
+  color: #f8fafc;
   text-align: center;
   font-size: 0.875rem;
 }
 
-/* ==============================
-   RESPONSIVE
-   ============================== */
-
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -342,5 +277,17 @@ body {
 @media (min-width: 64rem) {
   .projects-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
   }
 }
