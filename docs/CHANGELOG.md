@@ -306,3 +306,72 @@
 - Responsive sin media queries innecesarias.
 - Uso de `min()`.
 - Estados accesibles para enlaces.
+
+## [1.1.0]
+
+### Added
+
+- Clipboard Landing Page completado.
+- Captura previa del reto 11.
+- Segunda implementación con Less.
+- Mixins Less.
+- Landing page multi-sección.
+- Botones reutilizados dentro del reto.
+- Grid responsive para Workflow.
+- Sección de empresas.
+- Footer responsive.
+- README propio del reto 11.
+
+### Changed
+
+- Contador actualizado a 11 de 100.
+- README principal actualizado.
+- Workflow con Less ampliado para proyectos de mayor tamaño.
+
+### Learned
+
+- Mixins en Less.
+- `fade()`.
+- Arquitectura para una landing page extensa.
+- CSS Grid para múltiples secciones.
+- Imágenes que rompen parcialmente el contenedor.
+- `translateX()`.
+- Footer responsive.
+- Reutilización de patrones dentro del mismo proyecto.
+
+## [1.2.0]
+
+
+### Added
+
+- Nuevo sistema **Progreso Arcade** inspirado en Pac-Man.
+- Barra visual para representar el avance de los 100 desafíos.
+- Generación dinámica de 100 puntos.
+- Cada punto representa un challenge de o proyecto terminado.
+- Movimiento de Pac-Man basado en el porcentaje de proyectos completados.
+- Rastro amarillo para representar los challenges ya completados.
+- Hitos visuales distribuidos durante el recorrido.
+- Fantasmas posicionados en diferentes porcentajes del progreso.
+- Hitos especiales en 25%, 50%, 75% y 90%.
+- Cerezas como recompensa final del recorrido.
+- Sistema para mantener las cerezas bloqueadas hasta alcanzar el 100%.
+- Mensajes dinámicos asociados al progreso.
+- Seis SVG propios utilizados por el sistema Arcade.
+- Archivo independiente `css/arcade-progress.css`.
+- Archivo independiente `js/arcade-progress.js`.
+
+
+### Learned
+
+Durante esta actualización aprendí a:
+
+- Construir componentes visuales basados en datos.
+- Representar porcentajes mediante una interfaz gráfica.
+- Generar elementos dinámicamente con JavaScript.
+- Sincronizar el estado de una aplicación con una representación visual.
+- Separar funcionalidades JavaScript en archivos independientes.
+- Crear una arquitectura CSS específica para una funcionalidad.
+- Trabajar con SVG como assets de interfaz.
+- Diseñar una barra de progreso personalizada.
+- Resolver problemas de overflow en dispositivos pequeños.
+- Adaptar interfaces visualmente complejas mediante responsive design.
