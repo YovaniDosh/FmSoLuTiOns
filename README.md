@@ -1,4 +1,8 @@
-# Complete "FrontendMentor" challenges (HOUSE)
+<h1 style="text-align:center">
+
+ Complete "FrontendMentor" challenges (HOUSE)
+
+</h1>
 
 Página principal para organizar, presentar y publicar mi colección de desafíos completados de Frontend Mentor.
 
@@ -37,6 +41,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 13 | Single Price Grid Component | Completado | HTML, CSS, CSS Grid |
 | 14 | Four Card Feature Section | Completado | HTML, CSS, Grid, Flexbox |
 | 15 | Profile Card Component | Completado | HTML, CSS, CSS Grid |
+| 16 | Testimonials Grid Section | Completado | HTML, CSS, Grid, Flexbox |
 
 
 ---

@@ -509,3 +509,31 @@ Durante esta actualización aprendí a:
 - CSS Grid.
 - `place-items`.
 - Elementos decorativos accesibles.
+
+## [1.7.0]
+
+### Added
+
+- Testimonials Grid Section completado.
+- Captura previa del reto 16.
+- Cinco tarjetas de testimonios.
+- Layout responsive con CSS Grid.
+- Composición asimétrica mediante Grid Areas.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 15/100 a 16/100.
+- README principal actualizado.
+- Progreso Arcade actualizado al 16%.
+
+### Learned
+
+- `grid-template-areas`.
+- `grid-area`.
+- Grid asimétrico.
+- Grid + Flexbox.
+- Variantes BEM.
+- `<blockquote>`.
+- Avatares responsive.
+- Mobile-first.
