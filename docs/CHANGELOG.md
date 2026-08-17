@@ -445,3 +445,35 @@ Durante esta actualización aprendí a:
 - Diseño de CTA.
 - Contraste visual.
 - Uso semántico de listas.
+
+## [1.5.0]
+
+### Added
+
+- Four Card Feature Section completado.
+- Captura previa del reto 14.
+- Layout responsive con CSS Grid.
+- Composición asimétrica en desktop.
+- Pseudo-elementos decorativos.
+- Variantes BEM para las cuatro tarjetas.
+- Estados visuales sutiles.
+- Soporte para `prefers-reduced-motion`.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de a 14/100.
+- README principal actualizado.
+- Progreso Arcade actualizado al 14%.
+
+### Learned
+
+- CSS Grid asimétrico.
+- `grid-column`.
+- `grid-row`.
+- Grid + Flexbox.
+- `margin-top: auto`.
+- `::before`.
+- Variantes BEM.
+- Iconos decorativos accesibles.
+- `prefers-reduced-motion`.

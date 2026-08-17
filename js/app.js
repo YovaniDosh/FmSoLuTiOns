@@ -99,6 +99,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Four Card Feature Section",
+    description:"Sección responsive de cuatro tarjetas con CSS Grid y composición asimétrica.",
+    technologies: ["HTML", "CSS", "CSS Grid", "Flexbox"],
+    image: "./assets/screenshots/foursection.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/four-card-feature-section-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/four-card-feature-section-master",
+    completed: true
+  },
+  {
     title: "Bento Grid",
     description: "Bento layout responsive construido con Sass y CSS Grid avanzado.",
     technologies: ["HTML", "Sass","CSS Grid", "npm", "Git"],
@@ -109,11 +118,10 @@ const projects = [
   },
   {
     title: "Single Price Grid Component",
-    description:
-      "Componente de precios responsive construido con HTML y CSS Grid.",
+    description:"Componente de precios responsive construido con HTML y CSS Grid.",
     technologies: ["HTML", "CSS", "CSS Grid", "Git"],
     image: "assets/screenshots/singlegrid.png",
-    liveUrl: "./challenges/single-price-grid-component-master/",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/single-price-grid-component-master/",
     githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/single-price-grid-component-master",
     completed: true
   }
@@ -174,10 +182,35 @@ function handlePreviewError(event) {
   event.target.parentElement.innerHTML = '<span class="project-card__placeholder">Screenshot</span>';
 }
 
-function renderProjects() {
-  projectsGrid.innerHTML = projects.map(createProjectCard).join("");
+function shuffleProjects(projectList) {
+  const shuffledProjects = [...projectList];
 
+  for (
+    let currentIndex = shuffledProjects.length - 1;
+    currentIndex > 0;
+    currentIndex -= 1
+  ) {
+    const randomIndex = Math.floor(
+      Math.random() * (currentIndex + 1)
+    );
+
+    [
+      shuffledProjects[currentIndex],
+      shuffledProjects[randomIndex],
+    ] = [
+      shuffledProjects[randomIndex],
+      shuffledProjects[currentIndex],
+    ];
+  }
+
+  return shuffledProjects;
+}
+
+function renderProjects() 
+{
+  const randomizedProjects = shuffleProjects(projects);
   const totalCompleted = projects.filter((project) => project.completed).length;
+  projectsGrid.innerHTML = randomizedProjects.map(createProjectCard).join("");
   completedCount.textContent = totalCompleted;
 }
 

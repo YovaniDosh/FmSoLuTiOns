@@ -35,7 +35,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 11 | Clipboard Landing Page | Completado | HTML,Git, Less, npm |
 | 12 | Bento Grid |Completado| HTML · Sass · CSS Grid · npm |
 | 13 | Single Price Grid Component | Completado | HTML, CSS, CSS Grid |
-| 14 | next proyect | pendiente | HTML , CSS, GIT |
+| 14 | Four Card Feature Section | Completado | HTML, CSS, Grid, Flexbox |
 | 15 | next proyect | pendiente | HTML , CSS, GIT |
 
 
