@@ -376,6 +376,7 @@ Durante esta actualización aprendí a:
 - Resolver problemas de overflow en dispositivos pequeños.
 - Adaptar interfaces visualmente complejas mediante responsive design.
 
+## [1.3.0]
 
 ### Added
 
@@ -414,3 +415,33 @@ Durante esta actualización aprendí a:
 - `overflow: hidden`.
 - Sass modular.
 - Comparación práctica entre Sass y Less.
+
+## [1.4.0]
+
+### Added
+
+- Single Price Grid Component completado.
+- Captura previa del reto 13.
+- Layout responsive con CSS Grid.
+- Uso de `grid-template-areas`.
+- CTA con estados interactivos.
+- Lista semántica de beneficios.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 12/100 a 13/100.
+- README principal actualizado.
+- Progreso Arcade actualizado al 13%.
+- CSS puro retomado después de varios retos con preprocesadores.
+
+### Learned
+
+- CSS Grid aplicado a componentes pequeños.
+- `grid-template-areas`.
+- Layout mobile-first de una a dos columnas.
+- Jerarquía visual.
+- Estados `hover`, `focus-visible` y `active`.
+- Diseño de CTA.
+- Contraste visual.
+- Uso semántico de listas.

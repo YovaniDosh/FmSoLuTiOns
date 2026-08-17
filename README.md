@@ -34,7 +34,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 10 | Social Links Profile | Completado | HTML, Less, npm |
 | 11 | Clipboard Landing Page | Completado | HTML,Git, Less, npm |
 | 12 | Bento Grid |Completado| HTML · Sass · CSS Grid · npm |
-| 13 | next proyect | pendiente | HTML , CSS, GIT |
+| 13 | Single Price Grid Component | Completado | HTML, CSS, CSS Grid |
 | 14 | next proyect | pendiente | HTML , CSS, GIT |
 | 15 | next proyect | pendiente | HTML , CSS, GIT |
 
@@ -44,7 +44,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 ## Progreso
 
 ```text
-████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 12%
+████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 13%
 ```
 
 ### 👾 Arcade
