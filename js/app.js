@@ -106,6 +106,16 @@ const projects = [
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/bento-grid-main/",
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/bento-grid-main",
     completed: true,
+  },
+  {
+    title: "Single Price Grid Component",
+    description:
+      "Componente de precios responsive construido con HTML y CSS Grid.",
+    technologies: ["HTML", "CSS", "CSS Grid", "Git"],
+    image: "assets/screenshots/singlegrid.png",
+    liveUrl: "./challenges/single-price-grid-component-master/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/single-price-grid-component-master",
+    completed: true
   }
 ];
 
