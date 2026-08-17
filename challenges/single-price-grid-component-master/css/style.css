@@ -1,0 +1,219 @@
+:root {
+  --color-cyan:        hsl(179, 62%, 43%);
+  --color-cyan-light:  hsl(179, 47%, 52%);
+  --color-yellow:      hsl(71, 73%, 54%);
+  --color-gray:        hsl(204, 43%, 93%);
+  --color-blue-gray:   hsl(218, 22%, 67%);
+  --color-white:       hsl(0, 0%, 100%);
+  --radius-card: 0.5rem;
+  --shadow-card:
+    0 1rem 2rem
+    hsla(218, 22%, 45%, 0.2);
+}
+
+*,
+*::before,
+*::after 
+{
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p 
+{
+  margin: 0;
+}
+
+ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a 
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+
+  background: var(--color-gray);
+
+  font-family:
+    Arial,
+    sans-serif;
+}
+
+.page 
+{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.25rem;
+}
+
+.pricing-card 
+{
+  width: min(100%, 39.75rem);
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.pricing-card__intro,
+.pricing-card__subscription,
+.pricing-card__why {
+  padding: 1.75rem;
+}
+.pricing-card__intro
+{
+    background-color: var(--color-white);
+}
+
+.pricing-card__intro h1
+{
+    color: var(--color-cyan);
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+.pricing-card__intro h2{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: var(--color-yellow);
+}
+.pricing-card__intro p
+{
+    color: var(--color-blue-gray);
+    line-height: 1.8;
+}
+.pricing-card__subscription
+{
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+}
+.pricing-card__subscription h2 
+{
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+.pricing-card__subscription p{
+    margin: 1.25rem 0 0 0;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+.pricing-card__subscription strong
+{
+    font-size: 2rem;
+}
+.pricing-card__subscription span {
+  opacity: 0.65;
+}
+
+.pricing-card__subscription > p:last-of-type {
+  margin-top: 0.5rem;
+}
+.pricing-card__button {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.75rem;
+  border-radius: 0.35rem;
+  background: var(--color-yellow);
+  color: var(--color-white);
+  font-weight: 700;
+  box-shadow:
+    0 0.6rem 1rem
+    hsla(179, 62%, 25%, 0.25);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
+}
+
+.pricing-card__button:hover,
+.pricing-card__button:focus-visible {
+  transform: translateY(-0.15rem);
+  filter: brightness(1.05);
+  box-shadow:
+    0 0.8rem 1.25rem
+    hsla(179, 62%, 25%, 0.3);
+}
+
+.pricing-card__button:focus-visible {
+  outline:
+    0.15rem solid
+    var(--color-white);
+
+  outline-offset: 0.2rem;
+}
+
+.pricing-card__button:active {
+  transform: scale(0.98) rotate(5deg);
+}
+.pricing-card__why {
+  background: var(--color-cyan-light);
+
+  color: var(--color-white);
+}
+
+.pricing-card__why h2 {
+  font-size: 1.15rem;
+}
+
+.pricing-card__why ul {
+  margin-top: 1.25rem;
+}
+
+.pricing-card__why li {
+  color:
+    hsla(0, 0%, 100%, 0.75);
+
+  line-height: 1.5;
+}
+
+@media (min-width: 48rem) {
+  .pricing-card {
+    display: grid;
+    width: min(100%, 40rem);
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    grid-template-areas:
+      "intro intro"
+      "subscription why";
+  }
+
+  .pricing-card__intro {
+    grid-area: intro;
+
+    padding: 2.5rem;
+  }
+
+  .pricing-card__subscription {
+    grid-area: subscription;
+
+    padding: 2.5rem;
+  }
+
+  .pricing-card__why {
+    grid-area: why;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .page {
+    padding-inline: 1rem;
+  }
+}
