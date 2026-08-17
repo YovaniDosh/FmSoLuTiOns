@@ -477,3 +477,35 @@ Durante esta actualización aprendí a:
 - Variantes BEM.
 - Iconos decorativos accesibles.
 - `prefers-reduced-motion`.
+
+## [1.6.0]
+
+### Added
+
+- Profile Card Component completado.
+- Captura previa del reto 15.
+- Tarjeta de perfil responsive.
+- Avatar superpuesto.
+- Fondo compuesto por múltiples imágenes.
+- Estadísticas mediante CSS Grid.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 14/100 a 15/100.
+- README principal actualizado.
+- Dashboard de la House actualizado.
+- Progreso Arcade actualizado al 15%.
+
+### Learned
+
+- Multiple CSS backgrounds.
+- `position: relative`.
+- `position: absolute`.
+- `transform: translate()`.
+- `aspect-ratio`.
+- `object-fit`.
+- `border-radius: 50%`.
+- CSS Grid.
+- `place-items`.
+- Elementos decorativos accesibles.

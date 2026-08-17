@@ -36,7 +36,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 12 | Bento Grid |Completado| HTML · Sass · CSS Grid · npm |
 | 13 | Single Price Grid Component | Completado | HTML, CSS, CSS Grid |
 | 14 | Four Card Feature Section | Completado | HTML, CSS, Grid, Flexbox |
-| 15 | next proyect | pendiente | HTML , CSS, GIT |
+| 15 | Profile Card Component | Completado | HTML, CSS, CSS Grid |
 
 
 ---

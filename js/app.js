@@ -90,6 +90,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Profile Card Component",
+    description:"Tarjeta de perfil responsive con avatar superpuesto y fondo decorativo.",
+    technologies: ["HTML", "Git", "CSS Grid"],
+    image: "assets/screenshots/profilecard.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/15-profile-card-component/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/15-profile-card-component",
+    completed: true,
+  },
+  {
     title: "Clipboard Landing Page",
     description: "Landing page responsive construida con HTML y Less, usando mixins, Grid y layouts multisección.",
     technologies: ["HTML", "Less", "npm", "Git"],
