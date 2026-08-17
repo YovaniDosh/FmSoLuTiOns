@@ -45,6 +45,17 @@ const projects = [
     completed: true,
   },
   {
+    title: "Testimonials Grid Section",
+    description:"Sección de testimonios responsive con CSS Grid y layout asimétrico.",
+    technologies: ["HTML", "CSS", "CSS Grid","Git", "Flexbox"],
+    image: "assets/screenshots/testimonial.png",
+    liveUrl:
+      "https://yovanidosh.github.io/FmSoLuTiOns/challenges/testimonials-grid-section-main/",
+    githubUrl:
+      "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/testimonials-grid-section-main",
+    completed: true,
+  },
+  {
     title: "Recipe Page",
     description: "Página de receta responsive con estructura semántica, listas personalizadas y tabla nutricional.",
     technologies: ["HTML", "CSS", "Git"],
@@ -94,8 +105,8 @@ const projects = [
     description:"Tarjeta de perfil responsive con avatar superpuesto y fondo decorativo.",
     technologies: ["HTML", "Git", "CSS Grid"],
     image: "assets/screenshots/profilecard.png",
-    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/15-profile-card-component/",
-    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/15-profile-card-component",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/profile-card-component-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/profile-card-component-main",
     completed: true,
   },
   {
