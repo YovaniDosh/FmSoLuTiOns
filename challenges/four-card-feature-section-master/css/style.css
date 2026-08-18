@@ -15,76 +15,77 @@
 
 *,
 *::before,
-*::after {
+*::after
+{
   box-sizing: border-box;
 }
 
 body,
 h1,
 h2,
-p {
+p
+{
   margin: 0;
 }
 
-img {
+img
+{
   display: block;
   max-width: 100%;
 }
 
-body 
+body
 {
   min-width: 20rem;
   min-height: 100vh;
   background: var(--color-background);
   color: var(--color-dark-blue);
-  font-family:
-    Arial,
-    sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-.page 
+.page
 {
   width: min(100% - 2rem, 70rem);
   margin-inline: auto;
   padding-block: 5rem;
 }
 
-.hero 
+.hero
 {
   max-width: 34rem;
   margin-inline: auto;
   text-align: center;
 }
 
-.hero__eyebrow 
+.hero__eyebrow
 {
-  font-size:clamp(1.5rem, 6vw, 2.25rem);
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
   font-weight: 300;
 }
 
-.hero h1 
+.hero h1
 {
   margin-top: 0.35rem;
   font-size: clamp(1.5rem, 6vw, 2.25rem);
   font-weight: 700;
 }
 
-.hero__description 
+.hero__description
 {
   margin-top: 1.25rem;
-  padding: 0 3rem;
+  padding-inline: 3rem;
   color: var(--color-gray-blue);
   line-height: 1.3;
 }
 
-.features 
+.features
 {
   display: grid;
   gap: 1.75rem;
   margin-top: 4rem;
 }
 
-.feature-card 
+.feature-card
 {
   position: relative;
   min-height: 15.5rem;
@@ -94,23 +95,17 @@ body
   overflow: hidden;
   border-radius: var(--radius-card);
   background: var(--color-white);
-  box-shadow:
-    0 1rem 2rem
-    hsla(229, 6%, 50%, 0.18);
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease;
+  box-shadow: 0 1rem 2rem hsla(229, 6%, 50%, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.feature-card:hover {
+.feature-card:hover
+{
   transform: translateY(-0.25rem);
-
-  box-shadow:
-    0 1.25rem 2.5rem
-    hsla(229, 6%, 50%, 0.22);
+  box-shadow: 0 1.25rem 2.5rem hsla(229, 6%, 50%, 0.22);
 }
 
-.feature-card::before 
+.feature-card::before
 {
   content: "";
   position: absolute;
@@ -120,12 +115,12 @@ body
   height: 0.25rem;
 }
 
-.feature-card h2 
+.feature-card h2
 {
   font-size: 1.25rem;
 }
 
-.feature-card p 
+.feature-card p
 {
   max-width: 18rem;
   margin-top: 0.75rem;
@@ -134,66 +129,72 @@ body
   line-height: 1.4;
 }
 
-.feature-card img 
+.feature-card img
 {
   width: 4rem;
   margin-top: auto;
   margin-left: auto;
 }
 
-.feature-card--supervisor::before {
+.feature-card--supervisor::before
+{
   background: var(--color-cyan);
 }
 
-.feature-card--team::before {
+.feature-card--team::before
+{
   background: var(--color-red);
 }
 
-.feature-card--karma::before {
+.feature-card--karma::before
+{
   background: var(--color-orange);
 }
 
-.feature-card--calculator::before {
+.feature-card--calculator::before
+{
   background: var(--color-blue);
 }
 
-@media (min-width: 48rem) {
-  .features {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+@media (min-width: 48rem)
+{
+  .features
+  {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 64rem) {
-  .features {
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
-
-    grid-template-rows:
-      repeat(4, 1fr);
-
+@media (min-width: 64rem)
+{
+  .features
+  {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-      ".          team       ."
-      "supervisor team       calculator"
-      "supervisor karma      calculator"
-      ".          karma      .";
-
+      ". team ."
+      "supervisor team calculator"
+      "supervisor karma calculator"
+      ". karma .";
     gap: 2rem;
   }
 
-  .feature-card--supervisor {
+  .feature-card--supervisor
+  {
     grid-area: supervisor;
   }
 
-  .feature-card--team {
+  .feature-card--team
+  {
     grid-area: team;
   }
 
-  .feature-card--karma {
+  .feature-card--karma
+  {
     grid-area: karma;
   }
 
-  .feature-card--calculator {
+  .feature-card--calculator
+  {
     grid-area: calculator;
   }
 }

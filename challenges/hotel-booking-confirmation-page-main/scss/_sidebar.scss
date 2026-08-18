@@ -1,239 +1,220 @@
 @use "variables" as *;
 
-.sidebar {
+.sidebar
+{
   position: relative;
   padding: 1rem;
-
   border-bottom: 1px solid $color-border;
-
   background: $color-background;
 
-  &__top {
+  &__top
+  {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
-  &__brand {
+
+  &__brand
+  {
     display: inline-flex;
     align-items: center;
 
-    img {
+    img
+    {
       width: 8.5rem;
     }
   }
 
-  &__menu-button {
+  &__menu-button
+  {
     width: 2.5rem;
     aspect-ratio: 1;
-    background-color: transparent;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border: 1px solid $color-border;
     border-radius: 0.25rem;
-
+    background-color: transparent;
     color: $color-text;
-
     font-size: 1.4rem;
-
     cursor: pointer;
   }
 
-  &__body {
+  &__body
+  {
     display: none;
   }
 
-  &__navigation {
-    ul {
+  &__navigation
+  {
+    ul
+    {
       display: grid;
       gap: 0.25rem;
     }
   }
 
-  &__link {
+  &__link
+  {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-
     padding: 0.7rem 0.8rem;
-
     border: 1px solid transparent;
     border-radius: $radius-small;
-
     color: $color-muted;
-
     font-weight: 600;
     text-decoration: none;
+    transition: background-color $transition-fast, border-color $transition-fast, color $transition-fast;
 
-    transition:
-      background-color $transition-fast,
-      border-color $transition-fast,
-      color $transition-fast;
-
-    img {
+    img
+    {
       width: 1.1rem;
     }
+
     &:active
     {
       border-color: $color-orange;
     }
+
     &:hover,
-    &:focus-visible {
+    &:focus-visible
+    {
       background: $color-surface;
       color: $color-text;
-
       outline: none;
     }
 
-    &--active {
+    &--active
+    {
       background: $color-surface;
       color: $color-text;
     }
   }
 
-  &__footer {
+  &__footer
+  {
     margin-top: auto;
   }
 }
 
-/* ==============================
-   MOBILE MENU OPEN
-   ============================== */
-
-.sidebar--open {
+.sidebar--open
+{
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
 
-  .sidebar__body {
+  .sidebar__body
+  {
     flex: 1;
     display: flex;
     flex-direction: column;
-
     margin-top: 2rem;
   }
 }
 
-.weather {
+.weather
+{
   position: relative;
-
   overflow: hidden;
-
   padding: 1rem;
-
   border-radius: $radius-medium;
-
-  background:
-    linear-gradient(
-      135deg,
-      #f8d970,
-      $color-yellow
-    );
-
+  background: linear-gradient(135deg, #f8d970, $color-yellow);
   color: $color-text;
 
-  span {
+  span
+  {
     display: block;
-
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-
     text-transform: uppercase;
   }
 
-  strong {
+  strong
+  {
     display: block;
-
     margin-block: 0.35rem;
-
     font-family: Georgia, serif;
     font-size: 2.25rem;
     font-weight: 400;
   }
 
-  p {
+  p
+  {
     font-size: 0.7rem;
   }
 
-  &::after {
+  &::after
+  {
     content: "";
-
     position: absolute;
-
     top: -1.5rem;
     right: -1rem;
-
     width: 5.5rem;
     aspect-ratio: 1;
-
-    background:
-      url("../../../assets/images/icon-weather.svg")
-      center / contain
-      no-repeat;
+    background: url("../../../assets/images/icon-weather.svg") center / contain no-repeat;
   }
 }
 
-.sidebar__address {
+.sidebar__address
+{
   margin-top: 1.5rem;
-
   color: $color-muted;
-
   font-size: 0.6rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
-
   text-transform: uppercase;
 
-  span {
+  span
+  {
     display: block;
 
-    & + span {
+    & + span
+    {
       margin-top: 0.6rem;
     }
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
-  .sidebar {
+@media (min-width: $breakpoint-desktop)
+{
+  .sidebar
+  {
     position: sticky;
     top: 0;
-
     height: 100vh;
-
     display: flex;
     flex-direction: column;
-
     padding: 1rem 1.25rem;
-
     border-right: 1px solid $color-border;
     border-bottom: 0;
 
-    &__top {
+    &__top
+    {
       padding-bottom: 1rem;
-
       border-bottom: 1px solid $color-border;
     }
 
-    &__menu-button {
+    &__menu-button
+    {
       display: none;
     }
 
-    &__body {
+    &__body
+    {
       flex: 1;
-
       display: flex;
       flex-direction: column;
-
       margin-top: 1.25rem;
     }
 
-    &__navigation {
+    &__navigation
+    {
       display: block;
     }
 
-    &__footer {
+    &__footer
+    {
       display: block;
     }
   }

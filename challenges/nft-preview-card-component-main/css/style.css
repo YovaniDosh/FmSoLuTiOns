@@ -1,4 +1,4 @@
-:root 
+:root
 {
   --color-soft-blue:       hsl(215, 51%, 70%);
   --color-cyan:            hsl(178, 100%, 50%);
@@ -6,55 +6,51 @@
   --color-card-background: hsl(216, 50%, 16%);
   --color-line:            hsl(215, 32%, 27%);
   --color-white:           hsl(0, 0%, 100%);
+
   --radius-card: 1rem;
   --radius-image: 0.5rem;
-  --shadow-card:
-    0 1.5rem 3rem
-    hsla(220, 60%, 5%, 0.35);
+  --shadow-card: 0 1.5rem 3rem hsla(220, 60%, 5%, 0.35);
   --transition-fast: 180ms ease;
 }
 
 *,
 *::before,
-*::after 
+*::after
 {
   box-sizing: border-box;
 }
 
 body,
 h1,
-p 
+p
 {
   margin: 0;
 }
 
-img 
+img
 {
   display: block;
   max-width: 100%;
 }
 
-a 
+a
 {
   color: inherit;
   text-decoration: none;
 }
 
-body 
+body
 {
   min-width: 20rem;
   min-height: 100vh;
   background: var(--color-main-background);
   color: var(--color-soft-blue);
-  font-family:
-    "Outfit",
-    Arial,
-    sans-serif;
+  font-family: "Outfit", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.page 
+.page
 {
   min-height: 100vh;
   display: grid;
@@ -62,7 +58,7 @@ body
   padding: 1.5rem;
 }
 
-.nft-card 
+.nft-card
 {
   width: min(100%, 21.875rem);
   padding: 1.5rem;
@@ -71,7 +67,7 @@ body
   box-shadow: var(--shadow-card);
 }
 
-.nft-card__image-link 
+.nft-card__image-link
 {
   position: relative;
   display: block;
@@ -79,14 +75,14 @@ body
   border-radius: var(--radius-image);
 }
 
-.nft-card__image 
+.nft-card__image
 {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-.nft-card__overlay 
+.nft-card__overlay
 {
   position: absolute;
   inset: 0;
@@ -94,52 +90,52 @@ body
   place-items: center;
   background: hsla(178, 100%, 50%, 0.5);
   opacity: 0;
-  transition:
-    opacity var(--transition-fast);
+  transition: opacity var(--transition-fast);
 }
 
-.nft-card__view-icon 
+.nft-card__view-icon
 {
   width: 3rem;
 }
 
-.nft-card__image-link:hover
-.nft-card__overlay,
-
-.nft-card__image-link:focus-visible
-.nft-card__overlay {
+.nft-card__image-link:hover .nft-card__overlay,
+.nft-card__image-link:focus-visible .nft-card__overlay
+{
   opacity: 1;
 }
 
-.nft-card__content 
+.nft-card__content
 {
   padding-top: 1.5rem;
 }
 
-.nft-card__title 
+.nft-card__title
 {
   color: var(--color-white);
   font-size: 1.375rem;
   line-height: 1.3;
 }
 
-.nft-card__title a {
-  transition:
-    color var(--transition-fast);
+.nft-card__title a
+{
+  transition: color var(--transition-fast);
 }
 
 .nft-card__title a:hover,
-.nft-card__title a:focus-visible {
+.nft-card__title a:focus-visible
+{
   color: var(--color-cyan);
 }
 
-.nft-card__description {
+.nft-card__description
+{
   margin-top: 1rem;
   font-size: 1.125rem;
   font-weight: 300;
 }
 
-.nft-card__information {
+.nft-card__information
+{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,78 +144,78 @@ body
 }
 
 .nft-card__price,
-.nft-card__time {
+.nft-card__time
+{
   display: flex;
   align-items: center;
-
   gap: 0.45rem;
 }
 
-.nft-card__price {
+.nft-card__price
+{
   color: var(--color-cyan);
 }
 
-.nft-card__price img {
+.nft-card__price img
+{
   width: 0.7rem;
 }
 
-.nft-card__time img {
+.nft-card__time img
+{
   width: 1rem;
 }
 
-.nft-card__creator {
+.nft-card__creator
+{
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top:
-    1px solid var(--color-line);
+  border-top: 1px solid var(--color-line);
 }
 
-.nft-card__avatar {
+.nft-card__avatar
+{
   width: 2rem;
   aspect-ratio: 1;
-
-  border:
-    1px solid var(--color-white);
-
+  border: 1px solid var(--color-white);
   border-radius: 50%;
 }
 
-.nft-card__creator a {
+.nft-card__creator a
+{
   color: var(--color-white);
-
-  transition:
-    color var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .nft-card__creator a:hover,
-.nft-card__creator a:focus-visible {
+.nft-card__creator a:focus-visible
+{
   color: var(--color-cyan);
 }
 
-a:focus-visible {
-  outline:
-    0.15rem solid var(--color-cyan);
-
+a:focus-visible
+{
+  outline: 0.15rem solid var(--color-cyan);
   outline-offset: 0.25rem;
 }
 
-@media (min-width: 48rem) {
-  .page {
+@media (min-width: 48rem)
+{
+  .page
+  {
     padding: 2rem;
-  }
-
-  .nft-card {
-    padding: 1.5rem;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce)
+{
   *,
   *::before,
-  *::after {
+  *::after
+  {
     transition-duration: 0.01ms;
   }
 }
