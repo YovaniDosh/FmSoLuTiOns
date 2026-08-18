@@ -27,6 +27,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Social Proof Section",
+    description:"Sección responsive de prueba social con valoraciones y testimonios de clientes.",
+    technologies: ["HTML", "CSS", "Grid", "Flexbox"],
+    image: "assets/screenshots/socialprof.png",
+    liveUrl:"https://yovanidosh.github.io/FmSoLuTiOns/challenges/social-proof-section-master/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/social-proof-section-master",
+    completed: true,
+  },
+  {
     title: "Chat App CSS Illustration",
     description:"Landing responsive con una interfaz móvil de chat construida con HTML y CSS.",
     technologies: ["HTML", "CSS", "Grid", "Flexbox"],

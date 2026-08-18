@@ -612,3 +612,22 @@ Durante esta actualización aprendí a:
 - Integrado el Reto #19 en Frontend Mentor House.
 - Progreso actualizado a **19 / 100 retos**.
 - Actualizada la barra visual de progreso.
+
+## [1.11.0]
+
+### Added
+
+- Añadido el desafío **Social Proof Section**.
+- Creada una sección responsive de prueba social.
+- Añadidas tres valoraciones de cinco estrellas.
+- Añadidos tres testimonios de clientes.
+- Implementados layouts con CSS Grid y Flexbox.
+- Añadido efecto escalonado para ratings y testimonios.
+- Añadido diseño mobile-first.
+- Añadido README propio del desafío.
+
+### House
+
+- Integrado el Reto #20 en Frontend Mentor House.
+- Progreso actualizado a **20 / 100 retos**.
+- Barra de progreso actualizada al **20%**.
