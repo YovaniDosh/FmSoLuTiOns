@@ -564,3 +564,32 @@ Durante esta actualización aprendí a:
 - `minmax()`.
 - `:focus-visible`.
 - Mobile-first.
+
+## [1.9.0]
+
+### Added
+
+- Huddle Landing Page completada.
+- Hero responsive.
+- Ilustración principal.
+- CTA de registro.
+- Enlaces a redes sociales.
+- Estados hover y focus.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 17/100 a 18/100.
+- README principal actualizado.
+- House actualizada con el reto 18.
+- Progreso Arcade actualizado al 18%.
+
+### Learned
+
+- Hero responsive.
+- CSS Grid.
+- Fondos responsive.
+- `clamp()`.
+- `minmax()`.
+- `:focus-visible`.
+- `prefers-reduced-motion`.

@@ -27,6 +27,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Huddle Landing Page",
+    description: "Landing page responsive con hero, CTA, ilustración y enlaces sociales.",
+    technologies: ["HTML", "CSS", "Flexbox"],
+    image: "assets/screenshots/huddle.png",
+    liveUrl:"https://yovanidosh.github.io/FmSoLuTiOns/challenges/huddle-landing-page-with-single-introductory-section-master/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/huddle-landing-page-with-single-introductory-section-master",
+    completed: true,
+  },
+  {
     title: "3 Column Preview Card Component",
     description:"Componente responsive de vehículos con tres variantes y layout Grid.",
     technologies: ["HTML", "CSS", "CSS Grid", "Flexbox"],
