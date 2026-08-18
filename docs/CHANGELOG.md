@@ -537,3 +537,30 @@ Durante esta actualización aprendí a:
 - `<blockquote>`.
 - Avatares responsive.
 - Mobile-first.
+
+## [1.8.0]
+
+### Added
+
+- 3 Column Preview Card Component completado.
+- Captura previa del reto 17.
+- Tres variantes de tarjetas.
+- Layout responsive de una a tres columnas.
+- Estados hover y focus.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado a 17/100.
+- README principal actualizado.
+- Progreso Arcade actualizado al 17%.
+
+### Learned
+
+- Variantes BEM.
+- Flexbox dentro de componentes.
+- `margin-top: auto`.
+- CSS Grid responsive.
+- `minmax()`.
+- `:focus-visible`.
+- Mobile-first.

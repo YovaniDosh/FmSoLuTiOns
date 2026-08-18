@@ -27,6 +27,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "3 Column Preview Card Component",
+    description:"Componente responsive de vehículos con tres variantes y layout Grid.",
+    technologies: ["HTML", "CSS", "CSS Grid", "Flexbox"],
+    image: "assets/screenshots/sedans.png",
+    liveUrl:"https://yovanidosh.github.io/FmSoLuTiOns/challenges/3-column-preview-card-component-main/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/3-column-preview-card-component-main",
+    completed: true,
+  },
+  {
     title: "Social Links Profile",
     description: "Perfil social responsive construido con HTML y Less, con estados interactivos accesibles.",
     technologies: ["HTML", "Less", "npm"],
