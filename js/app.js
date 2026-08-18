@@ -36,6 +36,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Stats Preview Card Component",
+    description:"Tarjeta responsive de estadísticas con overlay violeta y layout Grid.",
+    technologies: ["HTML", "CSS", "CSS Grid"],
+    image: "assets/screenshots/stats.png",
+    liveUrl:"https://yovanidosh.github.io/FmSoLuTiOns/challenges/stats-preview-card-component-main/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/stats-preview-card-component-main",
+    completed: true,
+  },
+  {
     title: "Chat App CSS Illustration",
     description:"Landing responsive con una interfaz móvil de chat construida con HTML y CSS.",
     technologies: ["HTML", "CSS", "Grid", "Flexbox"],

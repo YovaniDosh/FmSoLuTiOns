@@ -46,6 +46,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 18 | Huddle Landing Page | Completado | HTML, CSS, Grid, Flexbox |
 | 19 | Chat App Css Landing Page | Completado | Html, Git, Css, Grid |
 | 20 | Social Proof Section | Completado | Html,Git, Css, Grid |
+| 21 | Stats Preview Card Component Main | Html,Git, Css, Grid |
 
 
 ---

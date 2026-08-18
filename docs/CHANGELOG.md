@@ -631,3 +631,30 @@ Durante esta actualización aprendí a:
 - Integrado el Reto #20 en Frontend Mentor House.
 - Progreso actualizado a **20 / 100 retos**.
 - Barra de progreso actualizada al **20%**.
+
+## [1.12.0]
+
+### Added
+
+- Stats Preview Card Component completado.
+- Tarjeta responsive de estadísticas.
+- Imagen con overlay violeta.
+- Layout mobile-first.
+- Distribución en dos columnas para escritorio.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 20/100 a 21/100.
+- README principal actualizado.
+- House actualizada con el reto 21.
+- Progreso Arcade actualizado al 21%.
+
+### Learned
+
+- Multiple backgrounds.
+- `linear-gradient()`.
+- CSS Grid.
+- `minmax()`.
+- `clamp()`.
+- Layout responsive.
