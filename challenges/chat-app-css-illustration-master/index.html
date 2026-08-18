@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Chat App CSS Illustration solution for Frontend Mentor.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/ajustes.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chat App CSS Illustration</title>
+
+</head>
+<body>
+  <main class="page">
+
+    <div class="background-shape background-shape--purple" aria-hidden="true"></div>
+    <div class="background-shape background-shape--light" aria-hidden="true"></div>
+
+    <section class="hero">
+
+      <div class="phone">
+
+        <div class="phone__notch" aria-hidden="true"></div>
+
+        <header class="chat-header">
+
+          <button class="chat-header__back" type="button" aria-label="Go back">
+            ‹
+          </button>
+
+          <img class="chat-header__avatar" src="../../assets/images/avatardog.jpg" alt="Samuel Green">
+
+          <div class="chat-header__user">
+
+            <h2>
+              Samuel Green
+            </h2>
+
+            <p>
+              Available to Walk
+            </p>
+
+          </div>
+
+          <button class="chat-header__menu" type="button" aria-label="Open options">
+            ⋮
+          </button>
+
+        </header>
+
+        <div class="chat">
+
+          <p class="message message--received">
+            That sounds great. I'd be happy with that.
+          </p>
+
+          <p class="message message--received">
+            Could you send over some pictures of your dog, please?
+          </p>
+
+          <div class="chat__images" aria-label="Dog pictures">
+            <img src="../../assets/images/dog-image-1.jpg" alt="Dog playing outdoors">
+            <img src="../../assets/images/dog-image-2.jpg" alt="Dog sitting outside">
+            <img src="../../assets/images/dog-image-3.jpg" alt="Dog holding a stick">
+          </div>
+
+          <p class="message message--sent">
+            Here are a few pictures. She's a happy girl!
+          </p>
+
+          <p class="message message--sent message--small">
+            Can you make it?
+          </p>
+
+          <p class="message message--received">
+            She looks so happy! The time we discussed works.
+            How long shall I take her out for?
+          </p>
+
+          <div class="walk-option">
+
+            <span class="walk-option__radio" aria-hidden="true"></span>
+
+            <span>
+              30 minute walk
+            </span>
+
+            <strong>
+              $29
+            </strong>
+
+          </div>
+
+          <div class="walk-option">
+
+            <span class="walk-option__radio" aria-hidden="true"></span>
+
+            <span>
+              1 hour walk
+            </span>
+
+            <strong>
+              $49
+            </strong>
+
+          </div>
+
+          <div class="message-input">
+
+            <span>
+              Type a message...
+            </span>
+
+            <button type="button" aria-label="Send message" id="alert">
+              ›
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero__content">
+
+        <h1>
+          Simple booking
+        </h1>
+
+        <p>
+          Stay in touch with our dog walkers through the
+          chat interface. This makes it easy to discuss
+          arrangements and make bookings. Once the walk
+          has been completed you can rate your walker
+          and book again all through the chat.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+<script>
+  const alertButton = document.getElementById("alert");
+
+  alertButton.addEventListener("click", () => {
+    alert("Mensaje enviado 😈​😈​😈​");
+  });
+</script>
+</body>
+</html>

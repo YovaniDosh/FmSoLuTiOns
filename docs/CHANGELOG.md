@@ -593,3 +593,22 @@ Durante esta actualización aprendí a:
 - `minmax()`.
 - `:focus-visible`.
 - `prefers-reduced-motion`.
+
+## [1.10.0]
+
+### Added
+
+- Añadido el desafío **Chat App CSS Illustration**.
+- Creada una interfaz móvil de chat completamente con HTML y CSS.
+- Añadidos mensajes enviados y recibidos.
+- Añadida galería de imágenes dentro de la conversación.
+- Añadidas opciones de paseo con precios.
+- Añadidos gradientes y elementos decorativos de fondo.
+- Añadido diseño responsive mobile-first.
+- Añadido README propio del desafío.
+
+### House
+
+- Integrado el Reto #19 en Frontend Mentor House.
+- Progreso actualizado a **19 / 100 retos**.
+- Actualizada la barra visual de progreso.

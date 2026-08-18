@@ -44,6 +44,7 @@ El diseño está centrado, sigue un enfoque mobile-first y usa un grid responsiv
 | 16 | Testimonials Grid Section | Completado | HTML, CSS, Grid, Flexbox |
 | 17 | 3 Column Preview Card Component | Completado | HTML, CSS, Grid, Flexbox |
 | 18 | Huddle Landing Page | Completado | HTML, CSS, Grid, Flexbox |
+| 19 | Chat App Css Landing Page | Completado | Html, Git, Css, Grid |
 
 
 ---

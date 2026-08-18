@@ -27,6 +27,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Chat App CSS Illustration",
+    description:"Landing responsive con una interfaz móvil de chat construida con HTML y CSS.",
+    technologies: ["HTML", "CSS", "Grid", "Flexbox"],
+    image: "assets/screenshots/simple.png",
+    liveUrl:"https://yovanidosh.github.io/FmSoLuTiOns/challenges/chat-app-css-illustration-master/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/chat-app-css-illustration-master",
+    completed: true,
+  },
+  {
     title: "Huddle Landing Page",
     description: "Landing page responsive con hero, CTA, ilustración y enlaces sociales.",
     technologies: ["HTML", "CSS", "Flexbox"],

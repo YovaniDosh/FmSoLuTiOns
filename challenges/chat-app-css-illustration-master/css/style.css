@@ -1,0 +1,389 @@
+:root {   
+  --color-purple-dark:     hsl(271, 36%, 24%);
+  --color-purple-text:     hsl(276, 55%, 52%);
+  --color-purple-light:    hsl(276, 100%, 81%);
+  --color-gray-text:       hsl(270, 7%, 64%);
+  --color-chat-background: hsl(270, 20%, 96%);
+  --color-white:           hsl(0, 0%, 100%);
+  --color-gradient-start:  hsl(293, 100%, 63%);
+  --color-gradient-end:    hsl(264, 100%, 61%);
+  --color-message-received:hsl(272, 41%, 93%);
+  --color-message-sent:    hsl(0, 0%, 100%);
+  --radius-phone: 2rem;
+  --radius-message: 0.75rem;
+  --shadow-phone:
+    0 2rem 3rem
+    hsla(271, 36%, 24%, 0.18);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+@font-face 
+{
+    font-family: "Rubik" ;
+    src: url("../../../assets/fonts/Rubik-VariableFont_wght.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body 
+{
+  min-width: 20rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-white);
+  color: var(--color-purple-dark);
+  font-family:"Rubik" ,Arial, Helvetica, sans-serif;
+  font-family:
+    Arial,
+    sans-serif;
+}
+
+.page 
+{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-shape 
+{
+  position: absolute;
+  width: 32rem;
+  height: 44rem;
+  border-radius:
+    0
+    0
+    16rem
+    16rem;
+}
+
+.background-shape--purple 
+{
+  top: -10rem;
+  left: -20rem;
+  background:
+    linear-gradient(
+      to bottom,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+}
+
+.background-shape--light 
+{
+  right: -22rem;
+  bottom: -10rem;
+  background: hsl(270, 20%, 98%);
+  transform: rotate(180deg);
+}
+
+.hero 
+{
+  position: relative;
+  z-index: 1;
+  width: min(100% - 3rem, 64rem);
+  display: grid;
+  gap: 4rem;
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.phone 
+{
+  position: relative;
+  width: min(100%, 17rem);
+  margin-inline: auto;
+  padding: 0.65rem;
+  border-radius: var(--radius-phone);
+  background: var(--color-white);
+  box-shadow: var(--shadow-phone);
+}
+
+.phone__notch 
+{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+  width: 8rem;
+  height: 1.7rem;
+  border-radius:
+    0
+    0
+    1rem
+    1rem;
+  background: var(--color-white);
+  transform: translateX(-50%);
+}
+
+.chat-header 
+{
+  min-height: 4.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding:
+    1.7rem
+    0.8rem
+    0.7rem;
+  border-radius:
+    1.4rem
+    1.4rem
+    0.35rem
+    0.35rem;
+  background:
+    linear-gradient(
+      to right,
+      var(--color-gradient-end),
+      var(--color-gradient-start)
+    );
+  color: var(--color-white);
+}
+
+.chat-header__back,
+.chat-header__menu 
+{
+  background: transparent;
+  color: var(--color-white);
+}
+
+.chat-header__back 
+{
+  font-size: 1.5rem;
+}
+
+.chat-header__avatar 
+{
+  width: 1.7rem;
+  aspect-ratio: 1;
+  border: 0.1rem solid var(--color-white);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-header__user 
+{
+  flex: 1;
+}
+
+.chat-header__user h2 
+{
+  font-size: 0.75rem;
+}
+
+.chat-header__user p 
+{
+  margin-top: 0.15rem;
+  color: var(--color-purple-light);
+  font-size: 0.55rem;
+}
+
+.chat 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.75rem;
+  border-radius:
+    0
+    0
+    1.4rem
+    1.4rem;
+  background: var(--color-chat-background);
+}
+
+.message 
+{
+  max-width: 65%;
+  padding: 0.50rem 0.65rem;
+  border-radius: var(--radius-message);
+  font-size: 0.55rem;
+  line-height: 1.2;
+}
+
+.message--received 
+{
+  align-self: flex-start;
+  border-bottom-left-radius: 0.2rem;
+  background: var(--color-message-received);
+  color: var(--color-purple-text);
+}
+
+.message--sent {
+  align-self: flex-end;
+  border-bottom-right-radius: 0.2rem;
+  background: var(--color-message-sent);
+  color: var(--color-gray-text);
+  box-shadow:
+    0 0.25rem 0.5rem
+    hsla(270, 7%, 64%, 0.12);
+}
+
+.message--small {
+  width: fit-content;
+}
+
+.chat__images {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.chat__images img {
+  width: 2.6rem;
+  aspect-ratio: 1;
+  border-radius: 0.6rem;
+  object-fit: cover;
+}
+
+.walk-option {
+  width: 75%;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding-inline: 0.6rem;
+
+  border-radius:
+    0.65rem
+    0.65rem
+    0.65rem
+    0.2rem;
+
+  background:
+    linear-gradient(
+      to left,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+
+  color: var(--color-white);
+
+  font-size: 0.55rem;
+}
+
+.walk-option__radio {
+  width: 0.8rem;
+  aspect-ratio: 1;
+
+  border: 0.1rem solid
+    hsla(0, 0%, 100%, 0.5);
+
+  border-radius: 50%;
+}
+
+.walk-option strong 
+{
+  margin-left: auto;
+  font-size: 0.85rem;
+}
+
+.message-input 
+{
+  min-height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+  border-radius: 999px;
+  background: var(--color-white);
+  color: var(--color-gray-text);
+  font-size: 0.55rem;
+}
+
+.message-input button 
+{
+  width: 1.75rem;
+  aspect-ratio: 1;
+  text-align: center;
+  align-self: center;
+  margin-right: 0.25rem;
+  font-weight: bold;
+  border-radius: 50%;
+  background: var(--color-purple-dark);
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.hero__content 
+{
+  max-width: 28rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero__content h1 
+{
+  font-size:
+    clamp(2.25rem, 8vw, 3rem);
+}
+
+.hero__content p 
+{
+  margin-top: 1.5rem;
+  padding: 0 .8rem;
+  color: var(--color-gray-text);
+  line-height: 1.8;
+}
+
+@media (min-width: 64rem) 
+{
+  .background-shape--purple 
+  {
+    left: -8rem;
+  }
+
+  .background-shape--light 
+  {
+    right: -12rem;
+  }
+
+  .hero 
+  {
+    min-height: 100vh;
+    grid-template-columns:
+      minmax(18rem, 0.8fr)
+      minmax(24rem, 1.2fr);
+    align-items: center;
+    gap: 7rem;
+    padding-block: 2rem;
+  }
+
+  .phone 
+  {
+    justify-self: end;
+    margin-inline: 0;
+  }
+
+  .hero__content 
+  {
+    justify-self: start;
+    margin-inline: 0;
+    text-align: left;
+  }
+}
