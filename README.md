@@ -55,7 +55,7 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 | 19 | Chat App CSS Landing Page | ✅ | HTML, CSS, Grid, Git |
 | 20 | Social Proof Section | ✅ | HTML, CSS, Grid, Git |
 | 21 | Stats Preview Card Component | ✅ | HTML, CSS, Grid, Git |
-| 22 | Bridge Collective | Completado | ✅ | HTML, CSS, JS, Grid |
+| 22 | Bridge Collective | ✅ | HTML, CSS, JS, Grid |
 
 > La tabla se actualiza cada vez que un proyecto queda finalizado, documentado y publicado.
 
