@@ -8,7 +8,7 @@
 
 @font-face 
 {
-    font-family: "Figtree" ;
+    font-family: "figtree" ;
     src: url("../../../assets/fonts/Figtree-VariableFont_wght.ttf");
     font-weight: 500 800;
     font-style: normal;
@@ -41,7 +41,7 @@ body
     min-height: 100vh;
     background: var(--color-yellow);
     color: var(--color-gray-950);
-    font-family: "Figtree", sans-serif;
+    font-family: "figtree", Arial, Helvetica, sans-serif;
 }
 
 .page
@@ -96,7 +96,7 @@ body
     margin-top: 1rem;
     font-size: clamp(1.25rem, 5vw, 1.5rem);
     line-height: 1.25;
-    font-family: "Figtree" sans-serif;
+    font-family: "figtree" Arial, Helvetica, sans-serif;
     font-weight: 800;
     cursor: pointer;
     transition: color 180ms ease;

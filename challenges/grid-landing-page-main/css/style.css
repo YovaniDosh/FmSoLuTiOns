@@ -135,7 +135,6 @@ body.menu-open
 {
   max-width: 20rem;
   font-size: clamp(2.5rem, 11vw, 4rem);
-  background-color: re;
   font-weight: 400;
   line-height: 1.05;
 }
