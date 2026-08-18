@@ -658,3 +658,33 @@ Durante esta actualización aprendí a:
 - `minmax()`.
 - `clamp()`.
 - Layout responsive.
+
+## [1.13.0]
+
+### Added
+
+- Bridge Collective completado.
+- Hero responsive.
+- Cuatro estadísticas de impacto.
+- Menú interactivo.
+- Overlay de navegación.
+- Iconos personalizados para abrir y cerrar el menú.
+- Cierre mediante tecla `Escape`.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 21/100 a 22/100.
+- README principal actualizado.
+- House actualizada con el reto 22.
+- Progreso Arcade actualizado al 22%.
+
+### Learned
+
+- `classList.toggle()`.
+- Estado visual controlado con JavaScript.
+- Cambio dinámico de iconos.
+- `aria-expanded`.
+- Overlays.
+- Eventos de teclado.
+- CSS Grid responsive.

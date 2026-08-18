@@ -27,6 +27,15 @@ const projects = [
     completed: true,
   },
   {
+    title: "Bridge Collective",
+    description:"Landing responsive con estadísticas y menú interactivo controlado con JavaScript.",
+    technologies: ["HTML", "CSS", "JS", "CSS Grid", "Git"],
+    image: "assets/screenshots/brig.png",
+    liveUrl:"https://yovanidosh.github.io/FmSoLuTiOns/challenges/grid-landing-page-main/",
+    githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/grid-landing-page-main",
+    completed: true,
+  },
+  {
     title: "Social Proof Section",
     description:"Sección responsive de prueba social con valoraciones y testimonios de clientes.",
     technologies: ["HTML", "CSS", "Grid", "Flexbox"],

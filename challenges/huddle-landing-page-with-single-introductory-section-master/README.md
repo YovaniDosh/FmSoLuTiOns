@@ -23,7 +23,7 @@ La página contiene:
 
 ## Enlaces
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/huddle-landing-page-with-single-introductory-section-main/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/huddle-landing-page-with-single-introductory-section-master/)
 
 ## Lo que aprendí
 

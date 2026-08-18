@@ -1,6 +1,6 @@
 <h1 style = "text-align:center">
 
-Esta es mi solución para el reto [Product Preview Card.](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
+Esta es mi solución para el reto [Recipe/Preview/Card.](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
 
 </h1>
 

@@ -10,7 +10,7 @@ Esta es mi solución para el reto [Blog Preview Card](https://www.frontendmentor
 
 ## Enlaces
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/blog-preview-card/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/blog-preview-card-main/)
 
 ## Tecnologías utilizadas
 

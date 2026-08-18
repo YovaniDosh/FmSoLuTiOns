@@ -25,7 +25,7 @@ El componente contiene:
 
 ## Enlaces
 
-- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/fylo-data-storage-component/)
+- Sitio publicado: [Ver proyecto en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/fylo-data-storage-component-master/)
 
 ## Lo que aprendí
 
