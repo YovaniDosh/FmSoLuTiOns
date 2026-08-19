@@ -1,0 +1,313 @@
+:root
+{
+  --blue:       hsl(223, 87%, 63%);
+  --pale-blue:  hsl(223, 100%, 88%);
+  --red:        hsl(354, 100%, 66%);
+  --gray:       hsl(0, 0%, 59%);
+  --dark-blue:  hsl(209, 33%, 12%);
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--dark-blue);
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+
+.page
+{
+  width: min(100% - 48px, 640px);
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.logo
+{
+  width: 86px;
+  height: auto;
+}
+
+h1
+{
+  margin: 48px 0 0;
+  color: var(--gray);
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1 strong
+{
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.subtitle
+{
+  margin: 16px 0 0;
+  font-size: 20px;
+}
+
+.subscribe-form
+{
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(180px, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.field
+{
+  min-width: 0;
+}
+
+input,
+button
+{
+  width: 100%;
+  height: 56px;
+  border-radius: 999px;
+  font: 300 16px "Libre Franklin", sans-serif;
+}
+
+input
+{
+  padding: 0 29px;
+  border: 1px solid var(--pale-blue);
+  color: var(--dark-blue);
+  outline: none;
+}
+
+input::placeholder
+{
+  color: hsl(223, 35%, 76%);
+  opacity: 1;
+}
+
+input:focus
+{
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px hsl(223 87% 63% / 0.12);
+}
+
+button
+{
+  border: 0;
+  background: var(--blue);
+  box-shadow: 0 8px 15px hsl(223 87% 63% / 0.28);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover
+{
+  background: hsl(223, 87%, 70%);
+}
+
+button:active
+{
+  transform: translateY(1px);
+}
+
+button:focus-visible
+{
+  outline: 3px solid var(--dark-blue);
+  outline-offset: 3px;
+}
+
+.error-message
+{
+  min-height: 15px;
+  margin: 7px 0 -22px 30px;
+  color: var(--red);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.subscribe-form.has-error input
+{
+  border-color: var(--red);
+}
+
+.dashboard
+{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 84px;
+}
+
+.site-footer
+{
+  margin-top: 72px;
+  padding-bottom: 48px;
+  color: var(--gray);
+}
+
+.site-footer p
+{
+  margin: 24px 0 0;
+  font-size: 12px;
+}
+
+.socials
+{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.socials a
+{
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid hsl(223, 35%, 90%);
+  border-radius: 50%;
+  color: var(--blue);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.socials svg
+{
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.socials a:hover
+{
+  background: var(--blue);
+  color: white;
+}
+
+.socials a:focus-visible
+{
+  outline: 2px solid var(--dark-blue);
+  outline-offset: 2px;
+}
+
+.sr-only
+{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px)
+{
+  .page
+  {
+    width: min(100% - 56px, 564px);
+    padding-top: 81px;
+  }
+
+  .logo
+  {
+    width: 56px;
+  }
+
+  h1
+  {
+    margin-top: 37px;
+    font-size: clamp(22px, 5.9vw, 34px);
+  }
+
+  .subtitle
+  {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .subscribe-form
+  {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 32px;
+    padding: 0 20px;
+  }
+
+  input,
+  button
+  {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  input
+  {
+    padding: 0 31px;
+  }
+
+  .error-message
+  {
+    min-height: 0;
+    margin: 6px 10px 11px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .subscribe-form:not(.has-error) .error-message
+  {
+    display: none;
+  }
+
+  .dashboard
+  {
+    margin-top: 72px;
+  }
+
+  .site-footer
+  {
+    margin-top: 120px;
+    padding-bottom: 37px;
+  }
+
+  .site-footer p
+  {
+    margin-top: 26px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-height: 900px)
+{
+  .page
+  {
+    padding-top: 48px;
+  }
+
+  h1
+  {
+    margin-top: 34px;
+  }
+
+  .dashboard
+  {
+    margin-top: 62px;
+  }
+
+  .site-footer
+  {
+    margin-top: 44px;
+  }
+}

@@ -198,6 +198,15 @@ const projects = [
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/single-price-grid-component-master/",
     githubUrl:"https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/single-price-grid-component-master",
     completed: true
+  },
+  {
+    title: "Ping Coming Soon Page",
+    description: "Página de lanzamiento responsive con formulario de suscripción y validación accesible.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/screenshots/ping.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/ping-coming-soon-page-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/ping-coming-soon-page-master",
+    completed: true,
   }
 ];
 

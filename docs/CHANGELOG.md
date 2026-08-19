@@ -688,3 +688,29 @@ Durante esta actualización aprendí a:
 - Overlays.
 - Eventos de teclado.
 - CSS Grid responsive.
+
+## [1.14.0]
+
+### Added
+
+- Ping Coming Soon Page completado.
+- Formulario de suscripción con validación accesible.
+- Mensajes de error dinámicos mediante `aria-live`.
+- Estados interactivos para el formulario y los enlaces sociales.
+- Diseño responsive Mobile First.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 22/100 a 23/100.
+- README principal actualizado.
+- House actualizada con el reto 23.
+- Progreso Arcade actualizado al 23%.
+
+### Learned
+
+- API de validación nativa del navegador.
+- Uso de `validity.valid`.
+- Gestión de `aria-invalid`.
+- Mensajes accesibles con `aria-live`.
+- Formularios responsive con CSS Grid.
