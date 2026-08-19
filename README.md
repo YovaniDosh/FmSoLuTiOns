@@ -8,8 +8,8 @@ Una colección abierta de **proyectos frontend individuales** creada para practi
 
 Incluye desafíos de Frontend Mentor, ejercicios independientes y futuros proyectos originales.
 
-[![Proyectos](https://img.shields.io/badge/Proyectos_completados-23%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
-[![Progreso](https://img.shields.io/badge/Progreso-23%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
+[![Proyectos](https://img.shields.io/badge/Proyectos_completados-24%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
+[![Progreso](https://img.shields.io/badge/Progreso-24%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
 [![GitHub Pages](https://img.shields.io/badge/Ver_House-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://yovanidosh.github.io/FmSoLuTiOns/)
 
 </div>
@@ -57,6 +57,7 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 | 21 | Stats Preview Card Component | ✅ | HTML, CSS, Grid, Git |
 | 22 | Bridge Collective | ✅ | HTML, CSS, JS, Grid |
 | 23 | Ping Coming Soon Page | ✅ | HTML, CSS, JavaScript, Git |
+| 24 | Base Apparel Coming Soon Page | ✅ | HTML, CSS, JavaScript, Git |
 
 > La tabla se actualiza cada vez que un proyecto queda finalizado, documentado y publicado.
 
@@ -64,9 +65,9 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 
 <div align="center">
 
-### 👾 23 de 100 proyectos completados
+### 👾 24 de 100 proyectos completados
 
-`█████░░░░░░░░░░░░░░░` **23%**
+`█████░░░░░░░░░░░░░░░` **24%**
 
 </div>
 

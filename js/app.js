@@ -207,6 +207,15 @@ const projects = [
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/ping-coming-soon-page-master/",
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/ping-coming-soon-page-master",
     completed: true,
+  },
+  {
+    title: "Base Apparel Coming Soon Page",
+    description: "Landing page responsive con formulario de suscripción y validación accesible de correo.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/screenshots/baseaparel.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/base-apparel-coming-soon-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/base-apparel-coming-soon-master",
+    completed: true,
   }
 ];
 

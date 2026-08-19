@@ -714,3 +714,30 @@ Durante esta actualización aprendí a:
 - Gestión de `aria-invalid`.
 - Mensajes accesibles con `aria-live`.
 - Formularios responsive con CSS Grid.
+
+## [1.15.0]
+
+### Added
+
+- Base Apparel Coming Soon Page completado.
+- Layout responsive Mobile First con imágenes adaptativas.
+- Formulario de suscripción con validación accesible.
+- Estado visual de error y mensajes mediante `aria-live`.
+- Recursos del reto integrados en `assets/images/`.
+- Fuente variable Josefin Sans cargada localmente.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 23/100 a 24/100.
+- README principal actualizado.
+- House actualizada con el reto 24.
+- Progreso Arcade actualizado al 24%.
+
+### Learned
+
+- Uso de `<picture>` y `srcset`.
+- Validación nativa con `validity.valid`.
+- Estados accesibles con `aria-invalid`.
+- CSS Grid para layouts de dos columnas.
+- Propiedades lógicas y estilos Mobile First.
