@@ -216,6 +216,15 @@ const projects = [
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/base-apparel-coming-soon-master/",
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/base-apparel-coming-soon-master",
     completed: true,
+  },
+  {
+    title: "Intro Component With Sign Up Form",
+    description: "Componente responsive con formulario de registro y validación accesible para varios campos.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/screenshots/learn.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/intro-component-with-signup-form-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/intro-component-with-signup-form-master",
+    completed: true,
   }
 ];
 

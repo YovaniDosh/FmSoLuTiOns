@@ -741,3 +741,30 @@ Durante esta actualización aprendí a:
 - Estados accesibles con `aria-invalid`.
 - CSS Grid para layouts de dos columnas.
 - Propiedades lógicas y estilos Mobile First.
+
+## [1.16.0]
+
+### Added
+
+- Intro Component With Sign Up Form completado.
+- Formulario de registro con cuatro campos.
+- Validación accesible con mensajes específicos.
+- Layout responsive Mobile First.
+- Fuente variable Poppins cargada localmente.
+- Recursos del reto integrados en `assets/images/`.
+- README propio del reto.
+
+### Changed
+
+- Progreso actualizado de 24/100 a 25/100.
+- README principal actualizado.
+- House actualizada con el reto 25.
+- Progreso Arcade actualizado al 25%.
+
+### Learned
+
+- Uso de `validity.valueMissing` y `validity.typeMismatch`.
+- Validación reutilizable de varios campos.
+- Estados accesibles mediante `aria-invalid` y `aria-live`.
+- Uso de `toggleAttribute()`.
+- Gestión del foco en formularios.
