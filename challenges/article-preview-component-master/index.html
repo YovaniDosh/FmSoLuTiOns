@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Article preview with author details and social sharing links.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Article preview component</title>
+</head>
+<body>
+  <main class="article-preview">
+    <article class="article-card">
+      <img class="article-card__cover" src="../../assets/images/article-drawers.jpg" alt="Green drawers decorated with a vase, frames and dried flowers">
+
+      <div class="article-card__content">
+        <h1 class="article-card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p class="article-card__description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+
+        <footer class="article-card__footer">
+          <div class="author">
+            <img class="author__avatar" src="../../assets/images/article-avatar-michelle.jpg" alt="Michelle Appleton">
+            <div>
+              <p class="author__name">Michelle Appleton</p>
+              <time class="author__date" datetime="2020-06-28">28 Jun 2020</time>
+            </div>
+          </div>
+
+          <div class="share" id="share-menu" hidden>
+            <span class="share__label">Share</span>
+            <a class="share__link" href="https://www.facebook.com" aria-label="Share on Facebook">
+              <img src="../../assets/images/article-icon-facebook.svg" alt="">
+            </a>
+            <a class="share__link" href="https://twitter.com" aria-label="Share on Twitter">
+              <img src="../../assets/images/article-icon-twitter.svg" alt="">
+            </a>
+            <a class="share__link" href="https://pinterest.com" aria-label="Share on Pinterest">
+              <img src="../../assets/images/article-icon-pinterest.svg" alt="">
+            </a>
+          </div>
+
+          <button class="share-button" type="button" aria-expanded="false" aria-controls="share-menu" aria-label="Show sharing options">
+            <img src="../../assets/images/article-icon-share.svg" alt="">
+          </button>
+        </footer>
+      </div>
+    </article>
+  </main>
+  <script src="js/scrip.js"></script>
+</body>
+</html>
