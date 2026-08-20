@@ -8,8 +8,8 @@ Una colección abierta de **proyectos frontend individuales** creada para practi
 
 Incluye desafíos de Frontend Mentor, ejercicios independientes y futuros proyectos originales.
 
-[![Proyectos](https://img.shields.io/badge/Proyectos_completados-27%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
-[![Progreso](https://img.shields.io/badge/Progreso-27%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
+[![Proyectos](https://img.shields.io/badge/Proyectos_completados-28%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
+[![Progreso](https://img.shields.io/badge/Progreso-28%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
 [![GitHub Pages](https://img.shields.io/badge/Ver_House-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://yovanidosh.github.io/FmSoLuTiOns/)
 
 </div>
@@ -61,6 +61,7 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 | 25 | Intro Component With Sign Up Form | ✅ | HTML, CSS, JavaScript, Git |
 | 26 | Newsletter Sign-up Form | ✅ | HTML, CSS, JavaScript, Git |
 | 27 | FAQ Accordion | ✅ | HTML, CSS, JavaScript, Git |
+| 28 | Article Preview Component | ✅ | HTML, CSS, JavaScript, Git |
 
 > La tabla se actualiza cada vez que un proyecto queda finalizado, documentado y publicado.
 
@@ -68,9 +69,9 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 
 <div align="center">
 
-### 👾 27 de 100 proyectos completados
+### 👾 28 de 100 proyectos completados
 
-`█████░░░░░░░░░░░░░░░` **27%**
+`██████░░░░░░░░░░░░░░` **28%**
 
 </div>
 

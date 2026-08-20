@@ -244,6 +244,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/faq-accordion",
     completed: true,
   },
+  {
+    title: "Article Preview Component",
+    description: "Tarjeta responsive de artículo con información de autor y opciones sociales accesibles.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/images/article-drawers.jpg",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/article-preview-component-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/article-preview-component-master",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

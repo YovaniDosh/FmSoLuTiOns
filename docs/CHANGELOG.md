@@ -824,3 +824,31 @@ Durante esta actualización aprendí a:
 - Relación accesible entre preguntas y respuestas.
 - Gestión sincronizada de paneles e iconos.
 - Fondos responsive para móvil y escritorio.
+
+## [1.19.0]
+
+### Added
+
+- Article Preview Component completado.
+- Tarjeta semántica con información del artículo y su autora.
+- Panel interactivo para compartir en redes sociales.
+- Cierre del panel mediante clic externo y tecla `Escape`.
+- Layout responsive Mobile First.
+- Fuente variable Manrope cargada localmente.
+- Recursos del reto integrados en `assets/images/`.
+- README propio con la ruta de captura preparada.
+
+### Changed
+
+- Progreso actualizado de 27/100 a 28/100.
+- README principal actualizado.
+- House actualizada con el reto 28.
+- Progreso Arcade actualizado al 28%.
+
+### Learned
+
+- Uso semántico de `<article>` y `<time>`.
+- Gestión accesible mediante `aria-expanded` y `aria-controls`.
+- Cierre de interfaces emergentes con clic externo y `Escape`.
+- Posicionamiento responsive de paneles flotantes.
+- Combinación de CSS Grid y Flexbox.
