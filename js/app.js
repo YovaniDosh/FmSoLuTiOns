@@ -235,6 +235,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/newsletter-sign-up-with-success-message-main",
     completed: true,
   },
+  {
+    title: "FAQ Accordion",
+    description: "Acordeón responsive de preguntas frecuentes con estados y navegación accesibles.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/screenshots/faq.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/faq-accordion/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/faq-accordion",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

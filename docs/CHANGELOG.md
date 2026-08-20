@@ -796,3 +796,31 @@ Durante esta actualización aprendí a:
 - Validación nativa mediante `validity.valid`.
 - Mensajes accesibles con `aria-live` y `aria-invalid`.
 - Uso de `<picture>` para imágenes responsive.
+
+## [1.18.0]
+
+### Added
+
+- FAQ Accordion completado.
+- Cuatro preguntas frecuentes interactivas.
+- Control de una sola respuesta abierta a la vez.
+- Estados accesibles mediante `aria-expanded` y `aria-controls`.
+- Layout responsive Mobile First.
+- Fuente variable Work Sans cargada localmente.
+- Recursos del reto integrados en `assets/images/`.
+- README propio con la ruta de captura preparada.
+
+### Changed
+
+- Progreso actualizado de 26/100 a 27/100.
+- README principal actualizado.
+- House actualizada con el reto 27.
+- Progreso Arcade actualizado al 27%.
+
+### Learned
+
+- Construcción de un acordeón con botones nativos.
+- Delegación de eventos mediante `closest()`.
+- Relación accesible entre preguntas y respuestas.
+- Gestión sincronizada de paneles e iconos.
+- Fondos responsive para móvil y escritorio.
