@@ -768,3 +768,31 @@ Durante esta actualización aprendí a:
 - Estados accesibles mediante `aria-invalid` y `aria-live`.
 - Uso de `toggleAttribute()`.
 - Gestión del foco en formularios.
+
+## [1.17.0]
+
+### Added
+
+- Newsletter Sign-up Form completado.
+- Formulario de suscripción con validación accesible.
+- Mensaje de confirmación con el correo enviado.
+- Layout responsive Mobile First.
+- Imágenes adaptativas mediante `<picture>`.
+- Fuente Roboto cargada localmente.
+- Recursos del reto integrados en `assets/images/`.
+- README propio y captura del reto.
+
+### Changed
+
+- Progreso actualizado de 25/100 a 26/100.
+- README principal actualizado.
+- House actualizada con el reto 26.
+- Progreso Arcade actualizado al 26%.
+
+### Learned
+
+- Alternancia de vistas mediante el atributo `hidden`.
+- Gestión del foco entre el formulario y la confirmación.
+- Validación nativa mediante `validity.valid`.
+- Mensajes accesibles con `aria-live` y `aria-invalid`.
+- Uso de `<picture>` para imágenes responsive.

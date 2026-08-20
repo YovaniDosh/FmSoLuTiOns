@@ -225,7 +225,16 @@ const projects = [
     liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/intro-component-with-signup-form-master/",
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/intro-component-with-signup-form-master",
     completed: true,
-  }
+  },
+  {
+    title: "Newsletter Sign-up Form",
+    description: "Formulario responsive de suscripción con validación accesible y mensaje de confirmación.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/screenshots/newform.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/newsletter-sign-up-with-success-message-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/newsletter-sign-up-with-success-message-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

@@ -1,0 +1,303 @@
+@font-face
+{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face
+{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root
+{
+  --color-red:      hsl(4, 100%, 67%);
+  --color-blue-800: hsl(234, 29%, 20%);
+  --color-blue-700: hsl(235, 18%, 26%);
+  --color-grey:     hsl(0, 0%, 58%);
+  --color-white:    hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  min-block-size: 100vh;
+  margin: 0;
+  color: var(--color-blue-800);
+  background: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button, input
+{
+  font: inherit;
+}
+
+.newsletter, .sign-up
+{
+  min-block-size: 100vh;
+}
+
+.sign-up
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__picture, .sign-up__image
+{
+  display: block;
+}
+
+.sign-up__image
+{
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.sign-up__content
+{
+  padding: 2.5rem 1.5rem 2.75rem;
+}
+
+.sign-up__title, .success__title
+{
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  line-height: 1;
+}
+
+.sign-up__content > p
+{
+  margin: 1.5rem 0;
+}
+
+.sign-up__benefits
+{
+  display: grid;
+  gap: 0.625rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sign-up__benefits li
+{
+  position: relative;
+  padding-inline-start: 2.25rem;
+}
+
+.sign-up__benefits li::before
+{
+  position: absolute;
+  inset-block-start: 0.1rem;
+  inset-inline-start: 0;
+  inline-size: 1.3125rem;
+  block-size: 1.3125rem;
+  background: url("../../../assets/images/icon-list.svg") center / contain no-repeat;
+  content: "";
+}
+
+.form
+{
+  margin-block-start: 2.5rem;
+}
+
+.form__heading
+{
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.form__error
+{
+  color: var(--color-red);
+}
+
+.form__input
+{
+  inline-size: 100%;
+  min-block-size: 3.5rem;
+  padding-inline: 1.5rem;
+  border: 0.0625rem solid var(--color-grey);
+  border-radius: 0.5rem;
+  color: var(--color-blue-800);
+  outline: none;
+}
+
+.form__input::placeholder
+{
+  color: var(--color-grey);
+}
+
+.form__input:focus-visible
+{
+  border-color: var(--color-blue-800);
+  box-shadow: 0 0 0 0.125rem hsl(234 29% 20% / 20%);
+}
+
+.form.has-error .form__input
+{
+  border-color: var(--color-red);
+  color: var(--color-red);
+  background: hsl(4 100% 67% / 15%);
+}
+
+.button
+{
+  inline-size: 100%;
+  min-block-size: 3.5rem;
+  margin-block-start: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  background: var(--color-blue-800);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  background: linear-gradient(90deg, hsl(346, 100%, 66%), hsl(14, 100%, 61%));
+  box-shadow: 0 1rem 2rem hsl(4 100% 67% / 40%);
+}
+
+.button:focus-visible
+{
+  outline: 0.1875rem solid var(--color-red);
+  outline-offset: 0.1875rem;
+}
+
+.button:active
+{
+  transform: translateY(0.125rem);
+}
+
+.success
+{
+  min-block-size: 100vh;
+  padding: 9.25rem 1.5rem 2.75rem;
+}
+
+.success__icon
+{
+  display: block;
+  inline-size: 4rem;
+  block-size: 4rem;
+  margin-block-end: 2.5rem;
+}
+
+.success p
+{
+  margin: 1.5rem 0 0;
+}
+
+.success__button
+{
+  position: absolute;
+  inset-block-end: 2.75rem;
+  inset-inline: 1.5rem;
+  inline-size: calc(100% - 3rem);
+}
+
+@media (min-width: 40rem)
+{
+  body
+  {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: var(--color-blue-700);
+  }
+
+  .newsletter
+  {
+    min-block-size: auto;
+  }
+
+  .sign-up
+  {
+    max-inline-size: 46rem;
+    min-block-size: auto;
+    overflow: hidden;
+    border-radius: 2.25rem;
+    background: var(--color-white);
+  }
+
+  .success
+  {
+    position: static;
+    max-inline-size: 31.5rem;
+    min-block-size: auto;
+    padding: 3rem 4rem 4rem;
+    border-radius: 2.25rem;
+    background: var(--color-white);
+    box-shadow: 0 1.5rem 3rem hsl(234 29% 20% / 25%);
+  }
+
+  .success__button
+  {
+    position: static;
+    inline-size: 100%;
+  }
+}
+
+@media (min-width: 64rem)
+{
+  .sign-up
+  {
+    display: grid;
+    max-inline-size: 58rem;
+    grid-template-columns: 1fr 25rem;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .sign-up__picture
+  {
+    grid-column: 2;
+  }
+
+  .sign-up__image
+  {
+    block-size: 37rem;
+    object-fit: cover;
+  }
+
+  .sign-up__content
+  {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 2rem 4rem 2rem 2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  .button:active
+  {
+    transform: none;
+  }
+}
+
+[hidden]
+{
+  display: none;
+}
