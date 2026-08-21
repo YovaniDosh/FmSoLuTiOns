@@ -10,7 +10,7 @@ Esta es mi solución para el reto [Intro Section With Dropdown Navigation.](http
 
 ## Link
 
-Demo preparada para GitHub Pages: [Ver proyecto](https://yovanidosh.github.io/FmSoLuTiOns/challenges/intro-section-with-dropdown-navigation-main/)
+[Ver proyecto](https://yovanidosh.github.io/FmSoLuTiOns/challenges/intro-section-with-dropdown-navigation-main/)
 
 ## Vista general
 

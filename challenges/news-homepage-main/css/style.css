@@ -232,6 +232,7 @@ button {
 
 .popular-stories {
   margin-block-start: 4rem;
+  margin-bottom: 5rem;
 }
 
 .popular-stories__list {
