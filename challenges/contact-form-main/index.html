@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible contact form for sending general enquiries or support requests.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Contact form</title>
+</head>
+<body>
+  <div class="success-message" role="status" tabindex="-1" hidden>
+    <p class="success-message__title">
+      <img src="../../assets/images/contact-icon-success-check.svg" alt="">
+      Message Sent!
+    </p>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+  <main class="contact-card">
+    <h1 class="contact-card__title">Contact Us</h1>
+    <form class="contact-form" novalidate>
+      <div class="contact-form__names">
+        <div class="form-field">
+          <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+          <input id="first-name" name="firstName" type="text" autocomplete="given-name" aria-describedby="first-name-error" required>
+          <p class="form-field__error" id="first-name-error" hidden>This field is required</p>
+        </div>
+
+        <div class="form-field">
+          <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+          <input id="last-name" name="lastName" type="text" autocomplete="family-name" aria-describedby="last-name-error" required>
+          <p class="form-field__error" id="last-name-error" hidden>This field is required</p>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required>
+        <p class="form-field__error" id="email-error" hidden>Please enter a valid email address</p>
+      </div>
+
+      <fieldset class="query-field" aria-describedby="query-error">
+        <legend>Query Type <span aria-hidden="true">*</span></legend>
+        <div class="query-field__options">
+          <label class="query-option">
+            <input type="radio" name="queryType" value="general" required>
+            <span>General Enquiry</span>
+          </label>
+          <label class="query-option">
+            <input type="radio" name="queryType" value="support">
+            <span>Support Request</span>
+          </label>
+        </div>
+        <p class="form-field__error" id="query-error" hidden>Please select a query type</p>
+      </fieldset>
+
+      <div class="form-field">
+        <label for="message">Message <span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="5" aria-describedby="message-error" required></textarea>
+        <p class="form-field__error" id="message-error" hidden>This field is required</p>
+      </div>
+
+      <div class="consent-field">
+        <label class="consent-field__label">
+          <input id="consent" name="consent" type="checkbox" aria-describedby="consent-error" required>
+          <span>I consent to being contacted by the team <span aria-hidden="true">*</span></span>
+        </label>
+        <p class="form-field__error" id="consent-error" hidden>To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button class="contact-form__submit" type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="js/scrip.js"></script>
+</body>
+</html>

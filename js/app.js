@@ -262,6 +262,33 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/interactive-rating-component-main",
     completed: true,
   },
+  {
+    title: "News Homepage",
+    description: "Portada de noticias responsive con layout editorial y menú móvil accesible.",
+    technologies: ["HTML", "Sass", "JavaScript", "CSS Grid", "npm"],
+    image: "assets/screenshots/news.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/news-homepage-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/news-homepage-main",
+    completed: true,
+  },
+  {
+    title: "Intro Section With Dropdown Navigation",
+    description: "Hero responsive con navegación desplegable y menú móvil accesible.",
+    technologies: ["HTML", "CSS", "JavaScript", "CSS Grid", "Git"],
+    image: "assets/screenshots/introsection.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/intro-section-with-dropdown-navigation-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/intro-section-with-dropdown-navigation-main",
+    completed: true,
+  },
+  {
+    title: "Contact Form",
+    description: "Formulario de contacto responsive con validación accesible y confirmación de envío.",
+    technologies: ["HTML", "CSS", "JavaScript", "Forms", "Git"],
+    image: "assets/screenshots/contactform.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/contact-form-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/contact-form-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

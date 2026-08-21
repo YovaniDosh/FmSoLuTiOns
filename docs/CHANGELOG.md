@@ -1,27 +1,5 @@
 # Changelog
 
-## [0.30.0]
-
-### Added
-
-- Interactive Rating Component completado.
-- Selector accesible de puntuación mediante botones de opción.
-- Estado de agradecimiento con resultado dinámico.
-- README propio y ruta preparada para la captura del reto 29.
-
-### Changed
-
-- Catálogo principal actualizado con el nuevo proyecto.
-- Contador general actualizado a 29 de 100.
-- Fuente Overpass configurada localmente sin depender de Google Fonts.
-
-### Learned
-
-- Formularios con `fieldset`, `legend` y botones de opción.
-- Personalización de controles nativos con CSS.
-- Lectura de valores mediante `form.elements`.
-- Cambio de vistas mediante el atributo `hidden`.
-
 ## [0.1.0]
 
 ### Added
@@ -874,3 +852,93 @@ Durante esta actualización aprendí a:
 - Cierre de interfaces emergentes con clic externo y `Escape`.
 - Posicionamiento responsive de paneles flotantes.
 - Combinación de CSS Grid y Flexbox.
+
+## [0.30.0]
+
+### Added
+
+- Interactive Rating Component completado.
+- Selector accesible de puntuación mediante botones de opción.
+- Estado de agradecimiento con resultado dinámico.
+- README propio y ruta preparada para la captura del reto 29.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 29 de 100.
+- Fuente Overpass configurada localmente sin depender de Google Fonts.
+
+### Learned
+
+- Formularios con `fieldset`, `legend` y botones de opción.
+- Personalización de controles nativos con CSS.
+- Lectura de valores mediante `form.elements`.
+- Cambio de vistas mediante el atributo `hidden`.
+
+## [0.31.0]
+
+### Added
+
+- News Homepage completado.
+- Portada editorial responsive con noticia principal, novedades y artículos populares.
+- Menú lateral móvil operable con teclado y cierre mediante `Escape`.
+- Fuente variable Inter configurada localmente.
+- README propio y ruta preparada para la captura del reto 30.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 30 de 100.
+- Estilos del reto desarrollados en Sass y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Imágenes responsive mediante `picture` y `source`.
+- Composición editorial mediante CSS Grid.
+- Control accesible del foco en un menú lateral.
+- Variables y nesting de Sass.
+
+## [0.32.0]
+
+### Added
+
+- Intro Section With Dropdown Navigation completado.
+- Menú lateral móvil con control de foco y cierre mediante `Escape`.
+- Submenús independientes para Features y Company.
+- Fuente variable Epilogue configurada localmente.
+- README propio y ruta preparada para la captura del reto 31.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 31 de 100.
+
+### Learned
+
+- Controles desplegables con `aria-expanded` y `aria-controls`.
+- Sincronización de iconos y estados mediante JavaScript.
+- Control de foco dentro de un menú lateral.
+- Imágenes responsive mediante `picture`.
+
+## [0.33.0]
+
+### Added
+
+- Contact Form completado.
+- Validación accesible para texto, correo, consulta y consentimiento.
+- Controles radio y checkbox personalizados.
+- Confirmación de envío mediante una región de estado.
+- Fuente variable Karla configurada localmente.
+- README propio y ruta preparada para la captura del reto 32.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 32 de 100.
+
+### Learned
+
+- Asociación de errores mediante `aria-describedby`.
+- Comunicación de campos inválidos mediante `aria-invalid`.
+- Enfoque automático del primer error.
+- Validación diferenciada de campos vacíos y correos incorrectos.

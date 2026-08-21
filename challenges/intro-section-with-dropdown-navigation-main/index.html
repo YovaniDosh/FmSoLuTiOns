@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Snap helps remote teams streamline processes, build rituals, and improve productivity.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-header__logo" href="#" aria-label="Snap home">
+      <img src="../../assets/images/snap-logo.svg" alt="">
+    </a>
+    <button class="site-header__menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="visually-hidden">Open navigation</span>
+      <img src="../../assets/images/snap-icon-menu.svg" alt="">
+    </button>
+
+    <nav class="site-navigation" id="primary-navigation" aria-label="Primary navigation">
+      <button class="site-navigation__close" type="button">
+        <span class="visually-hidden">Close navigation</span>
+        <img src="../../assets/images/icon-close-menu.svg" alt="">
+      </button>
+
+      <ul class="site-navigation__list">
+        <li class="dropdown">
+          <button class="dropdown__button" type="button" aria-expanded="false" aria-controls="features-menu">
+            Features
+            <img class="dropdown__arrow" src="../../assets/images/icon-arrow-down.svg" alt="">
+          </button>
+          <ul class="dropdown__menu dropdown__menu--features" id="features-menu" hidden>
+            <li><a href="#"><img src="../../assets/images/icon-todo.svg" alt="">Todo List</a></li>
+            <li><a href="#"><img src="../../assets/images/icon-calendar.svg" alt="">Calendar</a></li>
+            <li><a href="#"><img src="../../assets/images/icon-reminders.svg" alt="">Reminders</a></li>
+            <li><a href="#"><img src="../../assets/images/icon-planning.svg" alt="">Planning</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown__button" type="button" aria-expanded="false" aria-controls="company-menu">
+            Company
+            <img class="dropdown__arrow" src="../../assets/images/icon-arrow-down.svg" alt="">
+          </button>
+          <ul class="dropdown__menu" id="company-menu" hidden>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <div class="site-navigation__account">
+        <a href="#">Login</a>
+        <a class="site-navigation__register" href="#">Register</a>
+      </div>
+    </nav>
+    <button class="site-header__overlay" type="button" aria-label="Close navigation" tabindex="-1"></button>
+  </header>
+
+  <main class="hero">
+    <picture class="hero__picture">
+      <source media="(min-width: 56rem)" srcset="../../assets/images/image-hero-desktop.png">
+      <img class="hero__image" src="../../assets/images/image-hero-mobile.png" alt="A remote worker using a laptop surrounded by abstract geometric shapes">
+    </picture>
+
+    <section class="hero__content" aria-labelledby="hero-title">
+      <h1 class="hero__title" id="hero-title">Make remote work</h1>
+      <p class="hero__description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a class="hero__link" href="#">Learn more</a>
+
+      <ul class="clients" aria-label="Trusted clients">
+        <li><img src="../../assets/images/client-databiz.svg" alt="Databiz"></li>
+        <li><img src="../../assets/images/client-audiophile.svg" alt="Audiophile"></li>
+        <li><img src="../../assets/images/client-meet.svg" alt="Meet"></li>
+        <li><img src="../../assets/images/client-maker.svg" alt="Maker"></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/scrip.js"></script>
+</body>
+</html>
