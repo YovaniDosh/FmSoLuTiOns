@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive rating component for submitting feedback about a support request.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <main class="rating-component">
+    <section class="rating-card" aria-labelledby="rating-title">
+      <div class="rating-card__icon">
+        <img src="../../assets/images/rating-icon-star.svg" alt="">
+      </div>
+      <h1 class="rating-card__title" id="rating-title">How did we do?</h1>
+      <p class="rating-card__description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+      <form class="rating-form">
+        <fieldset class="rating-form__group">
+          <legend class="visually-hidden">Choose a rating from 1 to 5</legend>
+          <label class="rating-form__option"><input class="rating-form__input" type="radio" name="rating" value="1" required><span>1</span></label>
+          <label class="rating-form__option"><input class="rating-form__input" type="radio" name="rating" value="2"><span>2</span></label>
+          <label class="rating-form__option"><input class="rating-form__input" type="radio" name="rating" value="3"><span>3</span></label>
+          <label class="rating-form__option"><input class="rating-form__input" type="radio" name="rating" value="4"><span>4</span></label>
+          <label class="rating-form__option"><input class="rating-form__input" type="radio" name="rating" value="5"><span>5</span></label>
+        </fieldset>
+        <button class="rating-form__submit" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="thank-you-card" aria-labelledby="thank-you-title" tabindex="-1" hidden>
+      <img class="thank-you-card__illustration" src="../../assets/images/illustration-rating-thank-you.svg" alt="">
+      <p class="thank-you-card__result">You selected <output class="thank-you-card__rating">0</output> out of 5</p>
+      <h1 class="thank-you-card__title" id="thank-you-title">Thank you!</h1>
+      <p class="thank-you-card__description">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </section>
+  </main>
+  <script src="js/scrip.js"></script>
+</body>
+</html>

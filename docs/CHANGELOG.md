@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.30.0]
+
+### Added
+
+- Interactive Rating Component completado.
+- Selector accesible de puntuación mediante botones de opción.
+- Estado de agradecimiento con resultado dinámico.
+- README propio y ruta preparada para la captura del reto 29.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 29 de 100.
+- Fuente Overpass configurada localmente sin depender de Google Fonts.
+
+### Learned
+
+- Formularios con `fieldset`, `legend` y botones de opción.
+- Personalización de controles nativos con CSS.
+- Lectura de valores mediante `form.elements`.
+- Cambio de vistas mediante el atributo `hidden`.
+
 ## [0.1.0]
 
 ### Added

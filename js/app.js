@@ -253,6 +253,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/article-preview-component-master",
     completed: true,
   },
+  {
+    title: "Interactive Rating Component",
+    description: "Tarjeta de valoración responsive con selección accesible y confirmación dinámica.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"],
+    image: "assets/screenshots/rating.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/interactive-rating-component-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/interactive-rating-component-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");
