@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your exact age in years, months and days.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Age Calculator App</title>
+</head>
+<body>
+  <main class="age-calculator">
+    <h1 class="visually-hidden">Age calculator</h1>
+
+    <form class="age-form" novalidate>
+      <div class="age-form__fields">
+        <div class="age-form__field">
+          <label class="age-form__label" for="day">Day</label>
+          <input class="age-form__input" id="day" name="day" type="number" inputmode="numeric" placeholder="DD" min="1" max="31" aria-describedby="day-error" required>
+          <span class="age-form__error" id="day-error"></span>
+        </div>
+
+        <div class="age-form__field">
+          <label class="age-form__label" for="month">Month</label>
+          <input class="age-form__input" id="month" name="month" type="number" inputmode="numeric" placeholder="MM" min="1" max="12" aria-describedby="month-error" required>
+          <span class="age-form__error" id="month-error"></span>
+        </div>
+
+        <div class="age-form__field">
+          <label class="age-form__label" for="year">Year</label>
+          <input class="age-form__input" id="year" name="year" type="number" inputmode="numeric" placeholder="YYYY" min="1" aria-describedby="year-error" required>
+          <span class="age-form__error" id="year-error"></span>
+        </div>
+      </div>
+
+      <div class="age-form__divider">
+        <button class="age-form__submit" type="submit" aria-label="Calculate age">
+          <img src="../../assets/images/icon-arrow-age-calculator.svg" alt="" width="46" height="44">
+        </button>
+      </div>
+    </form>
+
+    <section class="age-result" aria-label="Calculated age" aria-live="polite">
+      <p><span id="years-result">--</span> years</p>
+      <p><span id="months-result">--</span> months</p>
+      <p><span id="days-result">--</span> days</p>
+    </section>
+  </main>
+
+  <script src="js/scrip.js"></script>
+</body>
+</html>

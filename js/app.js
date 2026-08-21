@@ -289,6 +289,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/contact-form-main",
     completed: true,
   },
+  {
+    title: "Age Calculator App",
+    description: "Calculadora responsive con validación accesible de fechas y resultado exacto en años, meses y días.",
+    technologies: ["HTML", "CSS", "JavaScript", "Forms", "Git"],
+    image: "assets/screenshots/calculatorAge.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/age-calculator-app-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/age-calculator-app-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

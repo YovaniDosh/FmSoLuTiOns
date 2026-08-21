@@ -8,8 +8,8 @@ Una colección abierta de **proyectos frontend individuales** creada para practi
 
 Incluye desafíos de Frontend Mentor, ejercicios independientes y futuros proyectos originales.
 
-[![Proyectos](https://img.shields.io/badge/Proyectos_completados-32%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
-[![Progreso](https://img.shields.io/badge/Progreso-32%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
+[![Proyectos](https://img.shields.io/badge/Proyectos_completados-33%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
+[![Progreso](https://img.shields.io/badge/Progreso-33%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
 [![GitHub Pages](https://img.shields.io/badge/Ver_House-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://yovanidosh.github.io/FmSoLuTiOns/)
 
 </div>
@@ -66,6 +66,7 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 | 30 | News Homepage | ✅ | HTML, Sass, JavaScript, CSS Grid, npm |
 | 31 | Intro Section With Dropdown Navigation | ✅ | HTML, CSS, JavaScript, CSS Grid, Git |
 | 32 | Contact Form | ✅ | HTML, CSS, JavaScript, Forms, Git |
+| 33 | Age Calculator App | ✅ | HTML, CSS, JavaScript, Forms, Git |
 
 > La tabla se actualiza cada vez que un proyecto queda finalizado, documentado y publicado.
 
@@ -73,9 +74,9 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 
 <div align="center">
 
-### 👾 32 de 100 proyectos completados
+### 👾 33 de 100 proyectos completados
 
-`██████░░░░░░░░░░░░░░` **32%**
+`██████░░░░░░░░░░░░░░` **33%**
 
 </div>
 

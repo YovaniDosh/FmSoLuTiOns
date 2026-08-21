@@ -942,3 +942,25 @@ Durante esta actualización aprendí a:
 - Comunicación de campos inválidos mediante `aria-invalid`.
 - Enfoque automático del primer error.
 - Validación diferenciada de campos vacíos y correos incorrectos.
+
+## [0.34.0]
+
+### Added
+
+- Age Calculator App completado.
+- Validación de campos vacíos, rangos, fechas inexistentes y fechas futuras.
+- Cálculo exacto de la edad en años, meses y días.
+- Fuente variable Poppins reutilizada desde los recursos globales.
+- README propio y ruta preparada para la captura del reto 33.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 33 de 100.
+
+### Learned
+
+- Validación de fechas reales mediante la cantidad de días de cada mes.
+- Cálculo de diferencias entre fechas ajustando días y meses pendientes.
+- Asociación accesible de errores con `aria-describedby` y `aria-invalid`.
+- Comunicación de resultados dinámicos mediante `aria-live`.
