@@ -8,8 +8,8 @@ Una colección abierta de **proyectos frontend individuales** creada para practi
 
 Incluye desafíos de Frontend Mentor, ejercicios independientes y futuros proyectos originales.
 
-[![Proyectos](https://img.shields.io/badge/Proyectos_completados-34%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
-[![Progreso](https://img.shields.io/badge/Progreso-34%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
+[![Proyectos](https://img.shields.io/badge/Proyectos_completados-35%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
+[![Progreso](https://img.shields.io/badge/Progreso-35%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
 [![GitHub Pages](https://img.shields.io/badge/Ver_House-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://yovanidosh.github.io/FmSoLuTiOns/)
 
 </div>
@@ -29,6 +29,12 @@ Cada tarjeta presenta:
 - Enlace al código fuente.
 
 La colección no está limitada a una plataforma: reúne retos de **Frontend Mentor**, ejercicios propios y proyectos frontend creados a partir de otras referencias.
+
+<p align="center">
+
+[VER PROYECTO 😊](https://yovanidosh.github.io/FmSoLuTiOns/)
+
+</p>
 
 ## Proyectos completados
 
@@ -68,6 +74,7 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 | 32 | Contact Form | ✅ | HTML, CSS, JavaScript, Forms, Git |
 | 33 | Age Calculator App | ✅ | HTML, CSS, JavaScript, Forms, Git |
 | 34 | Expenses Chart Component | ✅ | HTML, Less, JavaScript, JSON, npm, Git |
+| 35 | Sunnyside Agency Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
 
 > La tabla se actualiza cada vez que un proyecto queda finalizado, documentado y publicado.
 
@@ -75,9 +82,9 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 
 <div align="center">
 
-### 👾 34 de 100 proyectos completados
+### 👾 35 de 100 proyectos completados
 
-`██████░░░░░░░░░░░░░░` **34%**
+`███████░░░░░░░░░░░░░` **35%**
 
 </div>
 

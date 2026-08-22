@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sunnyside creative agency landing page with services, projects and client testimonials.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Sunnyside Agency Landing Page</title>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navigation" aria-label="Primary navigation">
+      <a class="navigation__brand" href="#home" aria-label="Sunnyside home">
+        <img src="../../assets/images/sunnyside-logo.svg" alt="Sunnyside" width="124" height="24">
+      </a>
+
+      <button class="navigation__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="visually-hidden">Open navigation menu</span>
+        <img src="../../assets/images/sunnyside-icon-hamburger.svg" alt="" width="24" height="18">
+      </button>
+
+      <ul class="navigation__menu" id="primary-menu" data-open="false" inert>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="navigation__contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__content">
+      <h1 class="reveal-text" aria-label="We are creatives">
+        <span class="reveal-text__word" aria-hidden="true">
+          <span class="reveal-text__letter" data-letter="W">W<span class="reveal-text__hidden">w</span></span>
+          <span class="reveal-text__letter" data-letter="E">E<span class="reveal-text__hidden">e</span></span>
+        </span>
+        <span class="reveal-text__word" aria-hidden="true">
+          <span class="reveal-text__letter" data-letter="A">A<span class="reveal-text__hidden">a</span></span>
+          <span class="reveal-text__letter" data-letter="R">R<span class="reveal-text__hidden">r</span></span>
+          <span class="reveal-text__letter" data-letter="E">E<span class="reveal-text__hidden">e</span></span>
+        </span>
+        <span class="reveal-text__word" aria-hidden="true">
+          <span class="reveal-text__letter" data-letter="C">C<span class="reveal-text__hidden">c</span></span>
+          <span class="reveal-text__letter" data-letter="R">R<span class="reveal-text__hidden">r</span></span>
+          <span class="reveal-text__letter" data-letter="E">E<span class="reveal-text__hidden">e</span></span>
+          <span class="reveal-text__letter" data-letter="A">A<span class="reveal-text__hidden">a</span></span>
+          <span class="reveal-text__letter" data-letter="T">T<span class="reveal-text__hidden">t</span></span>
+          <span class="reveal-text__letter" data-letter="I">I<span class="reveal-text__hidden">i</span></span>
+          <span class="reveal-text__letter" data-letter="V">V<span class="reveal-text__hidden">v</span></span>
+          <span class="reveal-text__letter" data-letter="E">E<span class="reveal-text__hidden">e</span></span>
+          <span class="reveal-text__letter" data-letter="S">S<span class="reveal-text__hidden">s</span></span>
+        </span>
+      </h1>
+      <a class="hero__arrow" href="#about" aria-label="Discover our services">
+        <img src="../../assets/images/sunnyside-icon-arrow-down.svg" alt="" width="36" height="114">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="features" id="about" aria-label="About Sunnyside">
+      <article class="feature feature--transform">
+        <picture class="feature__image">
+          <source media="(min-width: 48rem)" srcset="../../assets/images/sunnyside-desktop-image-transform.jpg">
+          <img src="../../assets/images/sunnyside-mobile-image-transform.jpg" alt="White egg on a yellow background">
+        </picture>
+        <div class="feature__content">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a class="feature__link feature__link--yellow" href="#contact">Learn more</a>
+        </div>
+      </article>
+
+      <article class="feature feature--stand-out">
+        <picture class="feature__image">
+          <source media="(min-width: 48rem)" srcset="../../assets/images/sunnyside-desktop-image-stand-out.jpg">
+          <img src="../../assets/images/sunnyside-mobile-image-stand-out.jpg" alt="Pink glass against a coral background">
+        </picture>
+        <div class="feature__content">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="feature__link feature__link--red" href="#contact">Learn more</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="services" id="services" aria-label="Creative services">
+      <article class="service service--graphic">
+        <div class="service__content">
+          <h2>Graphic design</h2>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </article>
+
+      <article class="service service--photography">
+        <div class="service__content">
+          <h2>Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <h2 class="testimonials__title" id="testimonials-title">Client testimonials</h2>
+
+      <div class="testimonials__grid">
+        <article class="testimonial">
+          <img class="testimonial__avatar" src="../../assets/images/sunnyside-image-emily.jpg" alt="Emily R." width="72" height="72">
+          <blockquote>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</blockquote>
+          <div>
+            <h3>Emily R.</h3>
+            <p>Marketing Director</p>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <img class="testimonial__avatar" src="../../assets/images/sunnyside-image-thomas.jpg" alt="Thomas S." width="72" height="72">
+          <blockquote>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</blockquote>
+          <div>
+            <h3>Thomas S.</h3>
+            <p>Chief Operating Officer</p>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <img class="testimonial__avatar" src="../../assets/images/sunnyside-image-jennie.jpg" alt="Jennie F." width="72" height="72">
+          <blockquote>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blockquote>
+          <div>
+            <h3>Jennie F.</h3>
+            <p>Business Owner</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="projects" aria-label="Selected projects">
+      <picture>
+        <source media="(min-width: 48rem)" srcset="../../assets/images/sunnyside-desktop-image-gallery-milkbottles.jpg">
+        <img src="../../assets/images/sunnyside-mobile-image-gallery-milkbottles.jpg" alt="Milk bottles beneath a blue sky">
+      </picture>
+      <picture>
+        <source media="(min-width: 48rem)" srcset="../../assets/images/sunnyside-desktop-image-gallery-orange.jpg">
+        <img src="../../assets/images/sunnyside-mobile-image-gallery-orange.jpg" alt="Orange on a plate">
+      </picture>
+      <picture>
+        <source media="(min-width: 48rem)" srcset="../../assets/images/sunnyside-desktop-image-gallery-cone.jpg">
+        <img src="../../assets/images/sunnyside-mobile-image-gallery-cone.jpg" alt="Empty ice cream cone against a blue sky">
+      </picture>
+      <picture>
+        <source media="(min-width: 48rem)" srcset="../../assets/images/sunnyside-desktop-image-gallery-sugarcubes.jpg">
+        <img src="../../assets/images/sunnyside-mobile-image-gallery-sugar-cubes.jpg" alt="Stacked sugar cubes against a pink background">
+      </picture>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <a class="footer__brand" href="#home">sunnyside</a>
+    <nav aria-label="Footer navigation">
+      <ul class="footer__menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <ul class="footer__socials" aria-label="Social media">
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../../assets/images/sunnyside-icon-facebook.svg" alt="" width="20" height="20"></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../../assets/images/sunnyside-icon-instagram.svg" alt="" width="20" height="20"></a></li>
+      <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X, formerly Twitter"><img src="../../assets/images/sunnyside-icon-twitter.svg" alt="" width="20" height="17"></a></li>
+      <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><img src="../../assets/images/sunnyside-icon-pinterest.svg" alt="" width="20" height="20"></a></li>
+    </ul>
+  </footer>
+
+  <script src="js/scrip.js"></script>
+</body>
+</html>

@@ -307,6 +307,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/expenses-chart-component-main",
     completed: true,
   },
+  {
+    title: "Sunnyside Agency Landing Page",
+    description: "Landing responsive de agencia creativa con Sass, galería adaptable y menú móvil accesible.",
+    technologies: ["HTML", "Sass", "JavaScript", "CSS Grid", "npm", "Git"],
+    image: "assets/screenshots/sunnyside.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/sunnyside-agency-landing-page-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/sunnyside-agency-landing-page-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

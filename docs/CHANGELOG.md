@@ -987,3 +987,27 @@ Durante esta actualización aprendí a:
 - Normalización de importes para calcular alturas proporcionales.
 - Organización de estilos mediante variables y nesting de Less.
 - Representación accesible de datos mediante controles con nombres descriptivos.
+
+## [0.36.0]
+
+### Added
+
+- Sunnyside Agency Landing Page completado.
+- Menú móvil accesible controlado con JavaScript.
+- Secciones de servicios, testimonios y galería responsive.
+- Imágenes específicas para móvil y escritorio mediante `<picture>`.
+- Fuente Barlow SemiBold configurada localmente para el contenido.
+- Ruta preparada para la captura del reto 35.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 35 de 100.
+- Estilos desarrollados en Sass y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Sincronización entre `aria-expanded` y estados visuales mediante `data-*`.
+- Gestión del cierre del menú con enlaces, `Escape` y cambios de viewport.
+- Composición responsive con Grid, Flexbox e imágenes adaptativas.
+- Organización de colores, fuentes y breakpoints mediante variables Sass.

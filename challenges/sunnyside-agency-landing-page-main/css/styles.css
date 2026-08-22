@@ -1,0 +1,553 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("../../../assets/fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../../../assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: hsl(213, 9%, 39%);
+  background: hsl(26, 100%, 99%);
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+body,
+button {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero {
+  min-block-size: 33.625rem;
+  color: hsl(0, 100%, 100%);
+  background: #3dbfff url("../../../assets/images/sunnyside-mobile-image-header.jpg") center bottom/cover no-repeat;
+}
+.hero__content {
+  display: grid;
+  padding: 4.7rem 1.25rem 0;
+  justify-items: center;
+  text-align: center;
+}
+.hero h1 {
+  display: flex;
+  max-inline-size: 22rem;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 0.18em 0.34em;
+  justify-content: center;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.5rem, 11vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.hero__arrow {
+  margin-block-start: 2.9rem;
+  border-radius: 0.25rem;
+}
+.hero__arrow:focus-visible {
+  outline: 3px solid hsl(51, 100%, 49%);
+  outline-offset: 0.5rem;
+}
+
+.reveal-text {
+  --letter-gap: 0.16em;
+}
+.reveal-text__word {
+  display: flex;
+  gap: var(--letter-gap);
+}
+.reveal-text__letter {
+  position: relative;
+  display: inline-block;
+  block-size: 1em;
+  color: transparent;
+  cursor: pointer;
+}
+.reveal-text__letter::before, .reveal-text__letter::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: hsl(0, 100%, 100%);
+  content: attr(data-letter);
+  transition: transform 500ms cubic-bezier(0.2, 0.85, 0.2, 1);
+}
+.reveal-text__letter::before {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+.reveal-text__letter::after {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+.reveal-text__letter:hover::before {
+  transform: translateY(-0.24em);
+}
+.reveal-text__letter:hover::after {
+  transform: translateY(0.24em);
+}
+.reveal-text__letter:hover .reveal-text__hidden {
+  opacity: 1;
+  transform: scale(1);
+}
+.reveal-text__hidden {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  color: hsl(51, 100%, 49%);
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-size: 0.62em;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.35);
+  transition: opacity 250ms ease 100ms, transform 500ms cubic-bezier(0.2, 0.85, 0.2, 1);
+}
+
+.navigation {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: 2rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__brand {
+  inline-size: 7.75rem;
+}
+.navigation__toggle {
+  padding: 0.5rem 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.navigation__toggle:focus-visible {
+  outline: 3px solid hsl(0, 100%, 100%);
+  outline-offset: 0.3rem;
+}
+.navigation__menu {
+  position: absolute;
+  inset: calc(100% + 1.25rem) 1.5rem auto;
+  display: grid;
+  padding: 2.5rem 1rem;
+  gap: 1.5rem;
+  justify-items: center;
+  color: hsl(232, 10%, 55%);
+  background: hsl(0, 100%, 100%);
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-0.75rem);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.navigation__menu::before {
+  position: absolute;
+  inset: -1.5rem 0 auto auto;
+  inline-size: 0;
+  block-size: 0;
+  border-block-start: 1.5rem solid transparent;
+  border-inline-end: 1.5rem solid hsl(0, 100%, 100%);
+  content: "";
+}
+.navigation__menu[data-open=true] {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.navigation__menu a:not(.navigation__contact):hover,
+.navigation__menu a:not(.navigation__contact):focus-visible {
+  color: hsl(212, 27%, 19%);
+}
+.navigation__contact {
+  display: inline-grid;
+  min-block-size: 3.5rem;
+  padding-inline: 2rem;
+  place-items: center;
+  color: hsl(212, 27%, 19%);
+  background: hsl(51, 100%, 49%);
+  border-radius: 2rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.feature {
+  display: grid;
+  background: hsl(26, 100%, 99%);
+}
+.feature__image img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+.feature__content {
+  padding: 3.9rem 1.5rem 4.1rem;
+  text-align: center;
+}
+.feature h2 {
+  margin: 0;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.feature p {
+  max-inline-size: 29rem;
+  margin: 1.5rem auto 0;
+}
+.feature__link {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  margin-block-start: 1.9rem;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.feature__link::after {
+  position: absolute;
+  z-index: -1;
+  inset: auto -0.5rem 0.05rem;
+  block-size: 0.55rem;
+  border-radius: 1rem;
+  content: "";
+  opacity: 0.3;
+  transition: opacity 180ms ease;
+}
+.feature__link--yellow::after {
+  background: hsl(51, 100%, 49%);
+}
+.feature__link--red::after {
+  background: hsl(7, 99%, 70%);
+}
+.feature__link:hover::after, .feature__link:focus-visible::after {
+  opacity: 1;
+}
+.feature__link:focus-visible {
+  outline: 2px solid hsl(212, 27%, 19%);
+  outline-offset: 0.4rem;
+}
+
+.service {
+  display: grid;
+  min-block-size: 37.5rem;
+  padding: 2rem 1.5rem 3.5rem;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.service--graphic {
+  color: hsl(167, 40%, 24%);
+  background-image: url("../../../assets/images/sunnyside-mobile-image-graphic-design.jpg");
+}
+.service--photography {
+  color: hsl(198, 62%, 26%);
+  background-image: url("../../../assets/images/sunnyside-mobile-image-photography.jpg");
+}
+.service__content {
+  max-inline-size: 23rem;
+  margin-inline: auto;
+}
+.service h2 {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+.service p {
+  margin: 1.4rem 0 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.testimonials {
+  padding: 4rem 1.5rem 5.5rem;
+  background: hsl(26, 100%, 99%);
+  text-align: center;
+}
+.testimonials__title {
+  margin: 0;
+  color: hsl(210, 4%, 67%);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.testimonials__grid {
+  display: grid;
+  max-inline-size: 69.5rem;
+  margin: 4rem auto 0;
+  gap: 4.1rem;
+}
+
+.testimonial {
+  display: grid;
+  justify-items: center;
+}
+.testimonial__avatar {
+  inline-size: 4.5rem;
+  block-size: 4.5rem;
+  border-radius: 50%;
+}
+.testimonial blockquote {
+  max-inline-size: 22rem;
+  margin: 2rem 0 1.7rem;
+  color: hsl(213, 9%, 39%);
+  font-size: 1rem;
+}
+.testimonial h3,
+.testimonial p {
+  margin: 0;
+}
+.testimonial h3 {
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+.testimonial p {
+  margin-block-start: 0.35rem;
+  color: hsl(210, 4%, 67%);
+  font-size: 0.8rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.gallery img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  display: grid;
+  padding: 3.8rem 1.5rem 5rem;
+  justify-items: center;
+  color: hsl(167, 40%, 24%);
+  background: hsl(167, 44%, 70%);
+}
+.footer__brand {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+.footer__menu, .footer__socials {
+  display: flex;
+  align-items: center;
+}
+.footer__menu {
+  margin-block-start: 1.9rem;
+  gap: clamp(2rem, 10vw, 3.5rem);
+  color: hsl(168, 34%, 41%);
+}
+.footer__menu a:hover,
+.footer__menu a:focus-visible {
+  color: hsl(0, 100%, 100%);
+}
+.footer__socials {
+  margin-block-start: 5rem;
+  gap: 1.7rem;
+}
+.footer__socials a {
+  display: block;
+  border-radius: 0.2rem;
+}
+.footer__socials a:hover, .footer__socials a:focus-visible {
+  filter: brightness(0) invert(1);
+}
+.footer a:focus-visible {
+  outline: 2px solid hsl(0, 100%, 100%);
+  outline-offset: 0.35rem;
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    min-block-size: 50rem;
+    background-image: url("../../../assets/images/sunnyside-desktop-image-header.jpg");
+  }
+  .hero__content {
+    padding-block-start: 4.3rem;
+  }
+  .hero h1 {
+    max-inline-size: none;
+    font-size: 3.5rem;
+    letter-spacing: 0;
+  }
+  .hero .reveal-text {
+    --letter-gap: 0.18em;
+  }
+  .hero__arrow {
+    margin-block-start: 5.6rem;
+  }
+  .navigation {
+    padding: 2.1rem 3rem;
+  }
+  .navigation__brand {
+    inline-size: 10.6rem;
+  }
+  .navigation__toggle {
+    display: none;
+  }
+  .navigation__menu {
+    position: static;
+    display: flex;
+    padding: 0;
+    gap: 2.9rem;
+    align-items: center;
+    color: hsl(0, 100%, 100%);
+    background: transparent;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+  .navigation__menu::before {
+    display: none;
+  }
+  .navigation__menu a:not(.navigation__contact):hover,
+  .navigation__menu a:not(.navigation__contact):focus-visible {
+    color: hsl(0, 100%, 100%);
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
+  }
+  .navigation__contact {
+    min-block-size: 3.5rem;
+    color: hsl(212, 27%, 19%);
+    background: hsl(0, 100%, 100%);
+  }
+  .navigation__contact:hover, .navigation__contact:focus-visible {
+    color: hsl(0, 100%, 100%);
+    background: hsla(0, 100%, 100%, 0.3);
+  }
+  .feature {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .feature--transform .feature__image {
+    grid-column: 2;
+  }
+  .feature--transform .feature__content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .feature__content {
+    display: flex;
+    min-block-size: 37.5rem;
+    padding: 4rem clamp(3rem, 8vw, 10.25rem);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+  }
+  .feature h2 {
+    max-inline-size: 28rem;
+    font-size: 2.5rem;
+  }
+  .feature p {
+    margin-inline: 0;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .service--graphic {
+    background-image: url("../../../assets/images/sunnyside-desktop-image-graphic-design.jpg");
+  }
+  .service--photography {
+    background-image: url("../../../assets/images/sunnyside-desktop-image-photography.jpg");
+  }
+  .testimonials {
+    padding-block: 10rem;
+  }
+  .testimonials__title {
+    font-size: 1.25rem;
+  }
+  .testimonials__grid {
+    margin-block-start: 5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.8rem;
+  }
+  .testimonial blockquote {
+    min-block-size: 8rem;
+    margin-block: 3.3rem 2.5rem;
+    font-size: 1.125rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .footer {
+    padding-block: 4rem 4.5rem;
+  }
+  .footer__socials {
+    margin-block-start: 4.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .navigation__menu,
+  .navigation__contact,
+  .feature__link::after,
+  .reveal-text__letter::before,
+  .reveal-text__letter::after,
+  .reveal-text__hidden {
+    transition: none;
+  }
+}

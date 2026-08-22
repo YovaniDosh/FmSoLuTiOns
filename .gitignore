@@ -1,4 +1,7 @@
 node_modules/
 AGENTS.md
 challenges/*.zip
+challenges/*/model.txt
+challenges/*/hover.html
+assets/fonts/*.zip
 AgentsComploit.md
