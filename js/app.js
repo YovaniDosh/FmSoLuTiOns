@@ -316,6 +316,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/sunnyside-agency-landing-page-main",
     completed: true,
   },
+  {
+    title: "Loopstudios Landing Page",
+    description: "Landing responsive de realidad virtual con Sass, galería adaptable y menú móvil accesible.",
+    technologies: ["HTML", "Sass", "JavaScript", "CSS Grid", "npm", "Git"],
+    image: "assets/images/loopstudios-desktop-image-hero.jpg",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/loopstudios-landing-page-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/loopstudios-landing-page-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");
