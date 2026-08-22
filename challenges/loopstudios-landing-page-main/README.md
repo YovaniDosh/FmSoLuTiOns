@@ -6,7 +6,7 @@ Esta es mi solución para el reto [Loopstudios Landing Page.](https://www.fronte
 
 ## Vista previa
 
-![Vista previa del proyecto Loopstudios Landing Page](../../assets/images/loopstudios-desktop-image-hero.jpg)
+![Vista previa del proyecto Loopstudios Landing Page](../../assets/screenshots/loop.png)
 
 ## Link
 
