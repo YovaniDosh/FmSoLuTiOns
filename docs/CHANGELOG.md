@@ -1060,3 +1060,27 @@ Durante esta actualización aprendí a:
 - Delegación de eventos con atributos `data-action`.
 - Cálculo de cantidades y totales desde una única fuente de datos.
 - Uso de `<dialog>` para presentar una confirmación modal accesible.
+
+## [0.39.0]
+
+### Added
+
+- Blogr Landing Page completado.
+- Navegación responsive con tres menús desplegables.
+- Secciones editoriales con ilustraciones específicas para móvil y escritorio.
+- Menú móvil accesible con cierre mediante botón y tecla `Escape`.
+- Fuente variable Overpass reutilizada desde los recursos globales.
+- README propio y ruta preparada para la captura del reto 38.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 38 de 100.
+- Estilos desarrollados en Sass y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Sincronización de menús mediante `aria-expanded`.
+- Gestión de elementos ocultos mediante `inert`.
+- Adaptación del menú al cambiar entre viewports.
+- Composición responsive con Grid e imágenes adaptativas.

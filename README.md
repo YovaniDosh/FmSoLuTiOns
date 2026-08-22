@@ -8,8 +8,8 @@ Una colección abierta de **proyectos frontend individuales** creada para practi
 
 Incluye desafíos de Frontend Mentor, ejercicios independientes y futuros proyectos originales.
 
-[![Proyectos](https://img.shields.io/badge/Proyectos_completados-37%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
-[![Progreso](https://img.shields.io/badge/Progreso-37%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
+[![Proyectos](https://img.shields.io/badge/Proyectos_completados-38%2F100-7c3aed?style=for-the-badge)](#proyectos-completados)
+[![Progreso](https://img.shields.io/badge/Progreso-38%25-facc15?style=for-the-badge&labelColor=111827)](#progreso-arcade)
 [![GitHub Pages](https://img.shields.io/badge/Ver_House-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://yovanidosh.github.io/FmSoLuTiOns/)
 
 </div>
@@ -77,6 +77,7 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 | 35 | Sunnyside Agency Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
 | 36 | Loopstudios Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
 | 37 | Product List with Cart | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 38 | Blogr Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
 
 > La tabla se actualiza cada vez que un proyecto queda finalizado, documentado y publicado.
 
@@ -84,9 +85,9 @@ La colección no está limitada a una plataforma: reúne retos de **Frontend Men
 
 <div align="center">
 
-### 👾 37 de 100 proyectos completados
+### 👾 38 de 100 proyectos completados
 
-`███████░░░░░░░░░░░░░` **37%**
+`████████░░░░░░░░░░░░` **38%**
 
 </div>
 
