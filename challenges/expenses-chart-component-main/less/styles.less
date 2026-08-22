@@ -1,0 +1,336 @@
+@color-red:          hsl(10, 79%, 65%);
+@color-red-hover:    hsl(10, 79%, 75%);
+@color-blue:         hsl(186, 34%, 65%);
+@color-blue-hover:   hsl(186, 34%, 75%);
+@color-brown-dark:   hsl(25, 47%, 15%);
+@color-brown-muted:  hsl(28, 10%, 53%);
+@color-cream:        hsl(26, 66%, 93%);
+@color-white:        hsl(33, 100%, 98%);
+@breakpoint-tablet: 48rem;
+
+@font-face
+{
+  font-family: "DM Sans";
+  src: url("../../../assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  display: grid;
+  min-block-size: 100vh;
+  margin: 0;
+  padding: 4.2rem 1rem;
+  place-items: start center;
+  color: @color-brown-dark;
+  background: @color-cream;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+button
+{
+  font: inherit;
+}
+
+.visually-hidden
+{
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.expenses
+{
+  display: grid;
+  inline-size: min(100%, 33.75rem);
+  gap: 1rem;
+}
+
+.balance-card
+{
+  display: flex;
+  min-block-size: 6rem;
+  padding: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  color: @color-white;
+  background: @color-red;
+  border-radius: 0.65rem;
+
+  &__label,
+  &__amount
+  {
+    margin: 0;
+  }
+
+  &__label
+  {
+    margin-block-end: 0.2rem;
+    font-size: 0.95rem;
+  }
+
+  &__amount
+  {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__logo
+  {
+    inline-size: 3.75rem;
+    block-size: auto;
+  }
+}
+
+.spending-card
+{
+  padding: 1.5rem 1.25rem;
+  background: @color-white;
+  border-radius: 0.65rem;
+
+  &__title
+  {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  &__summary
+  {
+    display: flex;
+    padding-block-start: 1.5rem;
+    align-items: end;
+    justify-content: space-between;
+    border-block-start: 2px solid @color-cream;
+  }
+
+  &__label,
+  &__total,
+  &__percentage
+  {
+    margin: 0;
+  }
+
+  &__label
+  {
+    color: @color-brown-muted;
+    font-size: 0.95rem;
+  }
+
+  &__total
+  {
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  &__comparison
+  {
+    padding-block-end: 0.25rem;
+    text-align: end;
+  }
+
+  &__percentage
+  {
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+}
+
+.chart
+{
+  position: relative;
+
+  &__status
+  {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    margin: 0;
+    color: @color-brown-muted;
+    font-size: 0.875rem;
+    transform: translate(-50%, -50%);
+
+  }
+
+  &__list
+  {
+    display: grid;
+    block-size: 14.5rem;
+    margin: 0;
+    padding: 2.5rem 0 1.5rem;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: clamp(0.5rem, 2.5vw, 1.1rem);
+    list-style: none;
+  }
+
+  &__item
+  {
+    display: grid;
+    min-inline-size: 0;
+    grid-template-rows: 1fr auto;
+    gap: 0.6rem;
+    align-items: end;
+    text-align: center;
+  }
+
+  &__bar
+  {
+    position: relative;
+    inline-size: 100%;
+    block-size: var(--bar-height);
+    min-block-size: 0.5rem;
+    padding: 0;
+    background: @color-red;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 160ms ease;
+
+    &:hover,
+    &:focus-visible
+    {
+      background: @color-red-hover;
+      outline: none;
+    }
+
+    &:hover .chart__tooltip,
+    &:focus-visible .chart__tooltip
+    {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    &--highest
+    {
+      background: @color-blue;
+
+      &:hover,
+      &:focus-visible
+      {
+        background: @color-blue-hover;
+      }
+    }
+  }
+
+  &__tooltip
+  {
+    position: absolute;
+    inset: auto auto calc(100% + 0.5rem) 50%;
+    z-index: 1;
+    padding: 0.35rem 0.4rem;
+    color: @color-white;
+    background: @color-brown-dark;
+    border-radius: 0.25rem;
+    font-size: clamp(0.65rem, 3vw, 1rem);
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 0.25rem);
+    transition: opacity 160ms ease, transform 160ms ease;
+  }
+
+  &__label
+  {
+    color: @color-brown-muted;
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: @breakpoint-tablet)
+{
+  body
+  {
+    padding: 11.4rem 1.5rem;
+  }
+
+  .expenses
+  {
+    gap: 1.5rem;
+  }
+
+  .balance-card
+  {
+    min-block-size: 7.8rem;
+    padding: 1.65rem 2rem;
+    border-radius: 1.25rem;
+
+    &__label
+    {
+      font-size: 1.125rem;
+    }
+
+    &__amount
+    {
+      font-size: 2rem;
+    }
+
+    &__logo
+    {
+      inline-size: 4.5rem;
+    }
+  }
+
+  .spending-card
+  {
+    padding: 2rem 2.5rem 2.5rem;
+    border-radius: 1.25rem;
+
+    &__title
+    {
+      font-size: 2rem;
+    }
+
+    &__summary
+    {
+      padding-block-start: 2rem;
+    }
+
+    &__label,
+    &__percentage
+    {
+      font-size: 1.125rem;
+    }
+
+    &__total
+    {
+      font-size: 3rem;
+    }
+  }
+
+  .chart
+  {
+    &__list
+    {
+      block-size: 17.5rem;
+      padding-block: 4.1rem 2rem;
+    }
+
+    &__label
+    {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  .chart__bar,
+  .chart__tooltip
+  {
+    transition: none;
+  }
+}

@@ -964,3 +964,26 @@ Durante esta actualización aprendí a:
 - Cálculo de diferencias entre fechas ajustando días y meses pendientes.
 - Asociación accesible de errores con `aria-describedby` y `aria-invalid`.
 - Comunicación de resultados dinámicos mediante `aria-live`.
+
+## [0.35.0]
+
+### Added
+
+- Expenses Chart Component completado.
+- Gráfico semanal generado dinámicamente desde `data.json`.
+- Tooltips disponibles mediante puntero y navegación por teclado.
+- Fuente variable DM Sans reutilizada desde los recursos globales.
+- README propio y ruta preparada para la captura del reto 34.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 34 de 100.
+- Estilos desarrollados en Less y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Consumo de datos locales mediante la Fetch API.
+- Normalización de importes para calcular alturas proporcionales.
+- Organización de estilos mediante variables y nesting de Less.
+- Representación accesible de datos mediante controles con nombres descriptivos.

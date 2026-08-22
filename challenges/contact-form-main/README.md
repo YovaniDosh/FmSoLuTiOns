@@ -10,7 +10,7 @@ Esta es mi solución para el reto [Contact Form.](https://www.frontendmentor.io/
 
 ## Link
 
-Demo preparada para GitHub Pages: [Ver proyecto](https://yovanidosh.github.io/FmSoLuTiOns/challenges/contact-form-main/)
+[Ver proyecto](https://yovanidosh.github.io/FmSoLuTiOns/challenges/contact-form-main/)
 
 ## Vista general
 

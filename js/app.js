@@ -298,6 +298,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/age-calculator-app-main",
     completed: true,
   },
+  {
+    title: "Expenses Chart Component",
+    description: "Gráfico responsive de gastos semanales generado desde JSON, con tooltips accesibles.",
+    technologies: ["HTML", "Less", "JavaScript", "JSON", "npm", "Git"],
+    image: "assets/screenshots/expances.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/expenses-chart-component-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/expenses-chart-component-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

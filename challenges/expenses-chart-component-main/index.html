@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive weekly expenses chart generated from local data.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Expenses Chart Component</title>
+</head>
+<body>
+  <main class="expenses">
+    <h1 class="visually-hidden">Weekly expenses summary</h1>
+
+    <header class="balance-card">
+      <div>
+        <p class="balance-card__label">My balance</p>
+        <p class="balance-card__amount">$921.48</p>
+      </div>
+      <img class="balance-card__logo" src="../../assets/images/logo-expenses-chart.svg" alt="" width="72" height="48">
+    </header>
+
+    <section class="spending-card" aria-labelledby="spending-title">
+      <h2 class="spending-card__title" id="spending-title">Spending - Last 7 days</h2>
+
+      <div class="chart">
+        <p class="chart__status" role="status">Loading expenses...</p>
+        <ul class="chart__list" aria-label="Daily expenses"></ul>
+      </div>
+
+      <footer class="spending-card__summary">
+        <div>
+          <p class="spending-card__label">Total this month</p>
+          <p class="spending-card__total">$478.33</p>
+        </div>
+        <div class="spending-card__comparison">
+          <p class="spending-card__percentage">+2.4%</p>
+          <p class="spending-card__label">from last month</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/scrip.js"></script>
+</body>
+</html>
