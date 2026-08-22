@@ -1011,3 +1011,28 @@ Durante esta actualización aprendí a:
 - Gestión del cierre del menú con enlaces, `Escape` y cambios de viewport.
 - Composición responsive con Grid, Flexbox e imágenes adaptativas.
 - Organización de colores, fuentes y breakpoints mediante variables Sass.
+
+## [0.37.0]
+
+### Added
+
+- Loopstudios Landing Page completado.
+- Menú móvil de pantalla completa controlado con JavaScript.
+- Presentación de la empresa y galería responsive de ocho creaciones.
+- Imágenes específicas para móvil y escritorio mediante `<picture>`.
+- Fuente variable Josefin Sans reutilizada desde los recursos globales.
+- Ruta preparada para la captura del reto 36.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 36 de 100.
+- Estilos desarrollados en Sass y compilados a CSS para GitHub Pages.
+- Arquitectura del README principal actualizada con las rutas reales del repositorio.
+
+### Learned
+
+- Composición de tarjetas mediante gradientes, imágenes y contenido superpuesto.
+- Sincronización accesible del menú con `aria-expanded`, `data-*` e `inert`.
+- Bloqueo del desplazamiento de fondo durante la navegación móvil.
+- Uso de Grid y `<picture>` para adaptar la galería a cada viewport.

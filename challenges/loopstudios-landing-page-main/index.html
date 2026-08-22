@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loopstudios creates immersive virtual reality experiences for global brands.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Loopstudios Landing Page</title>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navigation" aria-label="Primary navigation">
+      <a class="navigation__brand" href="#home" aria-label="Loopstudios home">
+        <img src="../../assets/images/loopstudios-logo.svg" alt="Loopstudios" width="192" height="32">
+      </a>
+
+      <button class="navigation__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="visually-hidden">Open navigation menu</span>
+        <img class="navigation__open-icon" src="../../assets/images/loopstudios-icon-hamburger.svg" alt="" width="24" height="16">
+        <img class="navigation__close-icon" src="../../assets/images/loopstudios-icon-close.svg" alt="" width="20" height="20">
+      </button>
+
+      <ul class="navigation__menu" id="primary-menu" data-open="false" inert>
+        <li><a href="#about">About</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__content">
+      <h1>Immersive experiences that deliver</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <picture class="about__image">
+        <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-interactive.jpg">
+        <img src="../../assets/images/loopstudios-mobile-image-interactive.jpg" alt="Person exploring a virtual reality experience">
+      </picture>
+
+      <div class="about__content" id="careers">
+        <h2 id="about-title">The leader in interactive VR</h2>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+      </div>
+    </section>
+
+    <section class="creations" id="products" aria-labelledby="creations-title">
+      <div class="creations__header">
+        <h2 id="creations-title">Our creations</h2>
+        <a class="creations__button creations__button--desktop" href="#events">See all</a>
+      </div>
+
+      <div class="creations__grid" id="events">
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-deep-earth.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-deep-earth.jpg" alt="View of planet Earth from space">
+          </picture>
+          <h3>Deep earth</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-night-arcade.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-night-arcade.jpg" alt="Illuminated arcade machine">
+          </picture>
+          <h3>Night arcade</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-soccer-team.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-soccer-team.jpg" alt="Soccer player running with the ball">
+          </picture>
+          <h3>Soccer team VR</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-grid.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-grid.jpg" alt="Race car on a track">
+          </picture>
+          <h3>The grid</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-from-above.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-from-above.jpg" alt="Aerial view of a winding road">
+          </picture>
+          <h3>From up above VR</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-pocket-borealis.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-pocket-borealis.jpg" alt="Green northern lights in a night sky">
+          </picture>
+          <h3>Pocket borealis</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-curiosity.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-curiosity.jpg" alt="Curiosity rover on Mars">
+          </picture>
+          <h3>The curiosity</h3>
+        </a>
+
+        <a class="creation" href="#products">
+          <picture>
+            <source media="(min-width: 48rem)" srcset="../../assets/images/loopstudios-desktop-image-fisheye.jpg">
+            <img src="../../assets/images/loopstudios-mobile-image-fisheye.jpg" alt="Circular fisheye view of a landscape">
+          </picture>
+          <h3>Make it fisheye</h3>
+        </a>
+      </div>
+
+      <a class="creations__button creations__button--mobile" href="#events">See all</a>
+    </section>
+  </main>
+
+  <footer class="footer" id="support">
+    <div class="footer__navigation">
+      <a class="footer__brand" href="#home" aria-label="Loopstudios home">
+        <img src="../../assets/images/loopstudios-logo.svg" alt="Loopstudios" width="144" height="24">
+      </a>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__details">
+      <ul class="footer__socials" aria-label="Social media">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../../assets/images/loopstudios-icon-facebook.svg" alt="" width="24" height="24"></a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X, formerly Twitter"><img src="../../assets/images/loopstudios-icon-twitter.svg" alt="" width="24" height="20"></a></li>
+        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><img src="../../assets/images/loopstudios-icon-pinterest.svg" alt="" width="24" height="24"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../../assets/images/loopstudios-icon-instagram.svg" alt="" width="24" height="24"></a></li>
+      </ul>
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scrip.js"></script>
+</body>
+</html>
