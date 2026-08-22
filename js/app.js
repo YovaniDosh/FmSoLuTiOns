@@ -325,6 +325,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/loopstudios-landing-page-main",
     completed: true,
   },
+  {
+    title: "Product List with Cart",
+    description: "Catálogo responsive de postres con carrito editable, totales y confirmación accesible del pedido.",
+    technologies: ["HTML", "Sass", "JavaScript", "CSS Grid", "npm", "Git"],
+    image: "assets/screenshots/listCart.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-list-with-cart-main/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/product-list-with-cart-main",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

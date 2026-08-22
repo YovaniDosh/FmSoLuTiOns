@@ -1,0 +1,403 @@
+@font-face
+{
+  font-display: swap;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("../../../assets/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+}
+
+$red: hsl(14, 86%, 42%);
+$red-dark: hsl(14, 88%, 30%);
+$green: hsl(159, 69%, 38%);
+$rose-50: hsl(20, 50%, 98%);
+$rose-100: hsl(13, 31%, 94%);
+$rose-300: hsl(14, 25%, 72%);
+$rose-400: hsl(7, 20%, 60%);
+$rose-500: hsl(12, 20%, 44%);
+$rose-900: hsl(14, 65%, 9%);
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  background: $rose-50;
+  color: $rose-900;
+  font-family: "Red Hat Text", sans-serif;
+  margin: 0;
+}
+
+button
+{
+  font: inherit;
+
+  &:focus-visible
+  {
+    outline: 0.1875rem solid $green;
+    outline-offset: 0.1875rem;
+  }
+}
+
+.shop
+{
+  display: grid;
+  gap: 2rem;
+  margin-inline: auto;
+  max-inline-size: 76rem;
+  padding: 1.5rem;
+}
+
+h1
+{
+  font-size: clamp(2rem, 7vw, 2.5rem);
+  line-height: 1.2;
+  margin: 0 0 2rem;
+}
+
+.product-grid
+{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product-card
+{
+  &__image-wrap
+  {
+    margin-block-end: 2.25rem;
+    position: relative;
+  }
+
+  &__image
+  {
+    border: 0.125rem solid transparent;
+    border-radius: 0.5rem;
+    display: block;
+    inline-size: 100%;
+  }
+
+  &.is-selected &__image
+  {
+    border-color: $red;
+  }
+
+  &__control
+  {
+    align-items: center;
+    background: white;
+    border: 0.0625rem solid $rose-400;
+    border-radius: 2rem;
+    block-size: 2.75rem;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    inset-block-end: -1.375rem;
+    inset-inline-start: 50%;
+    justify-content: center;
+    min-inline-size: 10rem;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  &__add
+  {
+    cursor: pointer;
+    gap: 0.5rem;
+
+    &:hover
+    {
+      border-color: $red;
+      color: $red;
+    }
+  }
+
+  &__quantity
+  {
+    background: $red;
+    border-color: $red;
+    color: white;
+    justify-content: space-between;
+    padding-inline: 0.75rem;
+  }
+
+  &__category
+  {
+    color: $rose-500;
+    font-size: 0.875rem;
+    margin: 0 0 0.25rem;
+  }
+
+  &__title
+  {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+  }
+
+  &__price
+  {
+    color: $red;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.quantity-button,
+.cart__remove
+{
+  align-items: center;
+  background: transparent;
+  border: 0.0625rem solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  block-size: 1.125rem;
+  inline-size: 1.125rem;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.quantity-button
+{
+  color: white;
+
+  &:hover
+  {
+    background: white;
+    color: $red;
+  }
+}
+
+.cart
+{
+  align-self: start;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+
+  h2
+  {
+    color: $red;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  &__empty
+  {
+    color: $rose-500;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+
+    img
+    {
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+
+  &__list
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item
+  {
+    align-items: center;
+    border-block-end: 0.0625rem solid $rose-100;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+
+    strong
+    {
+      display: block;
+      font-size: 0.875rem;
+      margin-block-end: 0.5rem;
+    }
+  }
+
+  &__details
+  {
+    color: $rose-500;
+    font-size: 0.875rem;
+  }
+
+  &__quantity
+  {
+    color: $red;
+    font-weight: 600;
+    margin-inline-end: 0.75rem;
+  }
+
+  &__item-total
+  {
+    font-weight: 600;
+    margin-inline-start: 0.5rem;
+  }
+
+  &__remove
+  {
+    color: $rose-400;
+
+    &:hover
+    {
+      color: $rose-900;
+    }
+  }
+}
+
+.order-total
+{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+
+  span
+  {
+    font-size: 0.875rem;
+  }
+
+  strong
+  {
+    font-size: 1.5rem;
+  }
+}
+
+.carbon-note
+{
+  align-items: center;
+  background: $rose-50;
+  display: flex;
+  font-size: 0.875rem;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+}
+
+.primary-button
+{
+  background: $red;
+  border: 0;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  inline-size: 100%;
+  padding: 1rem;
+
+  &:hover
+  {
+    background: $red-dark;
+  }
+}
+
+.confirmation
+{
+  border: 0;
+  border-radius: 0.75rem 0.75rem 0 0;
+  inline-size: 100%;
+  margin: auto 0 0;
+  max-block-size: 90vh;
+  max-inline-size: 37rem;
+  overflow-y: auto;
+  padding: 2.5rem 1.5rem 1.5rem;
+
+  &::backdrop
+  {
+    background: hsl(0 0% 0% / 50%);
+  }
+
+  h2
+  {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  > p
+  {
+    color: $rose-500;
+    margin: 0 0 2rem;
+  }
+
+  &__summary
+  {
+    background: $rose-50;
+    border-radius: 0.5rem;
+    margin-block-end: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  &__list
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item
+  {
+    align-items: center;
+    border-block-end: 0.0625rem solid $rose-100;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 3rem minmax(0, 1fr) auto;
+    padding-block: 1rem;
+
+    img
+    {
+      border-radius: 0.25rem;
+      inline-size: 3rem;
+    }
+
+    strong
+    {
+      display: block;
+      font-size: 0.875rem;
+      margin-block-end: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (min-width: 40rem)
+{
+  .product-grid
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .confirmation
+  {
+    border-radius: 0.75rem;
+    margin: auto;
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 64rem)
+{
+  .shop
+  {
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) 24rem;
+    padding-block: 5.5rem;
+  }
+
+  .product-grid
+  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

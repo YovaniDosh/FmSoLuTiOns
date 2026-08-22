@@ -1036,3 +1036,27 @@ Durante esta actualización aprendí a:
 - Sincronización accesible del menú con `aria-expanded`, `data-*` e `inert`.
 - Bloqueo del desplazamiento de fondo durante la navegación móvil.
 - Uso de Grid y `<picture>` para adaptar la galería a cada viewport.
+
+## [0.38.0]
+
+### Added
+
+- Product List with Cart completado.
+- Catálogo responsive de nueve postres con imágenes adaptativas.
+- Carrito con altas, bajas, cantidades, subtotales y total general.
+- Confirmación accesible del pedido mediante un diálogo modal.
+- Fuente variable Red Hat Text configurada localmente.
+- README propio y ruta preparada para la captura del reto 37.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 37 de 100.
+- Estilos desarrollados en Sass y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Gestión del estado del carrito mediante `Map`.
+- Delegación de eventos con atributos `data-action`.
+- Cálculo de cantidades y totales desde una única fuente de datos.
+- Uso de `<dialog>` para presentar una confirmación modal accesible.
