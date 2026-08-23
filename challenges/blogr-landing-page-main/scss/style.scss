@@ -7,12 +7,12 @@
   src: url("../../../assets/fonts/Overpass-VariableFont_wght.ttf") format("truetype");
 }
 
-$red: hsl(356, 100%, 66%);
-$light-red: hsl(355, 100%, 74%);
-$blue: hsl(208, 49%, 24%);
-$gray: hsl(207, 13%, 34%);
-$dark: hsl(240, 10%, 16%);
-$purple: hsl(237, 23%, 31%);
+$red:        hsl(356, 100%, 66%);
+$light-red:  hsl(355, 100%, 74%);
+$blue:       hsl(208, 49%, 24%);
+$gray:       hsl(207, 13%, 34%);
+$dark:       hsl(240, 10%, 16%);
+$purple:     hsl(237, 23%, 31%);
 
 *,
 *::before,
@@ -138,19 +138,39 @@ button:focus-visible
 
 .nav-group
 {
+  text-align: center;
+
   &__button
   {
     background: transparent;
     border: 0;
     color: inherit;
     cursor: pointer;
+    display: block;
     font-weight: 600;
+    margin-inline: auto;
+    min-inline-size: 8.5rem;
     padding: 0.75rem;
+    position: relative;
+    text-align: center;
+
+    span
+    {
+      align-self: center;
+      block-size: 1rem;
+      display: flex;
+      inline-size: 1rem;
+      inset-block-start: 50%;
+      inset-inline-end: 0.75rem;
+      justify-content: center;
+      position: absolute;
+      transform: translateY(-100%) rotate(0deg);
+      transform-origin: center;
+    }
 
     &[aria-expanded="true"] span
     {
-      display: inline-block;
-      transform: rotate(180deg);
+      transform: translateY(-10%) rotate(180deg);
     }
   }
 
@@ -194,6 +214,7 @@ button:focus-visible
   {
     background: white;
     color: $red;
+    font-weight: 800;
 
     &:hover
     {
@@ -281,12 +302,14 @@ button:focus-visible
   &__image
   {
     display: block;
-    margin: 3rem auto;
+    margin: 6rem auto;
   }
 
   &__image img
   {
     inline-size: 100%;
+    height: 90%;
+    transform: scale(1.2);
   }
 }
 
@@ -303,18 +326,19 @@ button:focus-visible
 
   img
   {
-    inset-block-start: -11rem;
+    inset-block-start: -12rem;
     inset-inline-start: 50%;
     inline-size: min(100%, 34rem);
     position: absolute;
     transform: translateX(-50%);
+    height: 65%;
   }
 
   h2
   {
     font-size: 2.4rem;
     line-height: 1.2;
-    margin: 0 0 1.5rem;
+    margin: 2rem 0 1.5rem;
   }
 
   p
@@ -336,6 +360,8 @@ button:focus-visible
   &__image img
   {
     inline-size: 100%;
+    height: 90%;
+    transform: scale(1.2);
   }
 }
 
@@ -438,8 +464,9 @@ button:focus-visible
       color: $gray;
       inline-size: 10rem;
       inset-block-start: 3rem;
-      inset-inline-start: 0;
+      inset-inline-start: 50%;
       position: absolute;
+      transform: translateX(-50%);
     }
   }
 
@@ -447,6 +474,8 @@ button:focus-visible
   {
     background: white;
     color: $red;
+    text-align: center;
+    font-weight: 800;
 
     &:hover
     {
@@ -479,6 +508,7 @@ button:focus-visible
     {
       font-size: 2.2rem;
       grid-column: 1 / -1;
+      grid-row: 1;
       text-align: center;
     }
 
@@ -487,15 +517,46 @@ button:focus-visible
       align-self: center;
       grid-column: 1;
       grid-row: 2;
-      padding-inline-end: 2rem;
+      align-self: start;
+      margin: 0;
+      padding: 3rem 0 0 0;
+
+      article,
+      h3,
+      p
+      {
+        margin:  0;
+        padding: 0;
+      }
+      h3
+      {
+        margin-top: 2rem;
+      }
+      h3,p
+      {
+        margin-bottom: 2rem;
+      }
+      p
+      {
+        line-height: 1.6;
+      }
+      article + article
+      {
+        margin: 0;
+      }
     }
 
     &__image
     {
       align-self: center;
       grid-column: 2;
-      grid-row: 1 / 3;
-      margin: 0 -45% 0 0;
+      grid-row: 2;
+      position: relative;
+      right: -25%;
+      top: -10%;
+      inline-size: auto;
+      margin-block: 0;
+      margin-inline-end: calc(-1 * max(3rem, calc((100vw - 69rem) / 2)));
     }
   }
 
@@ -505,19 +566,35 @@ button:focus-visible
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-block-size: 25rem;
-    padding: 4rem max(3rem, calc((100% - 69rem) / 2));
+    padding: 2rem max(3rem, calc((100% - 69rem) / 2));
+    position: relative;
     text-align: start;
+    margin: 0;
+   background: url(../../../assets/images/blogr-bg-pattern-circles.svg) -15vw -24rem / 56rem no-repeat, linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
 
     img
     {
-      inset: auto;
-      position: relative;
-      transform: none;
+      block-size: auto;
+      inline-size: min(38vw, 34.5rem);
+      inset-block-start: 60%;
+      inset-inline-start: max(3rem, calc((100% - 69rem) / 2));
+      position: absolute;
+      top: 13rem;
+      transform: translateY(-50%);
     }
 
-    p
+    > div
+    {
+      grid-column: 2;
+    }
+
+    h2,p
     {
       margin: 0;
+    }
+    h2
+    {
+      margin-bottom: 2rem;
     }
   }
 
@@ -536,6 +613,7 @@ button:focus-visible
     {
       padding-inline-start: 2rem;
     }
+
   }
 
   .footer
