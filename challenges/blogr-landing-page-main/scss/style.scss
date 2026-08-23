@@ -408,6 +408,10 @@ button:focus-visible
     min-block-size: 37.5rem;
     padding-inline: 3rem;
   }
+  .hero__content h1
+  {
+    font-size: 3.5rem;
+  }
 
   .navigation
   {
@@ -502,14 +506,13 @@ button:focus-visible
   {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    padding-block: 9rem 5rem;
+    padding-block: 7rem 5rem;
 
     > h2
     {
       font-size: 2.2rem;
       grid-column: 1 / -1;
       grid-row: 1;
-      text-align: center;
     }
 
     &__content
@@ -565,12 +568,12 @@ button:focus-visible
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-block-size: 25rem;
+    min-block-size: 22rem;
     padding: 2rem max(3rem, calc((100% - 69rem) / 2));
     position: relative;
     text-align: start;
     margin: 0;
-   background: url(../../../assets/images/blogr-bg-pattern-circles.svg) -15vw -24rem / 56rem no-repeat, linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
+    background: url(../../../assets/images/blogr-bg-pattern-circles.svg) -15vw -28rem / 56rem no-repeat, linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
 
     img
     {
@@ -579,7 +582,7 @@ button:focus-visible
       inset-block-start: 60%;
       inset-inline-start: max(3rem, calc((100% - 69rem) / 2));
       position: absolute;
-      top: 13rem;
+      top: 12rem;
       transform: translateY(-50%);
     }
 
@@ -607,6 +610,8 @@ button:focus-visible
     &__image
     {
       margin: 0 0 0 -55%;
+      position: relative;
+      right: 8%;
     }
 
     &__content
