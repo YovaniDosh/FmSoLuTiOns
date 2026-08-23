@@ -1,51 +1,39 @@
-<div align="center">
+<h1 style = "text-align:center">
 
-# Product List with Cart
+Esta es mi solución para el reto [Product List with Cart.](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d)
 
-![Vista previa del proyecto](../../assets/screenshots/listCart.png)
+</h1>
 
-</div>
+## Vista previa
 
-## Vista general
+![Captura del proyecto Product List with Cart](../../assets/screenshots/listCart.png)
 
-Solución responsive para crear un pedido de postres, modificar cantidades, eliminar productos y confirmar la compra desde un diálogo accesible.
+## Link
 
-## Enlaces
-
-- [Demostración en vivo](https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-list-with-cart-main/)
-- [Código fuente](https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/product-list-with-cart-main)
-
-## Lo que aprendí
-
-- Representar el carrito con un `Map`.
-- Mantener sincronizados productos, cantidades y totales.
-- Utilizar `<dialog>` para una confirmación modal accesible.
-- Organizar estilos Mobile First con Sass.
-
-```js
-function getOrderTotal(items)
-{
-  return items.reduce((total, item) => total + item.price * item.quantity, 0);
-}
-```
-
-## Accesibilidad
-
-La solución utiliza botones nativos, nombres accesibles, una región `aria-live`, foco visible y un diálogo modal.
-
-## Responsive Design
-
-Una columna en móvil, dos en tablet y tres columnas de productos junto al carrito en escritorio.
+- [Ver proyecto ](https://yovanidosh.github.io/FmSoLuTiOns/challenges/product-list-with-cart-main/)
 
 ## Tecnologías utilizadas
 
 - HTML5 semántico
-- Sass, CSS Grid y Flexbox
+- Sass
 - JavaScript
-- npm
+- CSS Grid y Flexbox
 - Fuente variable local Red Hat Text
+- Diseño mobile-first
+- Metodología BEM
+- Responsive design
+
+## Lo que aprendí
+
+- Representar el estado del carrito mediante un `Map`.
+- Renderizar productos y controles desde JavaScript.
+- Mantener sincronizadas las cantidades, los subtotales y el total general.
+- Utilizar `<picture>` para cargar imágenes según el dispositivo.
+- Crear una confirmación accesible mediante `<dialog>`.
+- Gestionar acciones con delegación de eventos y atributos `data-action`.
+- Formatear importes con `Intl.NumberFormat`.
+- Organizar los estilos mediante Sass y un enfoque mobile-first.
 
 ## Autor
 
-- GitHub: [@YovaniDosh](https://github.com/YovaniDosh)
-- Frontend Mentor: [@YovaniDosh](https://www.frontendmentor.io/profile/YovaniDosh)
+- Frontend Mentor: [JOHANX](https://www.frontendmentor.io/profile/YovaniDosh)
