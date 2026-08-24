@@ -112,6 +112,11 @@ button:focus-visible
     padding: 0.625rem 0.5rem;
     text-transform: uppercase;
 
+    span
+    {
+      font-size: 0.625rem;
+    }
+
     output
     {
       color: $navy-900;
@@ -199,8 +204,7 @@ button.choice
   column-gap: 2rem;
   display: grid;
   grid-template-areas:
-    "player house"
-    "result result";
+    "player opponent";
   grid-template-columns: repeat(2, 1fr);
   inline-size: min(100%, 62rem);
   margin: 6.5rem auto 2rem;
@@ -218,9 +222,9 @@ button.choice
       grid-area: player;
     }
 
-    &--house
+    &--opponent
     {
-      grid-area: house;
+      grid-area: opponent;
     }
 
     h3
@@ -233,22 +237,9 @@ button.choice
     }
   }
 
-  &__result
-  {
-    grid-area: result;
-    text-align: center;
-
-    p
-    {
-      font-size: clamp(3.5rem, 15vw, 4rem);
-      line-height: 1;
-      margin: 0 0 1.25rem;
-      text-transform: uppercase;
-    }
-  }
 }
 
-.play-again
+.restart-button
 {
   background: white;
   border: 0;
@@ -266,6 +257,35 @@ button.choice
   }
 }
 
+.match-dialog
+{
+  border: 0;
+  border-radius: 0.75rem;
+  color: $navy-900;
+  inline-size: min(calc(100% - 2rem), 25rem);
+  padding: 2.5rem 2rem;
+  text-align: center;
+
+  &::backdrop
+  {
+    background: hsl(237 48% 15% / 80%);
+  }
+
+  h2
+  {
+    font-size: clamp(2.75rem, 12vw, 4rem);
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .restart-button
+  {
+    margin-block-start: 1.5rem;
+  }
+
+}
+
 .rules-button
 {
   background: transparent;
@@ -278,6 +298,12 @@ button.choice
   margin: auto auto 0;
   padding: 0.65rem;
   text-transform: uppercase;
+
+  &:disabled
+  {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
 }
 
 .rules-dialog
@@ -318,14 +344,6 @@ button.choice
     padding: 0.5rem;
     position: absolute;
     transform: translateX(-50%);
-  }
-
-  &__goal
-  {
-    line-height: 1.5;
-    margin: 1.5rem auto 0;
-    max-inline-size: 18rem;
-    text-align: center;
   }
 
   &__image
@@ -388,8 +406,8 @@ button.choice
   .round
   {
     align-items: center;
-    grid-template-areas: "player result house";
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "player opponent";
+    grid-template-columns: repeat(2, 1fr);
     margin-block-start: 5rem;
 
     &__pick
@@ -398,10 +416,6 @@ button.choice
       gap: 4rem;
     }
 
-    &__result
-    {
-      min-inline-size: 14rem;
-    }
   }
 
   .rules-button

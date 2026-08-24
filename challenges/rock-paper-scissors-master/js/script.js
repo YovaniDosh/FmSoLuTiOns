@@ -9,34 +9,36 @@ const choiceImages = {
   paper: "../../assets/images/rock-paper-scissors-icon-paper.svg",
   scissors: "../../assets/images/rock-paper-scissors-icon-scissors.svg",
 };
+const roundDelay = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 1200;
 const selection = document.querySelector(".selection");
 const round = document.querySelector(".round");
 const choiceButtons = document.querySelectorAll(".selection .choice");
 const playerChoiceElement = document.getElementById("player-choice");
-const houseChoiceElement = document.getElementById("house-choice");
-const resultText = document.getElementById("result");
+const opponentChoiceElement = document.getElementById("opponent-choice");
 const playerScoreOutput = document.getElementById("player-score");
-const houseScoreOutput = document.getElementById("house-score");
-const playAgainButton = document.querySelector(".play-again");
+const opponentScoreOutput = document.getElementById("opponent-score");
 const rulesButton = document.querySelector(".rules-button");
 const rulesDialog = document.querySelector(".rules-dialog");
+const matchDialog = document.querySelector(".match-dialog");
+const matchResultText = document.getElementById("match-result");
+const restartButton = document.querySelector(".restart-button");
 let playerScore = 0;
-let houseScore = 0;
+let opponentScore = 0;
 
-function getHouseChoice()
+function getOpponentChoice()
 {
   const randomIndex = Math.floor(Math.random() * choices.length);
   return choices[randomIndex];
 }
 
-function getRoundResult(playerChoice, houseChoice)
+function getRoundResult(playerChoice, opponentChoice)
 {
-  if (playerChoice === houseChoice)
+  if (playerChoice === opponentChoice)
   {
     return "draw";
   }
 
-  return winningMoves[playerChoice] === houseChoice ? "win" : "lose";
+  return winningMoves[playerChoice] === opponentChoice ? "win" : "lose";
 }
 
 function renderChoice(element, choice)
@@ -53,11 +55,11 @@ function updateScore(result)
   }
   else if (result === "lose")
   {
-    houseScore += 1;
+    opponentScore += 1;
   }
 
   playerScoreOutput.textContent = playerScore;
-  houseScoreOutput.textContent = houseScore;
+  opponentScoreOutput.textContent = opponentScore;
 }
 
 function getMatchResult()
@@ -67,7 +69,7 @@ function getMatchResult()
     return "You win";
   }
 
-  if (houseScore === 3)
+  if (opponentScore === 3)
   {
     return "You lose";
   }
@@ -75,42 +77,58 @@ function getMatchResult()
   return "";
 }
 
+function showSelection()
+{
+  round.hidden = true;
+  selection.hidden = false;
+  rulesButton.disabled = false;
+  choiceButtons[0].focus();
+}
+
 function resetMatch()
 {
   playerScore = 0;
-  houseScore = 0;
+  opponentScore = 0;
   playerScoreOutput.textContent = playerScore;
-  houseScoreOutput.textContent = houseScore;
+  opponentScoreOutput.textContent = opponentScore;
+  matchDialog.close();
+  showSelection();
+}
+
+function finishRound(matchResult)
+{
+  if (matchResult)
+  {
+    matchResultText.textContent = matchResult === "You win" ? "🏆 You win 🎉" : "😞 You lose 💔";
+    matchDialog.showModal();
+    return;
+  }
+
+  showSelection();
 }
 
 function playRound(playerChoice)
 {
-  const houseChoice = getHouseChoice();
-  const roundResult = getRoundResult(playerChoice, houseChoice);
+  const opponentChoice = getOpponentChoice();
+  const roundResult = getRoundResult(playerChoice, opponentChoice);
   renderChoice(playerChoiceElement, playerChoice);
-  renderChoice(houseChoiceElement, houseChoice);
+  renderChoice(opponentChoiceElement, opponentChoice);
   updateScore(roundResult);
   const matchResult = getMatchResult();
   selection.hidden = true;
   round.hidden = false;
-  resultText.textContent = matchResult || (roundResult === "draw" ? "Draw" : `Round ${roundResult}`);
-  playAgainButton.textContent = matchResult ? "New game" : "Play again";
-  playAgainButton.focus();
+  rulesButton.disabled = true;
+  window.setTimeout(() => finishRound(matchResult), roundDelay);
 }
 
 choiceButtons.forEach((button) => {
   button.addEventListener("click", () => playRound(button.dataset.choice));
 });
 
-playAgainButton.addEventListener("click", () => {
-  if (getMatchResult())
-  {
-    resetMatch();
-  }
+restartButton.addEventListener("click", resetMatch);
 
-  round.hidden = true;
-  selection.hidden = false;
-  choiceButtons[0].focus();
+matchDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
 });
 
 rulesButton.addEventListener("click", () => {

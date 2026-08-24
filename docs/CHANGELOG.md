@@ -1117,8 +1117,8 @@ Durante esta actualización aprendí a:
 - Partidas contra una elección aleatoria de la computadora.
 - Marcadores separados para el jugador y la computadora.
 - Partidas definidas por el primer participante que alcance 3 victorias.
-- Vista de resultados con opción para volver a jugar.
-- Mensajes finales `You win` y `You lose` según el ganador de la partida.
+- Vista temporal de cada elección con regreso automático al tablero.
+- Modal final con emojis, `You win` o `You lose` según el ganador y opción para reiniciar.
 - Diálogo nativo con las reglas del juego.
 - README propio y ruta preparada para la captura del reto 40.
 
@@ -1134,4 +1134,5 @@ Durante esta actualización aprendí a:
 - Selección aleatoria de elementos almacenados en un array.
 - Separación de la lógica en funciones con responsabilidades concretas.
 - Control de rondas y reinicio del estado al terminar una partida.
+- Coordinación del flujo automático mediante un temporizador adaptado a `prefers-reduced-motion`.
 - Gestión accesible del foco después de actualizaciones dinámicas.

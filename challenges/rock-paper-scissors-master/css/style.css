@@ -85,6 +85,9 @@ button:focus-visible {
   padding: 0.625rem 0.5rem;
   text-transform: uppercase;
 }
+.scoreboard__score span {
+  font-size: 0.625rem;
+}
 .scoreboard__score output {
   color: hsl(229, 25%, 31%);
   font-size: 2.5rem;
@@ -147,7 +150,7 @@ button.choice:hover {
 .round {
   column-gap: 2rem;
   display: grid;
-  grid-template-areas: "player house" "result result";
+  grid-template-areas: "player opponent";
   grid-template-columns: repeat(2, 1fr);
   inline-size: min(100%, 62rem);
   margin: 6.5rem auto 2rem;
@@ -162,8 +165,8 @@ button.choice:hover {
 .round__pick--player {
   grid-area: player;
 }
-.round__pick--house {
-  grid-area: house;
+.round__pick--opponent {
+  grid-area: opponent;
 }
 .round__pick h3 {
   font-size: clamp(0.875rem, 4vw, 1.5rem);
@@ -172,18 +175,8 @@ button.choice:hover {
   text-align: center;
   text-transform: uppercase;
 }
-.round__result {
-  grid-area: result;
-  text-align: center;
-}
-.round__result p {
-  font-size: clamp(3.5rem, 15vw, 4rem);
-  line-height: 1;
-  margin: 0 0 1.25rem;
-  text-transform: uppercase;
-}
 
-.play-again {
+.restart-button {
   background: white;
   border: 0;
   border-radius: 0.5rem;
@@ -194,8 +187,29 @@ button.choice:hover {
   padding: 1rem;
   text-transform: uppercase;
 }
-.play-again:hover {
+.restart-button:hover {
   color: hsl(349, 71%, 52%);
+}
+
+.match-dialog {
+  border: 0;
+  border-radius: 0.75rem;
+  color: hsl(229, 25%, 31%);
+  inline-size: min(100% - 2rem, 25rem);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.match-dialog::backdrop {
+  background: hsla(237, 48%, 15%, 0.8);
+}
+.match-dialog h2 {
+  font-size: clamp(2.75rem, 12vw, 4rem);
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+.match-dialog .restart-button {
+  margin-block-start: 1.5rem;
 }
 
 .rules-button {
@@ -209,6 +223,10 @@ button.choice:hover {
   margin: auto auto 0;
   padding: 0.65rem;
   text-transform: uppercase;
+}
+.rules-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
 }
 
 .rules-dialog {
@@ -241,12 +259,6 @@ button.choice:hover {
   padding: 0.5rem;
   position: absolute;
   transform: translateX(-50%);
-}
-.rules-dialog__goal {
-  line-height: 1.5;
-  margin: 1.5rem auto 0;
-  max-inline-size: 18rem;
-  text-align: center;
 }
 .rules-dialog__image {
   display: block;
@@ -286,16 +298,13 @@ button.choice:hover {
   }
   .round {
     align-items: center;
-    grid-template-areas: "player result house";
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "player opponent";
+    grid-template-columns: repeat(2, 1fr);
     margin-block-start: 5rem;
   }
   .round__pick {
     flex-direction: column;
     gap: 4rem;
-  }
-  .round__result {
-    min-inline-size: 14rem;
   }
   .rules-button {
     margin-inline-end: 0;

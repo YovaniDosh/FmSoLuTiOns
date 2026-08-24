@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Play a responsive game of Rock, Paper, Scissors against the computer.">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/ajustes.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Rock, Paper, Scissors</title>
 </head>
@@ -12,9 +12,9 @@
   <main class="game">
     <header class="scoreboard">
       <h1><img src="../../assets/images/rock-paper-scissors-logo.svg" alt="Rock, Paper, Scissors" width="162" height="99"></h1>
-      <div class="scoreboard__scores">
+      <div class="scoreboard__scores" aria-live="polite">
         <p class="scoreboard__score"><span>You</span><output id="player-score">0</output></p>
-        <p class="scoreboard__score"><span>House</span><output id="house-score">0</output></p>
+        <p class="scoreboard__score"><span>Opponent</span><output id="opponent-score">0</output></p>
       </div>
     </header>
 
@@ -28,19 +28,15 @@
     </section>
 
     <section class="round" aria-labelledby="round-title" hidden>
-      <h2 class="sr-only" id="round-title">Round result</h2>
+      <h2 class="sr-only" id="round-title">Round choices</h2>
       <article class="round__pick round__pick--player">
         <h3>You picked</h3>
         <div class="choice" id="player-choice"><img src="" alt="" width="49" height="59"></div>
       </article>
-      <article class="round__pick round__pick--house">
-        <h3>The house picked</h3>
-        <div class="choice" id="house-choice"><img src="" alt="" width="49" height="59"></div>
+      <article class="round__pick round__pick--opponent">
+        <h3>Opponent picked</h3>
+        <div class="choice" id="opponent-choice"><img src="" alt="" width="49" height="59"></div>
       </article>
-      <div class="round__result">
-        <p id="result" aria-live="polite"></p>
-        <button class="play-again" type="button">Play again</button>
-      </div>
     </section>
 
     <button class="rules-button" type="button">Rules</button>
@@ -51,8 +47,12 @@
       <h2>Rules</h2>
       <form method="dialog"><button class="rules-dialog__close" type="submit"><img src="../../assets/images/rock-paper-scissors-icon-close.svg" alt="" width="20" height="20"><span class="sr-only">Close rules</span></button></form>
     </div>
-    <p class="rules-dialog__goal">The first player to win 3 rounds wins the match.</p>
     <img class="rules-dialog__image" src="../../assets/images/rock-paper-scissors-image-rules.svg" alt="Paper beats rock, rock beats scissors, and scissors beats paper" width="304" height="270">
+  </dialog>
+
+  <dialog class="match-dialog" aria-labelledby="match-result">
+    <h2 id="match-result"></h2>
+    <button class="restart-button" type="button">Play again</button>
   </dialog>
 
   <script src="js/script.js"></script>
