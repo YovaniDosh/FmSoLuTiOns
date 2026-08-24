@@ -1,4 +1,5 @@
 node_modules/
+*.map
 AGENTS.md
 challenges/*.zip
 challenges/*/model.txt

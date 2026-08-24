@@ -343,6 +343,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/blogr-landing-page-main",
     completed: true,
   },
+  {
+    title: "Insure Landing Page",
+    description: "Landing responsive de seguros con navegación accesible, hero editorial y secciones adaptativas.",
+    technologies: ["HTML", "Sass", "JavaScript", "CSS Grid", "npm", "Git"],
+    image: "assets/screenshots/insure.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/insure-landing-page-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/insure-landing-page-master",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");

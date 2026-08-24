@@ -1,0 +1,587 @@
+@font-face
+{
+  font-display: swap;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("../../../assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../assets/fonts/YoungSerif-Regular.ttf") format("truetype");
+}
+
+$blue-950: hsl(256, 26%, 20%);
+$blue-500: hsl(216, 30%, 68%);
+$gray-950: hsl(270, 9%, 17%);
+$gray-700: hsl(273, 4%, 51%);
+$gray-50:  hsl(0, 0%, 98%);
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  color: $gray-950;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+body.menu-open
+{
+  overflow: hidden;
+}
+
+img
+{
+  display: block;
+  max-inline-size: 100%;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+button
+{
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible
+{
+  outline: 0.1875rem solid $blue-500;
+  outline-offset: 0.25rem;
+}
+
+.sr-only
+{
+  block-size: 0.0625rem;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  inline-size: 0.0625rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.site-header
+{
+  background: white;
+  min-block-size: 5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.navigation
+{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  max-inline-size: 69rem;
+  min-block-size: 5rem;
+  padding-inline: 1.5rem;
+
+  &__toggle
+  {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__menu
+  {
+    align-items: stretch;
+    background: $gray-950 url("../../../assets/images/insure-bg-pattern-mobile-nav.svg") bottom / 100% auto no-repeat;
+    color: white;
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    inset-block-start: 5rem;
+    inset-inline: 0;
+    min-block-size: calc(100vh - 5rem);
+    padding: 3rem 1.5rem;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+
+    > a
+    {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+    }
+    > a:active
+    {
+      color: $gray-950;
+    }
+  }
+
+  &__toggle[aria-expanded="true"] + &__menu
+  {
+    display: flex;
+  }
+}
+
+.button
+{
+  border: 0.125rem solid currentColor;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+
+  &:hover
+  {
+    background: $blue-950;
+    color: white;
+  }
+
+  &--light:hover
+  {
+    background: white;
+    color: $blue-950;
+  }
+}
+
+.hero
+{
+  background: $blue-950;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__image img
+  {
+    inline-size: 100%;
+  }
+
+  &__content
+  {
+    padding: 5.5rem 1.5rem 6rem;
+    position: relative;
+
+    &::before,
+    &::after
+    {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+    }
+
+    &::before
+    {
+      background: url("../../../assets/images/insure-bg-pattern-intro-left-mobile.svg") left top / contain no-repeat;
+      block-size: 10.3125rem;
+      inline-size: 10.5rem;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+    }
+
+    &::after
+    {
+      background: url("../../../assets/images/insure-bg-pattern-intro-right-mobile.svg") right bottom / contain no-repeat;
+      block-size: 22.625rem;
+      inline-size: 8.5rem;
+      inset-block-end: -14rem;
+      inset-inline-end: 0;
+      z-index: 2;
+    }
+  }
+
+  hr
+  {
+    display: none;
+  }
+
+  h1
+  {
+    font-family: "Young Serif", serif;
+    font-size: clamp(2.5rem, 5vw, 3.2rem);
+    padding: 0 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 1.5rem;
+  }
+
+  p
+  {
+    line-height: 1.6;
+    margin: 0 auto 2rem;
+    max-inline-size: 34rem;
+  }
+}
+
+.difference
+{
+  margin-inline: auto;
+  max-inline-size: 69rem;
+  padding: 6rem 1.5rem;
+  text-align: center;
+
+  > hr
+  {
+    border: 0;
+    border-block-start: 0.0625rem solid hsl(256 26% 20% / 25%);
+    inline-size: 9.5rem;
+    margin: 0 auto 2.5rem;
+  }
+
+  > h2,
+  .work-card h2
+  {
+    font-family: "Young Serif", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  > h2
+  {
+    margin: 0 0 5rem;
+  }
+
+  &__grid
+  {
+    display: grid;
+    gap: 3.5rem;
+
+    img
+    {
+      margin-inline: auto;
+    }
+
+    h3
+    {
+      font-family: "Young Serif", serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin: 2rem 0 1rem;
+    }
+
+    p
+    {
+      color: $gray-700;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-inline-size: 22rem;
+    }
+  }
+}
+
+.work-card h2
+{
+  font-size: clamp(2.5rem, 4.375vw, 2.8rem);
+}
+
+.work-card
+{
+  align-items: center;
+  background: $blue-950 url("../../../assets/images/insure-bg-pattern-how-we-work-mobile.svg") right top no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block-start: 8.5rem;
+  padding: 4.5rem 2rem;
+
+  h2
+  {
+    margin: 0;
+  }
+}
+
+.footer
+{
+  background: $gray-50 url("../../../assets/images/insure-bg-pattern-footer-mobile.svg") top left / 100% auto no-repeat;
+  padding: 5.5rem 1.5rem;
+  text-align: center;
+
+  &__top,
+  &__links
+  {
+    margin-inline: auto;
+    max-inline-size: 69rem;
+  }
+
+  &__top
+  {
+    align-items: center;
+    border-block-end: 0.0625rem solid hsl(273 4% 51% / 25%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block-end: 2.5rem;
+  }
+
+  &__links
+  {
+    display: grid;
+    gap: 2rem;
+    padding-block-start: 2.5rem;
+
+    h2
+    {
+      color: $gray-700;
+      font-size: 0.875rem;
+      letter-spacing: 0.1em;
+      margin: 0 0 1.75rem;
+      text-transform: uppercase;
+    }
+
+    ul
+    {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      line-height: 2.2;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    a:hover
+    {
+      text-decoration: underline;
+    }
+  }
+}
+
+.social-links
+{
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a:hover img
+  {
+    filter: brightness(0.3);
+  }
+}
+
+@media (min-width: 48rem)
+{
+  .difference__grid,
+  .footer__links
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem)
+{
+  body.menu-open
+  {
+    overflow: auto;
+  }
+
+  .navigation
+  {
+    &__toggle
+    {
+      display: none;
+    }
+
+    &__menu
+    {
+      align-items: center;
+      background: transparent;
+      color: $gray-700;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      min-block-size: auto;
+      padding: 0;
+      position: static;
+
+      > a
+      {
+        font-size: 0.875rem;
+      }
+
+      .button
+      {
+        color: $blue-950;
+
+        &:hover
+        {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .hero
+  {
+    display: block;
+    min-block-size: 32rem;
+    padding: 6.5rem max(3rem, calc((100% - 69rem) / 2));
+    position: relative;
+    text-align: start;
+
+    h1
+    {
+      padding: 0;
+    }
+    p
+    {
+      font-size: .8rem;
+    }
+    &::before
+    {
+      background: url("../../../assets/images/insure-bg-pattern-intro-right-desktop.svg") right top / contain no-repeat;
+      block-size: 33rem;
+      content: "";
+      inline-size: 25rem;
+      inset-block-start: -5rem;
+      inset-inline-end: 0;
+      pointer-events: none;
+      position: absolute;
+      z-index: 3;
+    }
+    &::after
+    {
+      background: url("../../../assets/images/insure-bg-pattern-intro-left-desktop.svg") left bottom / contain no-repeat;
+      content: "";
+      inset-block-start: 22rem;
+      inset-inline-start: 0;
+      block-size: 32rem;
+      inline-size: 12rem;
+      position: absolute;
+    }
+
+    &__image
+    {
+      inset-block-start: 6.5rem;
+      inset-inline-end: max(3rem, calc((100% - 69rem) / 2));
+      inline-size: 46%;
+      max-inline-size: 34rem;
+      position: absolute;
+      height: 105%;
+      z-index: 2;
+      img
+      {
+        height: 100%;
+      }
+    }
+
+    &__content
+    {
+      background: none;
+      max-inline-size: 33rem;
+      padding: 0 0 0 6rem ;
+
+      &::before,
+      &::after
+      {
+        display: none;
+      }
+    }
+
+    hr
+    {
+      border: 0;
+      border-block-start: 0.0625rem solid white;
+      display: block;
+      inline-size: 9.5rem;
+      margin: 0 0 3.5rem;
+    }
+
+    p
+    {
+      margin-inline: 0;
+    }
+  }
+
+  .difference
+  {
+    padding-block: 19rem 9rem;
+    text-align: start;
+
+    > hr
+    {
+      margin-inline: 0;
+    }
+
+    &__grid
+    {
+      grid-template-columns: repeat(3, 1fr);
+
+      img
+      {
+        margin-inline: 0;
+      }
+
+      p
+      {
+        margin-inline: 0;
+      }
+    }
+  }
+
+  .work-card
+  {
+    background-image: url("../../../assets/images/insure-bg-pattern-how-we-work-desktop.svg");
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+
+    h2
+    {
+      max-inline-size: 25rem;
+      padding-right: .5rem;
+    }
+  }
+
+  .footer
+  {
+    background-image: url("../../../assets/images/insure-bg-pattern-footer-desktop.svg");
+    background-size: auto;
+    padding-block: 4rem;
+    text-align: start;
+
+    &__top
+    {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__links
+    {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  html
+  {
+    scroll-behavior: auto;
+  }
+}

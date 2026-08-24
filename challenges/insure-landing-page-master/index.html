@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find straightforward insurance plans designed to protect you and your loved ones.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/ajustes.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#"><img src="../../assets/images/insure-logo.svg" alt="Insure" width="112" height="18"></a>
+      <button class="navigation__toggle" type="button" aria-expanded="false" aria-controls="navigation-menu">
+        <img src="../../assets/images/insure-icon-hamburger.svg" alt="" width="32" height="32">
+        <span class="sr-only">Open menu</span>
+      </button>
+      <div class="navigation__menu" id="navigation-menu" inert>
+        <a href="#work">How we work</a><a href="#">Blog</a><a href="#">Account</a><a class="button" href="#">View plans</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture class="hero__image"><source media="(min-width: 64rem)" srcset="../../assets/images/insure-image-intro-desktop.jpg"><img src="../../assets/images/insure-image-intro-mobile.jpg" alt="A family walking together outdoors" width="375" height="451"></picture>
+      <div class="hero__content">
+        <hr><h1>Humanizing your insurance.</h1>
+        <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+        <a class="button button--light" href="#">View plans</a>
+      </div>
+    </section>
+
+    <section class="difference" id="work" aria-labelledby="difference-title">
+      <hr><h2 id="difference-title">We’re different</h2>
+      <div class="difference__grid">
+        <article><img src="../../assets/images/insure-icon-snappy-process.svg" alt="" width="86" height="86"><h3>Snappy Process</h3><p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p></article>
+        <article><img src="../../assets/images/insure-icon-affordable-prices.svg" alt="" width="86" height="86"><h3>Affordable Prices</h3><p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p></article>
+        <article><img src="../../assets/images/insure-icon-people-first.svg" alt="" width="86" height="86"><h3>People First</h3><p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p></article>
+      </div>
+      <aside class="work-card">
+        <h2>Find out more about how we work</h2><a class="button button--light" href="#">How we work</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#"><img src="../../assets/images/insure-logo.svg" alt="Insure" width="112" height="18"></a>
+      <ul class="social-links" aria-label="Social networks">
+        <li><a href="#" aria-label="Facebook"><img src="../../assets/images/insure-icon-facebook.svg" alt="" width="24" height="24"></a></li><li><a href="#" aria-label="Twitter"><img src="../../assets/images/insure-icon-twitter.svg" alt="" width="24" height="20"></a></li><li><a href="#" aria-label="Pinterest"><img src="../../assets/images/insure-icon-pinterest.svg" alt="" width="24" height="24"></a></li><li><a href="#" aria-label="Instagram"><img src="../../assets/images/insure-icon-instagram.svg" alt="" width="24" height="24"></a></li>
+      </ul>
+    </div>
+    <div class="footer__links">
+      <div><h2>Our company</h2><ul><li><a href="#">How we work</a></li><li><a href="#">Why Insure?</a></li><li><a href="#">View plans</a></li><li><a href="#">Reviews</a></li></ul></div>
+      <div><h2>Help me</h2><ul><li><a href="#">FAQ</a></li><li><a href="#">Terms of use</a></li><li><a href="#">Privacy policy</a></li><li><a href="#">Cookies</a></li></ul></div>
+      <div><h2>Contact</h2><ul><li><a href="#">Sales</a></li><li><a href="#">Support</a></li><li><a href="#">Live chat</a></li></ul></div>
+      <div><h2>Others</h2><ul><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="#">Licenses</a></li></ul></div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

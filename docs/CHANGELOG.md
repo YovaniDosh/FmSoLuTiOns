@@ -1084,3 +1084,27 @@ Durante esta actualización aprendí a:
 - Gestión de elementos ocultos mediante `inert`.
 - Adaptación del menú al cambiar entre viewports.
 - Composición responsive con Grid e imágenes adaptativas.
+
+## [0.40.0]
+
+### Added
+
+- Insure Landing Page completado.
+- Navegación responsive con menú móvil accesible.
+- Hero editorial, sección de ventajas y llamada a la acción.
+- Imágenes adaptativas específicas para móvil y escritorio.
+- Fuentes Karla y Young Serif reutilizadas desde los recursos globales.
+- README propio y ruta preparada para la captura del reto 39.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 39 de 100.
+- Estilos desarrollados en Sass y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Gestión de navegación oculta mediante `inert`.
+- Sincronización del botón móvil con `aria-expanded`.
+- Composición de fondos decorativos específicos por viewport.
+- Superposición responsive de imágenes sin duplicar contenido.
