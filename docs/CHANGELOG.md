@@ -1108,3 +1108,30 @@ Durante esta actualización aprendí a:
 - Sincronización del botón móvil con `aria-expanded`.
 - Composición de fondos decorativos específicos por viewport.
 - Superposición responsive de imágenes sin duplicar contenido.
+
+## [0.41.0]
+
+### Added
+
+- Rock, Paper, Scissors completado en su versión original.
+- Partidas contra una elección aleatoria de la computadora.
+- Marcadores separados para el jugador y la computadora.
+- Partidas definidas por el primer participante que alcance 3 victorias.
+- Vista de resultados con opción para volver a jugar.
+- Mensajes finales `You win` y `You lose` según el ganador de la partida.
+- Diálogo nativo con las reglas del juego.
+- README propio y ruta preparada para la captura del reto 40.
+
+### Changed
+
+- Catálogo principal actualizado con el nuevo proyecto.
+- Contador general actualizado a 40 de 100.
+- Estilos desarrollados en Sass y compilados a CSS para GitHub Pages.
+
+### Learned
+
+- Modelado de reglas mediante objetos de JavaScript.
+- Selección aleatoria de elementos almacenados en un array.
+- Separación de la lógica en funciones con responsabilidades concretas.
+- Control de rondas y reinicio del estado al terminar una partida.
+- Gestión accesible del foco después de actualizaciones dinámicas.

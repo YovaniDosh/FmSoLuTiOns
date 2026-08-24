@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play a responsive game of Rock, Paper, Scissors against the computer.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+  <main class="game">
+    <header class="scoreboard">
+      <h1><img src="../../assets/images/rock-paper-scissors-logo.svg" alt="Rock, Paper, Scissors" width="162" height="99"></h1>
+      <div class="scoreboard__scores">
+        <p class="scoreboard__score"><span>You</span><output id="player-score">0</output></p>
+        <p class="scoreboard__score"><span>House</span><output id="house-score">0</output></p>
+      </div>
+    </header>
+
+    <section class="selection" aria-labelledby="selection-title">
+      <h2 class="sr-only" id="selection-title">Choose your move</h2>
+      <div class="selection__board">
+        <button class="choice choice--paper" type="button" data-choice="paper"><img src="../../assets/images/rock-paper-scissors-icon-paper.svg" alt="" width="49" height="59"><span class="sr-only">Choose paper</span></button>
+        <button class="choice choice--scissors" type="button" data-choice="scissors"><img src="../../assets/images/rock-paper-scissors-icon-scissors.svg" alt="" width="51" height="58"><span class="sr-only">Choose scissors</span></button>
+        <button class="choice choice--rock" type="button" data-choice="rock"><img src="../../assets/images/rock-paper-scissors-icon-rock.svg" alt="" width="48" height="48"><span class="sr-only">Choose rock</span></button>
+      </div>
+    </section>
+
+    <section class="round" aria-labelledby="round-title" hidden>
+      <h2 class="sr-only" id="round-title">Round result</h2>
+      <article class="round__pick round__pick--player">
+        <h3>You picked</h3>
+        <div class="choice" id="player-choice"><img src="" alt="" width="49" height="59"></div>
+      </article>
+      <article class="round__pick round__pick--house">
+        <h3>The house picked</h3>
+        <div class="choice" id="house-choice"><img src="" alt="" width="49" height="59"></div>
+      </article>
+      <div class="round__result">
+        <p id="result" aria-live="polite"></p>
+        <button class="play-again" type="button">Play again</button>
+      </div>
+    </section>
+
+    <button class="rules-button" type="button">Rules</button>
+  </main>
+
+  <dialog class="rules-dialog">
+    <div class="rules-dialog__heading">
+      <h2>Rules</h2>
+      <form method="dialog"><button class="rules-dialog__close" type="submit"><img src="../../assets/images/rock-paper-scissors-icon-close.svg" alt="" width="20" height="20"><span class="sr-only">Close rules</span></button></form>
+    </div>
+    <p class="rules-dialog__goal">The first player to win 3 rounds wins the match.</p>
+    <img class="rules-dialog__image" src="../../assets/images/rock-paper-scissors-image-rules.svg" alt="Paper beats rock, rock beats scissors, and scissors beats paper" width="304" height="270">
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -352,6 +352,15 @@ const projects = [
     githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/insure-landing-page-master",
     completed: true,
   },
+  {
+    title: "Rock, Paper, Scissors",
+    description: "Juego responsive contra la computadora con marcador, resultados dinámicos y modal de reglas accesible.",
+    technologies: ["HTML", "Sass", "JavaScript", "CSS Grid", "npm", "Git"],
+    image: "assets/screenshots/rock-paper-scissors.png",
+    liveUrl: "https://yovanidosh.github.io/FmSoLuTiOns/challenges/rock-paper-scissors-master/",
+    githubUrl: "https://github.com/YovaniDosh/FmSoLuTiOns/tree/main/challenges/rock-paper-scissors-master",
+    completed: true,
+  },
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");
