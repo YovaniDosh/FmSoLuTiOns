@@ -8,11 +8,7 @@ My solution to the [QR Code Component challenge by Frontend Mentor](https://www.
 
 ## Preview
 
-</div>
-
 ![QR Code Component project screenshot](../../assets/screenshots/qr-code-screen.png)
-
-<div align="center">
 
 ## Links
 
@@ -47,6 +43,7 @@ During this challenge, I practiced:
 * Working with `padding` and `margin`.
 * Adapting a component to mobile devices.
 * Understanding the importance of alternative text for images.
+
 <div align="center">
 
 ## Author
