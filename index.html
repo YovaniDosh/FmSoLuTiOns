@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal collection of completed Frontend Mentor challenges.">
+  <link rel="shortcut icon" href="assets/images/ajustes.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/arcade-progress.css">
+  <title>Collection Challenge Frontend</title>
+</head>
+
+<body>
+
+  <header class="hero">
+
+    <div class="container">
+
+      <h1>My Collection of Frontend Challenges</h1>
+
+      <p class="hero__technologies">
+        HTML <span>•</span>
+        CSS <span>•</span>
+        JS<span>•</span>
+        Mobile-first<span>•</span>
+        Git<span>•</span>
+        SASS/LESS<span>•</span>
+        npm
+      </p>
+
+      <a class="button" href="#completedChallenges">
+        View Projects
+      </a>
+    </div>
+
+  </header>
+
+<main>
+    <section class="projects-section" id="completedChallenges">
+      <div class="container">
+        <div class="section-heading">
+          <article class="arcade-progress" aria-labelledby="progressTitle">
+            <div class="arcade-progress__header">
+              <p id="progressTitle">
+                <strong id="completedCount">0</strong>
+                of <b>100</b> projects completed
+              </p>
+              <span class="arcade-progress__percentage" id="progressPercentage" aria-hidden="true">0%</span>
+            </div>
+
+            <div class="arcade-progress__game" id="projectsProgress" role="progressbar" aria-label="Progreso de desafíos completados" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="--progress: 0%;">
+              <div class="arcade-progress__pellets" id="progressPellets" aria-hidden="true"></div>
+
+              <img class="arcade-progress__pacman" id="progressCharacter" src="./assets/images/pacman.webp" alt="" aria-hidden="true">
+
+              <div class="arcade-progress__milestone" data-milestone="25" style="--position: 25%;">
+                <img src="./assets/images/ghost-pink.svg" alt="" aria-hidden="true">
+                <span>25%</span>
+              </div>
+              <div class="arcade-progress__milestone" data-milestone="50" style="--position: 50%;">
+                <img src="./assets/images/ghost-cyan.svg" alt="" aria-hidden="true">
+                <span>50%</span>
+              </div>
+              <div class="arcade-progress__milestone" data-milestone="75" style="--position: 75%;">
+                <img src="./assets/images/ghost-orange.svg" alt="" aria-hidden="true">
+                <span>75%</span>
+              </div>
+              <div class="arcade-progress__milestone" data-milestone="90" style="--position: 90%;">
+                <img src="./assets/images/ghost-red.svg" alt="" aria-hidden="true">
+                <span>90%</span>
+              </div>
+
+              <div class="arcade-progress__reward" id="progressReward" aria-hidden="true">
+                <img src="./assets/images/cherries.svg" alt="">
+                <span class="arcade-progress__lock">🔒</span>
+              </div>
+            </div>
+
+            <p class="arcade-progress__message" id="progressMessage" aria-live="polite">
+              The game has just begun.
+            </p>
+          </article>
+        </div>
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Built with HTML, CSS and JavaScript.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="js/arcade-progress.js"></script>
+</body>
+</html>

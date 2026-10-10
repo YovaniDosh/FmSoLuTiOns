@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Fantasma cyan</title>
+  <path fill="#67e8f9" d="M8 56V29C8 15.2 18.7 4 32 4s24 11.2 24 25v27l-8-7-8 7-8-7-8 7-8-7z"/>
+  <g fill="#fff"><ellipse cx="24" cy="27" rx="7" ry="9"/><ellipse cx="42" cy="27" rx="7" ry="9"/></g>
+  <g fill="#1d4ed8"><circle cx="26" cy="29" r="3"/><circle cx="44" cy="29" r="3"/></g>
+</svg>
