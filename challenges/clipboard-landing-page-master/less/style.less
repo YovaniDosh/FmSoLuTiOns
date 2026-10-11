@@ -1,0 +1,393 @@
+@color-green: hsl(171, 66%, 44%);
+@color-blue: hsl(233, 100%, 69%);
+@color-heading: hsl(210, 10%, 33%);
+@color-text: hsl(201, 11%, 66%);
+@color-white: hsl(0, 0%, 100%);
+@color-footer: hsl(220, 18%, 97%);
+@radius-pill: 999px;
+@shadow-green: 0 0.25rem 0 hsl(171, 66%, 34%);
+@shadow-blue: 0 0.25rem 0 hsl(233, 60%, 58%);
+@transition-fast: 180ms ease;
+@breakpoint-tablet: 48rem;
+@breakpoint-desktop: 64rem;
+.section-container()
+{
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+.section-title()
+{
+  color: @color-heading;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  line-height: 1.4;
+  padding: 0 2rem;
+}
+.section-text()
+{
+  max-width: 42rem;
+  margin-inline: auto;
+  padding: 0 1.7rem;
+  color: @color-text;
+  line-height: 1.7;
+}
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+body,
+h1,
+h2,
+h3,
+p
+{
+  margin: 0;
+}
+body
+{
+  min-height: 100vh;
+  min-width: 100%;
+  color: @color-text;
+  font-family: Arial, sans-serif;
+  overflow-x: clip;
+}
+ul,
+ol
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img
+{
+  display: block;
+  max-width: 100%;
+}
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+textarea,
+select
+{
+  font: inherit;
+}
+button
+{
+  border: 0;
+}
+:focus-visible
+{
+  outline: 0.15rem solid currentColor;
+  outline-offset: 0.2rem;
+}
+.hero
+{
+  .section-container();
+  padding-block: 8rem 5rem;
+  background: url("../../../assets/images/bg-header-mobile.png") top center / cover no-repeat;
+  text-align: center;
+  &__logo
+  {
+    width: 7.5rem;
+    margin-inline: auto;
+  }
+  h1
+  {
+    .section-title();
+    max-width: 42rem;
+    margin: 3rem auto 0;
+    font-size: clamp(2rem, 7vw, 2.8rem);
+  }
+  > p
+  {
+    .section-text();
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+}
+.actions
+{
+  display: grid;
+  gap: 1rem;
+  max-width: 30rem;
+  margin: 3rem auto 0;
+}
+.button
+{
+  min-height: 3.25rem;
+  width: 90%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+  border-radius: @radius-pill;
+  color: @color-white;
+  font-weight: 700;
+  margin: 0 auto 0.5rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: transform @transition-fast, opacity @transition-fast, box-shadow @transition-fast;
+  &:hover,
+  &:focus-visible,
+  &:active
+  {
+    transform: translateY(-0.15rem);
+    opacity: 0.9;
+  }
+  &:active
+  {
+    transform: translateY(0);
+  }
+  &:focus-visible
+  {
+    outline: 0.15rem solid currentColor;
+    outline-offset: 0.2rem;
+  }
+  &--ios
+  {
+    background: @color-green;
+    box-shadow: 0 0.2rem 0 hsl(171, 66%, 34%), 0 0.75rem 1.5rem fade(@color-green, 20%);
+  }
+  &--mac
+  {
+    background: @color-blue;
+    box-shadow: 0 0.2rem 0 hsl(233, 60%, 58%), 0 0.75rem 1.5rem fade(@color-blue, 20%);
+  }
+}
+.section
+{
+  .section-container();
+  padding-block: 4rem;
+  &__header
+  {
+    text-align: center;
+    h2
+    {
+      .section-title();
+    }
+    p
+    {
+      .section-text();
+      margin-top: 1rem;
+    }
+  }
+}
+.tracking
+{
+  display: grid;
+  gap: 3.5rem;
+  margin-top: 4rem;
+  &__image
+  {
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__features
+  {
+    display: grid;
+    gap: 2.5rem;
+    padding-inline: 1.5rem;
+    text-align: center;
+  }
+}
+.feature
+{
+  h3
+  {
+    color: @color-heading;
+    font-size: 1.35rem;
+  }
+  p
+  {
+    margin-top: 0.75rem;
+    padding: 0 2rem;
+    line-height: 1.7;
+  }
+}
+.devices-image
+{
+  width: min(100%, 50rem);
+  margin: 5rem auto 0;
+}
+.workflow
+{
+  display: grid;
+  gap: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+  &__item
+  {
+    img
+    {
+      height: 2.5rem;
+      margin-inline: auto;
+    }
+    h3
+    {
+      margin-top: 2rem;
+      color: @color-heading;
+    }
+    p
+    {
+      margin-top: 1rem;
+      padding: 0 2rem;
+      line-height: 1.7;
+    }
+  }
+}
+.companies
+{
+  .section-container();
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+  padding-block: 4rem;
+  img
+  {
+    max-width: 8rem;
+    margin-bottom: 1.3rem;
+  }
+}
+.section--cta
+{
+  padding-bottom: 7rem;
+}
+.footer
+{
+  background: @color-footer;
+  &__content
+  {
+    .section-container();
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+  &__logo
+  {
+    margin-bottom: 1.4rem;
+    width: 3rem;
+  }
+  &__navigation
+  {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    a
+    {
+      color: @color-heading;
+      text-decoration: none;
+      transition: color @transition-fast;
+      &:hover,
+      &:focus-visible,
+      &:active
+      {
+        color: @color-green;
+      }
+    }
+  }
+  &__social
+  {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .social-link
+  {
+    display: inline-flex;
+    color: @color-heading;
+    svg
+    {
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+      fill: currentColor;
+    }
+    &:hover,
+    &:focus-visible,
+    &:active
+    {
+      color: @color-green;
+    }
+  }
+}
+@media (min-width: @breakpoint-tablet)
+{
+  .actions
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .workflow
+  {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .companies
+  {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+  }
+}
+@media (min-width: @breakpoint-desktop)
+{
+  .hero
+  {
+    width: 100vw;
+    background-image: url("../../../assets/images/bg-header-desktop.png");
+  }
+  .tracking
+  {
+    margin-inline: auto;
+    width: 100%;
+    grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.6fr);
+    align-items: center;
+    max-width: 80rem;
+    &__image
+    {
+      display: block;
+      width: min(52vw, 47rem);
+      max-width: none;
+      margin: 0;
+      height: auto;
+      transform: translateX(min(-1rem, calc((70rem - 100vw) / 2)));
+    }
+    &__features
+    {
+      text-align: left;
+      width: 100%;
+      max-width: 28rem;
+      padding-inline: 0 2rem;
+      justify-self: start;
+    }
+  }
+  .feature
+  {
+    p
+    {
+      padding-inline: 0;
+      text-align: left;
+    }
+  }
+  .footer
+  {
+    &__content
+    {
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      justify-items: center;
+    }
+    &__navigation
+    {
+      grid-template-columns: repeat(3, max-content);
+      text-align: left;
+    }
+  }
+}
