@@ -1,0 +1,257 @@
+@font-face
+{
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  src: url("../../../assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root
+{
+  --color-blue-900: hsl(217, 19%, 35%);
+  --color-blue-700: hsl(214, 17%, 51%);
+  --color-blue-500: hsl(212, 23%, 69%);
+  --color-blue-100: hsl(210, 46%, 95%);
+  --color-white:    hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  min-block-size: 100vh;
+  margin: 0;
+  padding: 4.625rem 1.5rem;
+  color: var(--color-blue-700);
+  background: var(--color-blue-100);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.article-preview
+{
+  display: grid;
+  min-block-size: calc(100vh - 9.25rem);
+  place-items: center;
+}
+
+button
+{
+  font: inherit;
+}
+
+.article-card
+{
+  inline-size: min(100%, 45.625rem);
+  overflow: hidden;
+  border-radius: 0.625rem;
+  background: var(--color-white);
+  box-shadow: 0 2.5rem 3.75rem hsl(214 17% 51% / 25%);
+}
+
+.article-card__cover
+{
+  display: block;
+  inline-size: 100%;
+  block-size: 12.5rem;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.article-card__content
+{
+  padding: 2rem 2rem 1.25rem;
+}
+
+.article-card__title
+{
+  margin: 0;
+  color: var(--color-blue-900);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.article-card__description
+{
+  margin: 0.75rem 0 2rem;
+}
+
+.article-card__footer
+{
+  position: relative;
+  display: flex;
+  min-block-size: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author
+{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author__avatar
+{
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  border-radius: 50%;
+}
+
+.author__name
+{
+  margin: 0;
+  color: var(--color-blue-900);
+  font-weight: 700;
+}
+
+.author__date
+{
+  color: var(--color-blue-500);
+}
+
+.share-button
+{
+  position: relative;
+  z-index: 2;
+  display: grid;
+  inline-size: 2rem;
+  block-size: 2rem;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-blue-100);
+  cursor: pointer;
+}
+
+.share-button:hover,
+.share-button[aria-expanded="true"]
+{
+  background: var(--color-blue-700);
+}
+
+.share-button:hover img,
+.share-button[aria-expanded="true"] img
+{
+  filter: brightness(0) invert(1);
+}
+
+.share-button:focus-visible,
+.share__link:focus-visible
+{
+  outline: 0.1875rem solid var(--color-blue-500);
+  outline-offset: 0.1875rem;
+}
+
+.share
+{
+  position: absolute;
+  z-index: 1;
+  inset: -1.25rem -2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 2rem 4.75rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  background: var(--color-blue-900);
+}
+
+.share__label
+{
+  color: var(--color-blue-500);
+  font-size: 0.75rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+}
+
+.share__link
+{
+  display: grid;
+  place-items: center;
+}
+
+.share__link img
+{
+  display: block;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+[hidden]
+{
+  display: none;
+}
+
+@media (min-width: 48rem)
+{
+  body
+  {
+    padding: 2rem;
+  }
+
+  .article-preview
+  {
+    min-block-size: calc(100vh - 4rem);
+  }
+
+  .article-card
+  {
+    display: grid;
+    overflow: visible;
+    grid-template-columns: 17.8125rem 1fr;
+  }
+
+  .article-card__cover
+  {
+    block-size: 100%;
+    border-radius: 0.625rem 0 0 0.625rem;
+    object-position: left center;
+  }
+
+  .article-card__content
+  {
+    padding: 2rem 2.5rem;
+  }
+
+  .article-card__title
+  {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+  }
+
+  .article-card__description
+  {
+    margin: 0.75rem 0 1.25rem;
+  }
+
+  .share
+  {
+    inset: auto -4.25rem 4.75rem auto;
+    inline-size: 15.5rem;
+    justify-content: center;
+    padding: 1.125rem 2rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.75rem 1.5rem hsl(217 19% 35% / 20%);
+  }
+
+  .share::after
+  {
+    position: absolute;
+    inset-block-end: -0.75rem;
+    inset-inline-start: calc(50% - 0.75rem);
+    border-width: 0.75rem 0.75rem 0;
+    border-style: solid;
+    border-color: var(--color-blue-900) transparent transparent;
+    content: "";
+  }
+}
