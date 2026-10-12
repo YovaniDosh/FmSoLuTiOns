@@ -5,7 +5,7 @@ const menuLabel = menuToggle.querySelector("span");
 const groupButtons = document.querySelectorAll(".nav-group__button");
 const desktopMedia = window.matchMedia("(min-width: 64rem)");
 
-function closeGroups(exceptButton)
+function closeGroups(exceptButton = null)
 {
   groupButtons.forEach((button) => {
     if (button !== exceptButton)
@@ -31,7 +31,8 @@ function setMenu(open)
 }
 
 menuToggle.addEventListener("click", () => {
-  setMenu(menuToggle.getAttribute("aria-expanded") === "false");
+  const open = menuToggle.getAttribute("aria-expanded") === "false";
+  setMenu(open);
 });
 
 groupButtons.forEach((button) => {
@@ -43,20 +44,31 @@ groupButtons.forEach((button) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape")
+  if (event.key !== "Escape")
+  {
+    return;
+  }
+
+  const expandedGroup = document.querySelector(
+    '.nav-group__button[aria-expanded="true"]'
+  );
+
+  if (expandedGroup)
+  {
+    expandedGroup.setAttribute("aria-expanded", "false");
+    expandedGroup.focus();
+    return;
+  }
+
+  if (!desktopMedia.matches && menuToggle.getAttribute("aria-expanded") === "true")
   {
     setMenu(false);
     menuToggle.focus();
   }
 });
 
-desktopMedia.addEventListener("change", (event) => {
-  menu.toggleAttribute("inert", !event.matches);
-  if (event.matches)
-  {
-    setMenu(false);
-    menu.removeAttribute("inert");
-  }
+desktopMedia.addEventListener("change", () => {
+  setMenu(false);
 });
 
-menu.toggleAttribute("inert", !desktopMedia.matches);
+setMenu(false);

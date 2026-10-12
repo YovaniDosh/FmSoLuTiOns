@@ -1,49 +1,57 @@
-@font-face {
+@font-face
+{
   font-display: swap;
   font-family: "Overpass";
   font-style: normal;
   font-weight: 300 900;
   src: url("../../../assets/fonts/Overpass-VariableFont_wght.ttf") format("truetype");
 }
+
 *,
 *::before,
-*::after 
+*::after
 {
   box-sizing: border-box;
 }
 
-html 
+html
 {
   scroll-behavior: smooth;
 }
 
-body {
+body
+{
   color: hsl(207, 13%, 34%);
   font-family: "Overpass", sans-serif;
   margin: 0;
 }
 
-img {
+img
+{
   display: block;
   max-inline-size: 100%;
 }
 
-a {
+a
+{
   color: inherit;
   text-decoration: none;
 }
 
-button {
+button
+{
   font: inherit;
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible
+{
   outline: 0.1875rem solid white;
   outline-offset: 0.25rem;
 }
 
-.sr-only {
+.sr-only
+{
   block-size: 0.0625rem;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -53,7 +61,8 @@ button:focus-visible {
   white-space: nowrap;
 }
 
-.hero {
+.hero
+{
   background: url("../../../assets/images/blogr-bg-pattern-intro-mobile.svg") center 40%/350% auto no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   border-radius: 0 0 0 6rem;
   color: white;
@@ -61,7 +70,8 @@ button:focus-visible {
   padding: 3.5rem 1.5rem;
 }
 
-.navigation {
+.navigation
+{
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -70,16 +80,22 @@ button:focus-visible {
   position: relative;
   z-index: 3;
 }
-.navigation__logo {
+
+.navigation__logo
+{
   inline-size: 5rem;
 }
-.navigation__toggle {
+
+.navigation__toggle
+{
   background: transparent;
   border: 0;
   cursor: pointer;
   padding: 0.5rem;
 }
-.navigation__menu {
+
+.navigation__menu
+{
   background: white;
   border-radius: 0.375rem;
   box-shadow: 0 1rem 2rem hsla(240, 10%, 16%, 0.25);
@@ -91,14 +107,20 @@ button:focus-visible {
   position: absolute;
   text-align: center;
 }
-.navigation__toggle[aria-expanded=true] + .navigation__menu {
+
+.navigation__toggle[aria-expanded=true] + .navigation__menu
+{
   display: block;
 }
-.navigation__groups {
+
+.navigation__groups
+{
   border-block-end: 0.0625rem solid hsl(0, 0%, 90%);
   padding-block-end: 1rem;
 }
-.navigation__account {
+
+.navigation__account
+{
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -107,10 +129,13 @@ button:focus-visible {
   padding-block-start: 1.5rem;
 }
 
-.nav-group {
+.nav-group
+{
   text-align: center;
 }
-.nav-group__button {
+
+.nav-group__button
+{
   background: transparent;
   border: 0;
   color: inherit;
@@ -123,7 +148,9 @@ button:focus-visible {
   position: relative;
   text-align: center;
 }
-.nav-group__button span {
+
+.nav-group__button span
+{
   align-self: center;
   block-size: 1rem;
   display: flex;
@@ -135,10 +162,14 @@ button:focus-visible {
   transform: translateY(-100%) rotate(0deg);
   transform-origin: center;
 }
-.nav-group__button[aria-expanded=true] span {
+
+.nav-group__button[aria-expanded=true] span
+{
   transform: translateY(-10%) rotate(180deg);
 }
-.nav-group__list {
+
+.nav-group__list
+{
   background: hsl(240, 7%, 94%);
   border-radius: 0.25rem;
   display: none;
@@ -147,103 +178,139 @@ button:focus-visible {
   margin: 0;
   padding: 1rem;
 }
-.nav-group__button[aria-expanded=true] + .nav-group__list {
+
+.nav-group__button[aria-expanded=true] + .nav-group__list
+{
   display: block;
 }
-.nav-group a:hover {
+
+.nav-group a:hover
+{
   font-weight: 600;
 }
 
-.button {
+.button
+{
   border-radius: 2rem;
   display: inline-block;
   font-weight: 600;
   padding: 0.85rem 1.1rem;
 }
-.button--signup {
+
+.button--signup
+{
   background: linear-gradient(135deg, hsl(355, 100%, 74%), hsl(356, 100%, 66%));
   color: white;
   min-inline-size: 8.5rem;
 }
-.button--light {
+
+.button--light
+{
   background: white;
   color: hsl(356, 100%, 66%);
   font-weight: 800;
 }
-.button--light:hover {
+
+.button--light:hover
+{
   background: hsl(355, 100%, 74%);
   color: white;
 }
-.button--outline {
+
+.button--outline
+{
   border: 0.0625rem solid white;
 }
-.button--outline:hover {
+
+.button--outline:hover
+{
   background: white;
   color: hsl(356, 100%, 66%);
 }
 
-.hero__content {
+.hero__content
+{
   margin: 7.5rem auto 0;
   max-inline-size: 50rem;
   text-align: center;
 }
-.hero__content h1 {
+
+.hero__content h1
+{
   font-size: clamp(2.1rem, 8vw, 4rem);
   line-height: 1.25;
   margin: 0 0 1rem;
 }
-.hero__content p {
+
+.hero__content p
+{
   font-size: 1.125rem;
   margin: 0 0 2.75rem;
 }
 
-.hero__actions {
+.hero__actions
+{
   display: flex;
   gap: 0.75rem;
   justify-content: center;
 }
 
 .future,
-.tooling {
+.tooling
+{
   overflow: hidden;
   padding: 6.5rem 1.5rem;
   text-align: center;
 }
+
 .future h2,
 .future h3,
 .tooling h2,
-.tooling h3 {
+.tooling h3
+{
   color: hsl(208, 49%, 24%);
   line-height: 1.2;
 }
+
 .future h2,
-.tooling h2 {
+.tooling h2
+{
   font-size: 1.75rem;
 }
+
 .future h3,
-.tooling h3 {
+.tooling h3
+{
   font-size: 1.75rem;
 }
+
 .future p,
-.tooling p {
+.tooling p
+{
   line-height: 1.8;
 }
+
 .future article + article,
-.tooling article + article {
+.tooling article + article
+{
   margin-block-start: 3rem;
 }
 
-.future__image {
+.future__image
+{
   display: block;
   margin: 6rem auto;
 }
-.future__image img {
+
+.future__image img
+{
   inline-size: 100%;
   height: 90%;
   transform: scale(1.2);
 }
 
-.infrastructure {
+.infrastructure
+{
   background: url("../../../assets/images/blogr-bg-pattern-circles.svg") center -14rem/38rem no-repeat, linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
   border-radius: 0 6rem;
   color: white;
@@ -253,7 +320,9 @@ button:focus-visible {
   position: relative;
   text-align: center;
 }
-.infrastructure img {
+
+.infrastructure img
+{
   inset-block-start: -12rem;
   inset-inline-start: 50%;
   inline-size: min(100%, 34rem);
@@ -261,28 +330,36 @@ button:focus-visible {
   transform: translateX(-50%);
   height: 65%;
 }
-.infrastructure h2 {
+
+.infrastructure h2
+{
   font-size: 2.4rem;
   line-height: 1.2;
   margin: 2rem 0 1.5rem;
 }
-.infrastructure p {
+
+.infrastructure p
+{
   line-height: 1.8;
   margin: 0 auto;
   max-inline-size: 34rem;
 }
 
-.tooling__image {
+.tooling__image
+{
   display: block;
   margin: 0 -2.5rem 4rem;
 }
-.tooling__image img {
+
+.tooling__image img
+{
   inline-size: 100%;
   height: 90%;
   transform: scale(1.2);
 }
 
-.footer {
+.footer
+{
   align-items: center;
   background: hsl(240, 10%, 16%);
   border-radius: 0 6rem 0 0;
@@ -293,43 +370,61 @@ button:focus-visible {
   padding: 4.5rem 1.5rem;
   text-align: center;
 }
-.footer h2 {
+
+.footer h2
+{
   font-size: 1rem;
   margin: 0 0 1.5rem;
 }
-.footer ul {
+
+.footer ul
+{
   color: hsl(240, 3%, 79%);
   line-height: 2;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.footer a:hover {
+
+.footer a:hover
+{
   text-decoration: underline;
 }
 
-@media (min-width: 64rem) {
-  .hero {
+@media (min-width: 64rem)
+{
+  .hero
+  {
     background-image: url("../../../assets/images/blogr-bg-pattern-intro-desktop.svg"), linear-gradient(100deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-position: 25% 52%, center;
     background-size: 190% auto, cover;
     min-block-size: 37.5rem;
     padding-inline: 3rem;
   }
-  .hero__content h1 {
+
+  .hero__content h1
+  {
     font-size: 3.5rem;
   }
-  .navigation {
+
+  .navigation
+  {
     justify-content: flex-start;
   }
-  .navigation__logo {
+
+  .navigation__logo
+  {
     inline-size: 6.25rem;
     margin-inline-end: 4rem;
   }
-  .navigation__toggle {
+
+  .navigation__toggle
+  {
     display: none;
   }
-  .navigation__menu {
+
+  .navigation__menu
+  {
     align-items: center;
     background: transparent;
     box-shadow: none;
@@ -342,20 +437,28 @@ button:focus-visible {
     position: static;
     text-align: start;
   }
-  .navigation__groups {
+
+  .navigation__groups
+  {
     border: 0;
     display: flex;
     gap: 1rem;
     padding: 0;
   }
-  .navigation__account {
+
+  .navigation__account
+  {
     flex-direction: row;
     padding: 0;
   }
-  .nav-group {
+
+  .nav-group
+  {
     position: relative;
   }
-  .nav-group__list {
+
+  .nav-group__list
+  {
     background: white;
     color: hsl(207, 13%, 34%);
     inline-size: 10rem;
@@ -364,38 +467,52 @@ button:focus-visible {
     position: absolute;
     transform: translateX(-50%);
   }
-  .button--signup {
+
+  .button--signup
+  {
     background: white;
     color: hsl(356, 100%, 66%);
     text-align: center;
     font-weight: 800;
   }
-  .button--signup:hover {
+
+  .button--signup:hover
+  {
     background: hsl(355, 100%, 74%);
     color: white;
   }
-  .hero__content {
+
+  .hero__content
+  {
     margin-block-start: 8rem;
   }
+
   .future,
-  .tooling {
+  .tooling
+  {
     display: grid;
     min-block-size: 55rem;
     padding-inline: max(3rem, (100% - 69rem) / 2);
     text-align: start;
   }
-  .future {
+
+  .future
+  {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     padding-block: 6rem 5rem;
   }
-  .future > h2 {
+
+  .future > h2
+  {
     font-size: 2.2rem;
     grid-column: 1/-1;
     grid-row: 1;
     text-align: center;
   }
-  .future__content {
+
+  .future__content
+  {
     align-self: center;
     grid-column: 1;
     grid-row: 2;
@@ -403,25 +520,38 @@ button:focus-visible {
     margin: 0;
     padding: 3rem 0 0 0;
   }
+
   .future__content article,
   .future__content h3,
-  .future__content p {
+  .future__content p
+  {
     margin: 0;
     padding: 0;
   }
-  .future__content h3 {
+
+  .future__content h3
+  {
     margin-top: 2rem;
   }
-  .future__content h3, .future__content p {
+
+  .future__content h3,
+  .future__content p
+  {
     margin-bottom: 2rem;
   }
-  .future__content p {
+
+  .future__content p
+  {
     line-height: 1.6;
   }
-  .future__content article + article {
+
+  .future__content article + article
+  {
     margin: 0;
   }
-  .future__image {
+
+  .future__image
+  {
     align-self: center;
     grid-column: 2;
     grid-row: 2;
@@ -432,7 +562,9 @@ button:focus-visible {
     margin-block: 0;
     margin-inline-end: calc(-1 * max(3rem, (100vw - 69rem) / 2));
   }
-  .infrastructure {
+
+  .infrastructure
+  {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -443,7 +575,9 @@ button:focus-visible {
     margin: 0;
     background: url(../../../assets/images/blogr-bg-pattern-circles.svg) -15vw -28rem/56rem no-repeat, linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
   }
-  .infrastructure img {
+
+  .infrastructure img
+  {
     block-size: auto;
     inline-size: min(38vw, 34.5rem);
     inset-block-start: 60%;
@@ -452,29 +586,44 @@ button:focus-visible {
     top: 12rem;
     transform: translateY(-50%);
   }
-  .infrastructure > div {
+
+  .infrastructure > div
+  {
     grid-column: 2;
   }
-  .infrastructure h2, .infrastructure p {
+
+  .infrastructure h2,
+  .infrastructure p
+  {
     margin: 0;
   }
-  .infrastructure h2 {
+
+  .infrastructure h2
+  {
     margin-bottom: 2rem;
   }
-  .tooling {
+
+  .tooling
+  {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     padding-block: 7rem;
   }
-  .tooling__image {
+
+  .tooling__image
+  {
     margin: 0 0 0 -55%;
     position: relative;
     right: 8%;
   }
-  .tooling__content {
+
+  .tooling__content
+  {
     padding-inline-start: 2rem;
   }
-  .footer {
+
+  .footer
+  {
     align-items: start;
     grid-template-columns: repeat(4, 1fr);
     justify-items: start;
@@ -482,10 +631,11 @@ button:focus-visible {
     text-align: start;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  html {
+
+@media (prefers-reduced-motion: reduce)
+{
+  html
+  {
     scroll-behavior: auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
