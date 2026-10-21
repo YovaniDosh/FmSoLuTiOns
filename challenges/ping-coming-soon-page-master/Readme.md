@@ -1,5 +1,3 @@
-# Ping Coming Soon Page
-
 <h1 align="center">
 
 My Solution to the [Ping Coming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7) challenge.
