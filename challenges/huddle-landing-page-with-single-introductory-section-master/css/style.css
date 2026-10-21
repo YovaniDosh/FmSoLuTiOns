@@ -8,6 +8,12 @@
   --transition-fast: 180ms ease;
 }
 
+::selection
+{
+  background: var(--color-magenta);
+  color: var(--color-white);
+}
+
 *,
 *::before,
 *::after

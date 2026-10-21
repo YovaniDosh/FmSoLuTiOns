@@ -1,0 +1,14 @@
+{
+  "name": "intro-component-signup-form",
+  "version": "1.0.0",
+  "description": "Responsive sign-up form with client-side validation and automated Playwright tests.",
+  "main": "script.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
