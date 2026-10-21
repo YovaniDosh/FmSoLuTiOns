@@ -1,0 +1,771 @@
+$color-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-green-dark: hsl(167, 40%, 24%);
+$color-blue-dark: hsl(198, 62%, 26%);
+$color-green-footer: hsl(167, 44%, 70%);
+$color-green-link: hsl(168, 34%, 41%);
+$color-grey-950: hsl(212, 27%, 19%);
+$color-grey-600: hsl(213, 9%, 39%);
+$color-grey-550: hsl(232, 10%, 55%);
+$color-grey-400: hsl(210, 4%, 67%);
+$color-white: hsl(0, 100%, 100%);
+$color-cream: hsl(26, 100%, 99%);
+$font-heading: "Fraunces", Georgia, serif;
+$font-body: "Barlow", Arial, Helvetica, sans-serif;
+$desktop: 48rem;
+
+@font-face
+{
+  font-family: "Barlow";
+  src: url("../../../assets/fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face
+{
+  font-family: "Fraunces";
+  src: url("../../../assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  margin: 0;
+  color: $color-grey-600;
+  background: $color-cream;
+  font-family: $font-body;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+body,
+button
+{
+  font-family: $font-body;
+}
+
+img
+{
+  display: block;
+  max-inline-size: 100%;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden
+{
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero
+{
+  min-block-size: 33.625rem;
+  color: $color-white;
+  background: #3dbfff url("../../../assets/images/sunnyside-mobile-image-header.jpg") center bottom / cover no-repeat;
+
+  &__content
+  {
+    display: grid;
+    padding: 4.7rem 1.25rem 0;
+    justify-items: center;
+    text-align: center;
+  }
+
+  h1
+  {
+    display: flex;
+    max-inline-size: 22rem;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 0.18em 0.34em;
+    justify-content: center;
+    font-family: $font-heading;
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__arrow
+  {
+    margin-block-start: 2.9rem;
+    border-radius: 0.25rem;
+
+    &:focus-visible
+    {
+      outline: 3px solid $color-yellow;
+      outline-offset: 0.5rem;
+    }
+  }
+}
+
+.reveal-text
+{
+  --letter-gap: 0.16em;
+
+  &__word
+  {
+    display: flex;
+    gap: var(--letter-gap);
+  }
+
+  &__letter
+  {
+    position: relative;
+    display: inline-block;
+    block-size: 1em;
+    color: transparent;
+    cursor: pointer;
+
+    &::before,
+    &::after
+    {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      color: $color-white;
+      content: attr(data-letter);
+      transition: transform 500ms cubic-bezier(0.2, 0.85, 0.2, 1);
+    }
+
+    &::before
+    {
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+
+    &::after
+    {
+      clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    }
+
+    &:hover::before
+    {
+      transform: translateY(-0.24em);
+    }
+
+    &:hover::after
+    {
+      transform: translateY(0.24em);
+    }
+
+    &:hover .reveal-text__hidden
+    {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__hidden
+  {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    color: $color-yellow;
+    font-family: $font-body;
+    font-size: 0.62em;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0;
+    transform: scale(0.35);
+    transition: opacity 250ms ease 100ms, transform 500ms cubic-bezier(0.2, 0.85, 0.2, 1);
+  }
+}
+
+.navigation
+{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: 2rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand
+  {
+    inline-size: 7.75rem;
+  }
+
+  &__toggle
+  {
+    padding: 0.5rem 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &:focus-visible
+    {
+      outline: 3px solid $color-white;
+      outline-offset: 0.3rem;
+    }
+  }
+
+  &__menu
+  {
+    position: absolute;
+    inset: calc(100% + 1.25rem) 1.5rem auto;
+    display: grid;
+    padding: 2.5rem 1rem;
+    gap: 1.5rem;
+    justify-items: center;
+    color: $color-grey-550;
+    background: $color-white;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.75rem);
+    transition: opacity 180ms ease, transform 180ms ease;
+
+    &::before
+    {
+      position: absolute;
+      inset: -1.5rem 0 auto auto;
+      inline-size: 0;
+      block-size: 0;
+      border-block-start: 1.5rem solid transparent;
+      border-inline-end: 1.5rem solid $color-white;
+      content: "";
+    }
+
+    &[data-open="true"]
+    {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    a:not(.navigation__contact):hover,
+    a:not(.navigation__contact):focus-visible
+    {
+      color: $color-grey-950;
+    }
+  }
+
+  &__contact
+  {
+    display: inline-grid;
+    min-block-size: 3.5rem;
+    padding-inline: 2rem;
+    place-items: center;
+    color: $color-grey-950;
+    background: $color-yellow;
+    border-radius: 2rem;
+    font-family: $font-heading;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 180ms ease, background-color 180ms ease;
+  }
+}
+
+.feature
+{
+  display: grid;
+  background: $color-cream;
+
+  &__image
+  {
+    img
+    {
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content
+  {
+    padding: 3.9rem 1.5rem 4.1rem;
+    text-align: center;
+  }
+
+  h2
+  {
+    margin: 0;
+    color: $color-grey-950;
+    font-family: $font-heading;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  p
+  {
+    max-inline-size: 29rem;
+    margin: 1.5rem auto 0;
+  }
+
+  &__link
+  {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    margin-block-start: 1.9rem;
+    color: $color-grey-950;
+    font-family: $font-heading;
+    font-size: 0.95rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    &::after
+    {
+      position: absolute;
+      z-index: -1;
+      inset: auto -0.5rem 0.05rem;
+      block-size: 0.55rem;
+      border-radius: 1rem;
+      content: "";
+      opacity: 0.3;
+      transition: opacity 180ms ease;
+    }
+
+    &--yellow::after
+    {
+      background: $color-yellow;
+    }
+
+    &--red::after
+    {
+      background: $color-red;
+    }
+
+    &:hover::after,
+    &:focus-visible::after
+    {
+      opacity: 1;
+    }
+
+    &:focus-visible
+    {
+      outline: 2px solid $color-grey-950;
+      outline-offset: 0.4rem;
+    }
+  }
+}
+
+.service
+{
+  display: grid;
+  min-block-size: 37.5rem;
+  padding: 2rem 1.5rem 3.5rem;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &--graphic
+  {
+    color: $color-green-dark;
+    background-image: url("../../../assets/images/sunnyside-mobile-image-graphic-design.jpg");
+  }
+
+  &--photography
+  {
+    color: $color-blue-dark;
+    background-image: url("../../../assets/images/sunnyside-mobile-image-photography.jpg");
+  }
+
+  &__content
+  {
+    max-inline-size: 23rem;
+    margin-inline: auto;
+  }
+
+  h2
+  {
+    margin: 0;
+    font-family: $font-heading;
+    font-size: 1.75rem;
+    font-weight: 900;
+  }
+
+  p
+  {
+    margin: 1.4rem 0 0;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+.testimonials
+{
+  padding: 4rem 1.5rem 5.5rem;
+  background: $color-cream;
+  text-align: center;
+
+  &__title
+  {
+    margin: 0;
+    color: $color-grey-400;
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+  &__grid
+  {
+    display: grid;
+    max-inline-size: 69.5rem;
+    margin: 4rem auto 0;
+    gap: 4.1rem;
+  }
+}
+
+.testimonial
+{
+  display: grid;
+  justify-items: center;
+
+  &__avatar
+  {
+    inline-size: 4.5rem;
+    block-size: 4.5rem;
+    border-radius: 50%;
+  }
+
+  blockquote
+  {
+    max-inline-size: 22rem;
+    margin: 2rem 0 1.7rem;
+    color: $color-grey-600;
+    font-size: 1rem;
+  }
+
+  h3,
+  p
+  {
+    margin: 0;
+  }
+
+  h3
+  {
+    color: $color-grey-950;
+    font-family: $font-heading;
+    font-size: 1.125rem;
+    font-weight: 900;
+  }
+
+  p
+  {
+    margin-block-start: 0.35rem;
+    color: $color-grey-400;
+    font-size: 0.8rem;
+  }
+}
+
+.gallery
+{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  img
+  {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.footer
+{
+  display: grid;
+  padding: 3.8rem 1.5rem 5rem;
+  justify-items: center;
+  color: $color-green-dark;
+  background: $color-green-footer;
+
+  &__brand
+  {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+  }
+
+  &__menu,
+  &__socials
+  {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu
+  {
+    margin-block-start: 1.9rem;
+    gap: clamp(2rem, 10vw, 3.5rem);
+    color: $color-green-link;
+
+    a:hover,
+    a:focus-visible
+    {
+      color: $color-white;
+    }
+  }
+
+  &__socials
+  {
+    margin-block-start: 5rem;
+    gap: 1.7rem;
+
+    a
+    {
+      display: block;
+      border-radius: 0.2rem;
+
+      &:hover,
+      &:focus-visible
+      {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  a:focus-visible
+  {
+    outline: 2px solid $color-white;
+    outline-offset: 0.35rem;
+  }
+}
+
+@media (min-width: $desktop)
+{
+  .hero
+  {
+    min-block-size: 50rem;
+    background-image: url("../../../assets/images/sunnyside-desktop-image-header.jpg");
+
+    &__content
+    {
+      padding-block-start: 4.3rem;
+    }
+
+    h1
+    {
+      max-inline-size: none;
+      font-size: 3.5rem;
+      letter-spacing: 0;
+    }
+
+    .reveal-text
+    {
+      --letter-gap: 0.18em;
+    }
+
+    &__arrow
+    {
+      margin-block-start: 5.6rem;
+    }
+  }
+
+  .navigation
+  {
+    padding: 2.1rem 3rem;
+
+    &__brand
+    {
+      inline-size: 10.6rem;
+    }
+
+    &__toggle
+    {
+      display: none;
+    }
+
+    &__menu
+    {
+      position: static;
+      display: flex;
+      padding: 0;
+      gap: 2.9rem;
+      align-items: center;
+      color: $color-white;
+      background: transparent;
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
+
+      &::before
+      {
+        display: none;
+      }
+
+      a:not(.navigation__contact):hover,
+      a:not(.navigation__contact):focus-visible
+      {
+        color: $color-white;
+        text-decoration: underline;
+        text-underline-offset: 0.35rem;
+      }
+    }
+
+    &__contact
+    {
+      min-block-size: 3.5rem;
+      color: $color-grey-950;
+      background: $color-white;
+
+      &:hover,
+      &:focus-visible
+      {
+        color: $color-white;
+        background: hsla(0, 100%, 100%, 0.3);
+      }
+    }
+  }
+
+  .feature
+  {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    &--transform .feature__image
+    {
+      grid-column: 2;
+    }
+
+    &--transform .feature__content
+    {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &__content
+    {
+      display: flex;
+      min-block-size: 37.5rem;
+      padding: 4rem clamp(3rem, 8vw, 10.25rem);
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: start;
+    }
+
+    h2
+    {
+      max-inline-size: 28rem;
+      font-size: 2.5rem;
+    }
+
+    p
+    {
+      margin-inline: 0;
+    }
+  }
+
+  .services
+  {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service
+  {
+    &--graphic
+    {
+      background-image: url("../../../assets/images/sunnyside-desktop-image-graphic-design.jpg");
+    }
+
+    &--photography
+    {
+      background-image: url("../../../assets/images/sunnyside-desktop-image-photography.jpg");
+    }
+  }
+
+  .testimonials
+  {
+    padding-block: 10rem;
+
+    &__title
+    {
+      font-size: 1.25rem;
+    }
+
+    &__grid
+    {
+      margin-block-start: 5rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.8rem;
+    }
+  }
+
+  .testimonial
+  {
+    blockquote
+    {
+      min-block-size: 8rem;
+      margin-block: 3.3rem 2.5rem;
+      font-size: 1.125rem;
+    }
+  }
+
+  .gallery
+  {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .footer
+  {
+    padding-block: 4rem 4.5rem;
+
+    &__socials
+    {
+      margin-block-start: 4.5rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  html
+  {
+    scroll-behavior: auto;
+  }
+
+  .navigation__menu,
+  .navigation__contact,
+  .feature__link::after,
+  .reveal-text__letter::before,
+  .reveal-text__letter::after,
+  .reveal-text__hidden
+  {
+    transition: none;
+  }
+}

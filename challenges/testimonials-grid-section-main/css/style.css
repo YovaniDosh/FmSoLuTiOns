@@ -12,6 +12,12 @@
     hsla(217, 19%, 35%, 0.15);
 }
 
+::selection 
+{
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
 *,
 *::before,
 *::after {
