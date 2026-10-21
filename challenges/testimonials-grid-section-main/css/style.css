@@ -1,0 +1,205 @@
+:root {
+  --color-purple:     hsl(263, 55%, 52%);
+  --color-gray-blue:  hsl(217, 19%, 35%);
+  --color-dark-blue:  hsl(219, 29%, 14%);
+  --color-white:      hsl(0, 0%, 100%);
+  --color-background: hsl(210, 46%, 95%);
+  --color-muted:      hsl(0, 0%, 81%);
+
+  --radius-card: 0.6rem;
+  --shadow-card:
+    1.5rem 2rem 3rem
+    hsla(217, 19%, 35%, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h2,
+p,
+blockquote {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+
+  background: var(--color-background);
+
+  font-family:
+    "RedHat",
+    Arial,
+    sans-serif;
+}
+
+@font-face 
+{
+    font-family: "RedHat";
+    src: url("../../../assets/fonts/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500 900;
+    font-style: normal;
+    font-display: swap;    
+}
+.page 
+{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1.5rem;
+}
+.testimonials 
+{
+  width: min(100%, 70rem);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.testimonial 
+{
+  padding: 1.75rem;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  color: var(--color-gray-blue);
+  box-shadow: var(--shadow-card);
+}
+
+.testimonial__author 
+{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial__author img 
+{
+  width: 2.2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial__author h2 
+{
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.testimonial__author p 
+{
+  margin-top: 0.15rem;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.testimonial__title 
+{
+  margin-bottom: 1.25rem;
+  font-size: 1.10rem;
+  font-weight: 600;
+  order: 10;
+  line-height: 1.25;
+}
+
+.testimonial blockquote 
+{
+  font-size: 0.82rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.testimonial--daniel 
+{
+  position: relative;
+  isolation: isolate;
+  order: 10;
+  overflow: hidden;
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.testimonial--daniel::before
+{
+    content: "";
+    width:   6.5rem;
+    height:  6.5rem;
+    order: 5;
+    z-index: 0;
+    top: 0;
+    background-color: transparent;
+    background-image: url(../../../assets/images/bg-pattern-quotation.svg);
+    position: absolute;
+    right: 3.5rem;
+    pointer-events: none;
+
+}
+
+.testimonial--daniel > *
+{
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial--jonathan 
+{
+  background: var(--color-gray-blue);
+  color: var(--color-white);
+}
+
+.testimonial--jonathan blockquote
+{
+    font-size: .80rem;
+}
+.testimonial--patrick 
+{
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.testimonial--jeanette,
+.testimonial--kira 
+{
+  background: var(--color-white);
+  color: var(--color-gray-blue);
+}
+
+
+@media (min-width: 64rem) {
+  .testimonials {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+
+  .testimonial--daniel {
+    grid-area: daniel;
+  }
+
+  .testimonial--jonathan {
+    grid-area: jonathan;
+  }
+
+  .testimonial--jeanette {
+    grid-area: jeanette;
+  }
+
+  .testimonial--patrick {
+    grid-area: patrick;
+  }
+
+  .testimonial--kira {
+    grid-area: kira;
+  }
+}
