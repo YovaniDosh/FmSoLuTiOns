@@ -1,10 +1,10 @@
-const signUpSection = document.querySelector('.sign-up');
-const successSection = document.querySelector('.success');
-const form = document.querySelector('.form');
-const emailInput = document.querySelector('#email');
-const errorMessage = document.querySelector('#email-error');
-const submittedEmail = document.querySelector('.success__email');
-const dismissButton = document.querySelector('.success__button');
+const signUpSection   = document.querySelector('.sign-up');
+const successSection  = document.querySelector('.success');
+const form            = document.querySelector('.form');
+const emailInput      = document.querySelector('#email');
+const errorMessage    = document.querySelector('#email-error');
+const submittedEmail  = document.querySelector('.success__email');
+const dismissButton   = document.querySelector('.success__button');
 
 function showError()
 {
