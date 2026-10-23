@@ -1,0 +1,638 @@
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-grey-200: hsl(0, 0%, 85%);
+$color-grey-500: hsl(0, 0%, 55%);
+$font-heading: "Josefin Sans", Arial, sans-serif;
+$font-body: Arial, Helvetica, sans-serif;
+$desktop: 48rem;
+
+@font-face
+{
+  font-family: "Josefin Sans";
+  src: url("../../../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  margin: 0;
+  color: $color-black;
+  background: $color-white;
+  font-family: $font-body;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+body.menu-open
+{
+  overflow: hidden;
+}
+
+button
+{
+  font: inherit;
+}
+
+img
+{
+  display: block;
+  max-inline-size: 100%;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3
+{
+  font-family: $font-heading;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.visually-hidden
+{
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero
+{
+  min-block-size: 40.625rem;
+  color: $color-white;
+  background: $color-black url("../../../assets/images/loopstudios-mobile-image-hero.jpg") center / cover no-repeat;
+
+  &__content
+  {
+    max-inline-size: 74rem;
+    margin-inline: auto;
+    padding: 7.6rem 1.5rem 0;
+  }
+
+  h1
+  {
+    max-inline-size: 33rem;
+    margin: 0;
+    padding: 1.5rem;
+    border: 2px solid $color-white;
+    font-size: clamp(2.5rem, 11vw, 4.5rem);
+    line-height: 0.95;
+  }
+}
+
+.navigation
+{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  max-inline-size: 74rem;
+  margin-inline: auto;
+  padding: 2.5rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand
+  {
+    position: relative;
+    z-index: 2;
+    inline-size: 9rem;
+  }
+
+  &__toggle
+  {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    padding: 0;
+    place-items: center;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    img
+    {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &:focus-visible
+    {
+      outline: 2px solid $color-white;
+      outline-offset: 0.25rem;
+    }
+  }
+
+  &__close-icon
+  {
+    display: none;
+  }
+
+  &__toggle[aria-expanded="true"] &__open-icon
+  {
+    display: none;
+  }
+
+  &__toggle[aria-expanded="true"] &__close-icon
+  {
+    display: block;
+  }
+
+  &__menu
+  {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    padding: 10rem 1.5rem 3rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    color: $color-white;
+    background: $color-black;
+    font-family: $font-heading;
+    font-size: 1.75rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+
+    &[data-open="true"]
+    {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.about
+{
+  display: grid;
+  max-inline-size: 74rem;
+  margin-inline: auto;
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+
+  &__image img
+  {
+    inline-size: 100%;
+  }
+
+  &__content
+  {
+    padding: 3rem 1.5rem 0;
+    background: $color-white;
+  }
+
+  h2
+  {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  p
+  {
+    max-inline-size: 29rem;
+    margin: 1.5rem auto 0;
+    color: $color-grey-500;
+  }
+}
+
+.creations
+{
+  max-inline-size: 74rem;
+  margin-inline: auto;
+  padding: 3.5rem 1.5rem 6rem;
+
+  &__header
+  {
+    text-align: center;
+  }
+
+  h2
+  {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  &__grid
+  {
+    display: grid;
+    margin-block-start: 3rem;
+    gap: 1.5rem;
+  }
+
+  &__button
+  {
+    min-inline-size: 9.8rem;
+    padding: 0.55rem 1.5rem;
+    border: 1px solid $color-black;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 180ms ease, background-color 180ms ease;
+
+    &:hover,
+    &:focus-visible
+    {
+      color: $color-white;
+      background: $color-black;
+    }
+
+    &:focus-visible
+    {
+      outline: 2px solid $color-black;
+      outline-offset: 0.25rem;
+    }
+
+    &--desktop
+    {
+      display: none;
+    }
+
+    &--mobile
+    {
+      display: block;
+      inline-size: fit-content;
+      margin: 2rem auto 0;
+    }
+  }
+}
+
+.creation
+{
+  position: relative;
+  display: block;
+  min-block-size: 7.5rem;
+  overflow: hidden;
+  color: $color-white;
+
+  &::after
+  {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 0.7), transparent 70%);
+    content: "";
+    transition: background-color 180ms ease;
+  }
+
+  picture,
+  img
+  {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  img
+  {
+    object-fit: cover;
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  h3
+  {
+    position: absolute;
+    z-index: 1;
+    inset: auto auto 1.25rem 1.25rem;
+    max-inline-size: 10rem;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  &:hover,
+  &:focus-visible
+  {
+    color: $color-black;
+    outline: 0;
+
+    &::after
+    {
+      background: hsla(0, 0%, 100%, 0.7);
+    }
+
+    img
+    {
+      transform: scale(1.03);
+    }
+  }
+
+  &:focus-visible
+  {
+    box-shadow: 0 0 0 3px $color-black;
+  }
+}
+
+.footer
+{
+  display: grid;
+  padding: 3.5rem 1.5rem;
+  justify-items: center;
+  color: $color-white;
+  background: $color-black;
+  text-align: center;
+
+  &__brand
+  {
+    display: inline-block;
+  }
+
+  &__menu
+  {
+    display: grid;
+    margin-block-start: 2rem;
+    gap: 1rem;
+  }
+
+  &__menu a,
+  &__socials a
+  {
+    position: relative;
+
+    &::after
+    {
+      position: absolute;
+      inset: auto 25% -0.5rem;
+      block-size: 2px;
+      background: $color-white;
+      content: "";
+      opacity: 0;
+    }
+
+    &:hover::after,
+    &:focus-visible::after
+    {
+      opacity: 1;
+    }
+
+    &:focus-visible
+    {
+      outline: 2px solid $color-white;
+      outline-offset: 0.4rem;
+    }
+  }
+
+  &__details
+  {
+    margin-block-start: 3rem;
+  }
+
+  &__socials
+  {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  p
+  {
+    margin: 1.25rem 0 0;
+    color: $color-grey-500;
+  }
+}
+
+@media (min-width: $desktop)
+{
+  body.menu-open
+  {
+    overflow: visible;
+  }
+
+  .hero
+  {
+    min-block-size: 40.625rem;
+    background-image: url("../../../assets/images/loopstudios-desktop-image-hero.jpg");
+
+    &__content
+    {
+      padding-block-start: 4.5rem;
+    }
+
+    h1
+    {
+      max-inline-size: 42rem;
+      padding: 2.5rem;
+      font-size: 4.5rem;
+    }
+  }
+
+  .navigation
+  {
+    padding: 4rem 1.5rem;
+
+    &__brand
+    {
+      inline-size: 12rem;
+    }
+
+    &__toggle
+    {
+      display: none;
+    }
+
+    &__menu
+    {
+      position: static;
+      display: flex;
+      padding: 0;
+      flex-direction: row;
+      gap: 2rem;
+      color: $color-white;
+      background: transparent;
+      font-family: $font-body;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      text-transform: none;
+      opacity: 1;
+      pointer-events: auto;
+
+      a
+      {
+        position: relative;
+
+        &::after
+        {
+          position: absolute;
+          inset: auto 25% -0.6rem;
+          block-size: 2px;
+          background: $color-white;
+          content: "";
+          opacity: 0;
+        }
+
+        &:hover::after,
+        &:focus-visible::after
+        {
+          opacity: 1;
+        }
+
+        &:focus-visible
+        {
+          outline: 2px solid $color-white;
+          outline-offset: 0.4rem;
+        }
+      }
+    }
+  }
+
+  .about
+  {
+    position: relative;
+    display: block;
+    padding-block: 10rem 5rem;
+    text-align: start;
+
+    &__image
+    {
+      display: block;
+      max-inline-size: 45.5rem;
+    }
+
+    &__content
+    {
+      position: absolute;
+      inset: auto 1.5rem 5rem auto;
+      max-inline-size: 34rem;
+      padding: 6rem 0 0 6rem;
+    }
+
+    h2
+    {
+      font-size: 3rem;
+    }
+
+    p
+    {
+      margin-inline: 0;
+    }
+  }
+
+  .creations
+  {
+    padding-block: 5rem 11.5rem;
+
+    &__header
+    {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: start;
+    }
+
+    h2
+    {
+      font-size: 3rem;
+    }
+
+    &__grid
+    {
+      margin-block-start: 5rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.9rem;
+    }
+
+    &__button--desktop
+    {
+      display: block;
+    }
+
+    &__button--mobile
+    {
+      display: none;
+    }
+  }
+
+  .creation
+  {
+    min-block-size: 28rem;
+
+    &::after
+    {
+      background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.75), transparent 60%);
+    }
+
+    h3
+    {
+      inset: auto 2rem 2rem;
+      max-inline-size: 12rem;
+      font-size: 2rem;
+    }
+  }
+
+  .footer
+  {
+    display: flex;
+    padding: 2.75rem max(1.5rem, calc((100% - 71rem) / 2));
+    align-items: end;
+    justify-content: space-between;
+    text-align: start;
+
+    &__menu
+    {
+      display: flex;
+      margin-block-start: 1.5rem;
+      gap: 2rem;
+    }
+
+    &__details
+    {
+      margin: 0;
+      text-align: end;
+    }
+
+    &__socials
+    {
+      justify-content: end;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  html
+  {
+    scroll-behavior: auto;
+  }
+
+  .navigation__menu,
+  .creations__button,
+  .creation::after,
+  .creation img
+  {
+    transition: none;
+  }
+}
