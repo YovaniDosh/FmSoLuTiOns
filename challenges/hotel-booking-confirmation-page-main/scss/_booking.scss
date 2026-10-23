@@ -1,0 +1,375 @@
+@use "variables" as *;
+
+.booking
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.booking__fan-control
+{
+  display: none;
+}
+
+.receipt,
+.welcome-card
+{
+  width: 100%;
+  padding: 1.75rem;
+  border-radius: $radius-medium;
+}
+
+.receipt
+{
+  order: 2;
+  background: $color-surface;
+  box-shadow: $shadow-soft;
+  transform: rotate(-2deg);
+
+  &__header
+  {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed $color-border;
+
+    small
+    {
+      color: $color-muted;
+      font-size: 0.6rem;
+      line-height: 1.4;
+      text-align: right;
+    }
+
+    h3
+    {
+      margin-top: 0.4rem;
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+  &__label
+  {
+    color: $color-muted;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  &__dates
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-block: 1rem;
+    border-bottom: 1px dashed $color-border;
+
+    > div
+    {
+      display: grid;
+      gap: 0.25rem;
+      text-align: center;
+    }
+
+    span
+    {
+      color: $color-muted;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    strong
+    {
+      font-family: Georgia, serif;
+      font-size: clamp(1.8rem, 8vw, 2.4rem);
+      font-weight: 400;
+    }
+
+    small
+    {
+      color: $color-muted;
+    }
+  }
+
+  &__prices
+  {
+    display: grid;
+    gap: 0.6rem;
+    margin-top: 1rem;
+
+    div
+    {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    dt
+    {
+      font-size: 0.85rem;
+    }
+
+    dd
+    {
+      margin: 0;
+      font-family: monospace;
+      white-space: nowrap;
+    }
+  }
+
+  &__total
+  {
+    margin-top: 1.25rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid $color-text;
+  }
+
+  &__total-price,
+  &__payment
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__total-price
+  {
+    span
+    {
+      color: $color-muted;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    strong
+    {
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__payment
+  {
+    margin-top: 0.65rem;
+
+    span
+    {
+      color: $color-muted;
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    img
+    {
+      max-width: 6rem;
+    }
+  }
+}
+
+.welcome-card
+{
+  order: 1;
+  min-height: 27rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to left, $color-welcome-start, $color-welcome-end);
+  color: $color-surface;
+  box-shadow: 0 1rem 3rem rgba(210, 85, 39, 0.28);
+  transform: rotate(2deg);
+
+  &__label
+  {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  &__sun
+  {
+    display: flex;
+    justify-content: flex-end;
+
+    img
+    {
+      width: 2.5rem;
+    }
+  }
+
+  > p:first-of-type
+  {
+    margin-top: 1rem;
+    color: $color-welcome-accent;
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  h3
+  {
+    margin-block: 0.4rem 1.5rem;
+    font-family: Georgia, serif;
+    font-size: 2.7rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  > p:last-of-type
+  {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  &__room
+  {
+    display: grid;
+    margin-top: auto;
+    padding-top: 3rem;
+
+    span
+    {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    strong
+    {
+      margin-top: 0.35rem;
+      font-family: Georgia, serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop)
+{
+  .booking
+  {
+    position: relative;
+    max-width: 52rem;
+    min-height: 28rem;
+    display: grid;
+    grid-template-columns: minmax(20rem, 1fr) minmax(20rem, 1fr);
+    align-items: center;
+    gap: 0;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+
+    &:has(.booking__fan-trigger:hover),
+    &:has(.booking__fan-trigger:focus-visible)
+    {
+      .receipt
+      {
+        transform-origin: -1rem right;
+        transform: translateX(-5.5rem) rotate(8deg);
+      }
+
+      .welcome-card
+      {
+        transform-origin: 1rem left;
+        transform: translateX(5.5rem) rotate(-5deg);
+      }
+
+      .booking__sun
+      {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+
+  .receipt
+  {
+    order: 1;
+    position: relative;
+    z-index: 2;
+    min-height: 26rem;
+    transform: translateX(3rem) rotate(-4deg);
+    transition: transform $transition-fan, box-shadow $transition-fan;
+  }
+
+  .welcome-card
+  {
+    order: 3;
+    position: relative;
+    z-index: 3;
+    min-height: 26rem;
+    transform: translateX(-3rem) rotate(4deg);
+    transition: transform $transition-fan, box-shadow $transition-fan;
+  }
+
+  .booking__fan-control
+  {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+  }
+
+  .booking__sun
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8rem;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.75);
+    transition: opacity $transition-fan, transform $transition-fan;
+  }
+
+  .booking__fan-trigger
+  {
+    position: absolute;
+    left: 50%;
+    bottom: -1.5rem;
+    border: 0;
+    background: transparent;
+    color: $color-orange;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    pointer-events: auto;
+    transform: translateX(-50%);
+    transition: color $transition-fast, letter-spacing $transition-fast;
+
+    &:hover,
+    &:focus-visible
+    {
+      color: $color-text;
+      letter-spacing: 0.16em;
+    }
+
+    &:focus-visible
+    {
+      outline: 0.125rem solid $color-orange;
+      outline-offset: 0.35rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+  .receipt,
+  .welcome-card,
+  .booking__sun,
+  .booking__fan-trigger
+  {
+    transition: none;
+  }
+}
