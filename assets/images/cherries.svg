@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 64" role="img" aria-labelledby="title">
+  <title id="title">Cerezas de recompensa</title>
+  <path d="M35 34C35 16 45 7 60 6M37 34C31 20 22 14 12 17" fill="none" stroke="#22c55e" stroke-width="5" stroke-linecap="round"/>
+  <path fill="#4ade80" d="M48 10c8-8 17-6 20-5-5 7-12 10-20 5Z"/>
+  <circle cx="26" cy="44" r="14" fill="#ef4444"/>
+  <circle cx="51" cy="45" r="14" fill="#dc2626"/>
+  <circle cx="21" cy="39" r="4" fill="#fecaca"/>
+  <circle cx="46" cy="40" r="4" fill="#fecaca"/>
+</svg>
