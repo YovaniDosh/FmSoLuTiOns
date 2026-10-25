@@ -49,14 +49,55 @@ The collection is not limited to a single platform: it brings together **Fronten
 | # | Project | Status | Main Technologies |
 |---:|---|:---:|---|
 | 01 | QR Code Component | ✅ | HTML, CSS |
+| 02 | Blog Preview Card | ✅ | HTML, CSS |
+| 03 | Product Preview Card | ✅ | HTML, CSS |
+| 04 | Order Summary Component | ✅ | HTML, CSS |
+| 05 | Results Summary Component | ✅ | HTML, CSS, JavaScript, Git |
+| 06 | Recipe Page | ✅ | HTML, CSS, Git |
+| 07 | NFT Preview Card | ✅ | HTML, CSS, Git |
+| 08 | Fylo Data Storage Component | ✅ | HTML, Sass, npm, Git |
+| 09 | Booking Confirmation Dashboard | ✅ | HTML, Sass, JavaScript, npm |
+| 10 | Social Links Profile | ✅ | HTML, Less, npm |
+| 11 | Clipboard Landing Page | ✅ | HTML, Less, npm, Git |
+| 12 | Bento Grid | ✅ | HTML, Sass, CSS Grid, npm |
+| 13 | Single Price Grid Component | ✅ | HTML, CSS, CSS Grid |
+| 14 | Four Card Feature Section | ✅ | HTML, CSS, Grid, Flexbox |
+| 15 | Profile Card Component | ✅ | HTML, CSS, CSS Grid |
+| 16 | Testimonials Grid Section | ✅ | HTML, CSS, Grid, Flexbox |
+| 17 | 3 Column Preview Card Component | ✅ | HTML, CSS, Grid, Flexbox |
+| 18 | Huddle Landing Page | ✅ | HTML, CSS, Grid, Flexbox |
+| 19 | Chat App CSS Landing Page | ✅ | HTML, CSS, Grid, Git |
+| 20 | Social Proof Section | ✅ | HTML, CSS, Grid, Git |
+| 21 | Stats Preview Card Component | ✅ | HTML, CSS, Grid, Git |
+| 22 | Bridge Collective | ✅ | HTML, CSS, JS, Grid |
+| 23 | Ping Coming Soon Page | ✅ | HTML, CSS, JavaScript, Git |
+| 24 | Base Apparel Coming Soon Page | ✅ | HTML, CSS, JavaScript, Git |
+| 25 | Intro Component With Sign Up Form | ✅ | HTML, CSS, JavaScript, Git |
+| 26 | Newsletter Sign-up Form | ✅ | HTML, CSS, JavaScript, Git |
+| 27 | FAQ Accordion | ✅ | HTML, CSS, JavaScript, Git |
+| 28 | Article Preview Component | ✅ | HTML, CSS, JavaScript, Git |
+| 29 | Interactive Rating Component | ✅ | HTML, CSS, JavaScript, Git |
+| 30 | News Homepage | ✅ | HTML, Sass, JavaScript, CSS Grid, npm |
+| 31 | Intro Section With Dropdown Navigation | ✅ | HTML, CSS, JavaScript, CSS Grid, Git |
+| 32 | Contact Form | ✅ | HTML, CSS, JavaScript, Forms, Git |
+| 33 | Age Calculator App | ✅ | HTML, CSS, JavaScript, Forms, Git |
+| 34 | Expenses Chart Component | ✅ | HTML, Less, JavaScript, JSON, npm, Git |
+| 35 | Sunnyside Agency Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 36 | Loopstudios Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 37 | Product List with Cart | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 38 | Blogr Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 39 | Insure Landing Page | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 40 | Rock, Paper, Scissors | ✅ | HTML, Sass, JavaScript, CSS Grid, npm, Git |
+| 41 | My Profile Card | ✅ | HTML, CSS, CSS Grid |
+| 42 | My Social Links Profile | ✅ | HTML, Less, npm |
 
 > The table is updated whenever a project is completed, documented, and published.
 
 ## Arcade Progress
 
-### 👾 1 of 100 Projects Completed
+### 👾 42 de 100 proyectos completados
 
-`░░░░░░░░░░░░░░░░░░░░` **1%**
+`████████░░░░░░░░░░░░` **42%**
 
 
 </div>

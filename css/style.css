@@ -1,9 +1,15 @@
 :root 
 {
-  --color-background: conic-gradient( from 15deg at 50% 50%,#6f2134,#5a212f, #472029, #361c23, #26181b, #181113, #0b090a, #000);
+  --color-background: 
+    conic-gradient( 
+      from 15deg at 50% 50%,
+      #005B41,#006447, #006D4D, #007553, #008170);
   --color-surface: #fff;
-  --color-primary: #6f2134;
-  --color-primary-dark: #5a212f;
+  --color-primary: 
+    conic-gradient(
+      from 3deg at 50% 50%,
+      #123F36,#17483D, #1C5145, #235F51,#2A6B5C);
+  --color-primary-dark: #008170;
   --color-text: #27212a;
   --color-muted: #667085;
   --color-border: #d8dee8;
@@ -142,19 +148,21 @@ a
 {
   transform: translateY(-3px);
   box-shadow: 0 0.9rem 2rem rgb(26 9 15 / 35%);
+  background: #08f18d;
+  color: #fff;
 }
 
 .button:focus-visible,
 .project-link:focus-visible 
 {
-  outline: 0.18rem solid #67e8f9;
+  outline: 0.18rem solid var(--color-primary-dark);
   outline-offset: 0.2rem;
 }
 
 .projects-section 
 {
   padding-block: 5rem;
-  background: var(--color-background);
+  background: var(--color-primary);
 }
 
 .section-heading 
@@ -174,17 +182,20 @@ a
 .project-card 
 {
   overflow: hidden;
-  border: 1px solid var(--color-border);
   border-radius: var(--radius-medium);
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
-  transition: transform 180ms ease, border 180ms ease;
+  transition: 
+    transform 180ms ease, border 180ms ease,
+    outline-offset 180ms ease;
 }
 
 .project-card:hover 
 {
   transform: translateY(-5px) scale(1.04);
-  border: none;
+  outline: 0.18rem solid var(--color-primary-dark);
+  outline-offset: -0.5rem;
+  outline-style: dashed;
 }
 
 .project-card__image 
@@ -270,14 +281,28 @@ a
 
 .project-link--primary 
 {
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   color: #fff;
+  transition: 
+  background 180ms ease;
+}
+
+.project-link--primary:hover,
+.project-link--primary:focus-visible
+{
+  background: #08f18d;
 }
 
 .project-link--secondary 
 {
   border: 1px solid var(--color-border);
   background: #fff;
+}
+
+.project-link--secondary:hover
+{
+  outline: 0.1rem solid #08f18d;
+  outline-offset: .2rem;
 }
 
 .empty-project 
